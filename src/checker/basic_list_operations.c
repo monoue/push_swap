@@ -2,30 +2,30 @@
 #include <libft.h>
 #include <debug.h>
 
-t_num	*lstlast(t_num *lst)
+t_num	*lstlast(t_num *stack)
 {
-	if (lst == NULL)
-		return (lst);
-	while (lst->next)
-		lst = lst->next;
-	return (lst);
+	if (stack == NULL)
+		return (stack);
+	while (stack->next)
+		stack = stack->next;
+	return (stack);
 }
 
-void	lstadd_back(t_num **lst, t_num *new)
+void	lstadd_back(t_num **stack, t_num *new)
 {
-	if (!lst || !new)
+	if (!stack || !new)
 		return ;
-	new->prev = lstlast(*lst);
-	lstlast(*lst)->next = new;
+	new->prev = lstlast(*stack);
+	lstlast(*stack)->next = new;
 }
 
-void	lstadd_front(t_num **lst, t_num *new)
+void	lstadd_front(t_num **stack, t_num *new)
 {
-	if (!lst || !new)
+	if (!stack || !new)
 		return ;
-	new->next = *lst;
-	(*lst)->prev = new;
-	*lst = new;
+	new->next = *stack;
+	(*stack)->prev = new;
+	*stack = new;
 }
 
 void	lstdel_one(t_num *lst)
@@ -35,33 +35,33 @@ void	lstdel_one(t_num *lst)
 	SAFE_FREE(lst);
 }
 
-void	lstdel_front(t_num **lst)
+void	lstdel_front(t_num **stack)
 {
 	t_num	*tmp;
 
-	if (!lst)
+	if (!stack)
 		return ;
-	tmp = *lst;
-	*lst = (*lst)->next;
+	tmp = *stack;
+	*stack = (*stack)->next;
 	lstdel_one(tmp);
-	if (*lst)
-		(*lst)->prev = NULL;
+	if (*stack)
+		(*stack)->prev = NULL;
 }
 
-void	lstdel_back(t_num **lst)
+void	lstdel_back(t_num **stack)
 {
 	t_num	*head;
 	t_num	*tmp;
 
-	if (!lst)
+	if (!stack)
 		return ;
-	head = *lst;
-	tmp = lstlast(*lst);
-	*lst = tmp->prev;
+	head = *stack;
+	tmp = lstlast(*stack);
+	*stack = tmp->prev;
 	lstdel_one(tmp);
-	if (*lst)
-		(*lst)->next = NULL;
-	*lst = head;
+	if (*stack)
+		(*stack)->next = NULL;
+	*stack = head;
 }
 
 t_num	*lstnew(int num)
@@ -76,14 +76,14 @@ t_num	*lstnew(int num)
 	return (tmp);
 }
 
-size_t	lstsize(t_num *num_list)
+size_t	lstsize(t_num *stack)
 {
 	t_num	*tmp;
 	size_t	count;
 
-	if (!num_list)
+	if (!stack)
 		return (0);
-	tmp = num_list;
+	tmp = stack;
 	count = 0;
 	while (tmp)
 	{

@@ -16,12 +16,12 @@ static void	push(t_num **src, t_num **dst)
 		lstadd_front(dst, new);
 }
 
-void		push_a(t_num **list_a, t_num **list_b)
+void		push_a(t_num **stack_a, t_num **stack_b)
 {
-	push(list_b, list_a);
+	push(stack_b, stack_a);
 }
 
-void		push_b(t_num **list_a, t_num **list_b)
+void		push_b(t_num **stack_a, t_num **stack_b)
 {
-	push(list_a, list_b);
+	push(stack_a, stack_b);
 }

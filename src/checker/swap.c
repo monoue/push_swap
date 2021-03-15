@@ -2,38 +2,38 @@
 #include <libft.h>
 #include <debug.h>
 
-static void	swap(t_num **num_list)
+static void	swap(t_num **stack)
 {
 	int	a;
 	int	b;
 
-	if (lstsize(*num_list) < 2)
+	if (lstsize(*stack) < 2)
 		return ;
-	a = (*num_list)->num;
-	b = (*num_list)->next->num;
-	lstdel_front(num_list);
-	lstdel_front(num_list);
-	if (!(*num_list))
-		*num_list = lstnew(a);
+	a = (*stack)->num;
+	b = (*stack)->next->num;
+	lstdel_front(stack);
+	lstdel_front(stack);
+	if (!(*stack))
+		*stack = lstnew(a);
 	else
-		lstadd_front(num_list, lstnew(a));
-	lstadd_front(num_list, lstnew(b));
+		lstadd_front(stack, lstnew(a));
+	lstadd_front(stack, lstnew(b));
 }
 
-void		swap_a(t_num **list_a, t_num **list_b)
+void		swap_a(t_num **stack_a, t_num **stack_b)
 {
-	(void)list_b;
-	swap(list_a);
+	(void)stack_b;
+	swap(stack_a);
 }
 
-void		swap_b(t_num **list_a, t_num **list_b)
+void		swap_b(t_num **stack_a, t_num **stack_b)
 {
-	(void)list_a;
-	swap(list_b);
+	(void)stack_a;
+	swap(stack_b);
 }
 
-void		swap_double(t_num **list_a, t_num **list_b)
+void		swap_double(t_num **stack_a, t_num **stack_b)
 {
-	swap(list_a);
-	swap(list_b);
+	swap(stack_a);
+	swap(stack_b);
 }

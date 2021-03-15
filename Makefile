@@ -6,7 +6,7 @@
 #    By: monoue <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/04 16:52:24 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/15 16:06:20 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,10 +26,15 @@ INCLUDE	= -I./libft -I./src/includes
 
 BASE	  = $(CHECKER_PATH)args_are_unique.c \
 			$(CHECKER_PATH)args_are_valid.c \
-			$(CHECKER_PATH)checker_main.c
+			$(CHECKER_PATH)checker.c \
+			$(CHECKER_PATH)basic_list_operations.c \
+			$(CHECKER_PATH)swap.c \
+			$(CHECKER_PATH)rotate.c \
+			$(CHECKER_PATH)reverse_rotate.c \
+			$(CHECKER_PATH)push.c \
 
-SRCS_NAME = $(BASE)
-TEST_NAME = $(BASE)
+SRCS_NAME = $(BASE) $(CHECKER_PATH)checker_main.c
+TEST_NAME = $(BASE) test.c test_functions.c
 
 SRCS = $(addprefix $(SRCS_PATH), $(SRCS_NAME))
 TEST = $(addprefix $(SRCS_PATH), $(TEST_NAME))

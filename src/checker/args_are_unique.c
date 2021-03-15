@@ -1,13 +1,25 @@
 #include <push_swap.h>
 #include <libft.h>
 
-static void	swap(int *x, int *y)
+static void	int_swap(int *x, int *y)
 {
 	int	temp;
 
 	temp = *x;
 	*x = *y;
 	*y = temp;
+}
+
+static void	move(int array[], int *i, int *j, int pivot)
+{
+	(*i)++;
+	(*j)--;
+	while (array[*i] < array[pivot])
+		(*i)++;
+	while (array[pivot] < array[*j])
+		(*j)--;
+	if (*i < *j)
+		int_swap(&array[*i], &array[*j]);
 }
 
 static int	partition(int array[], int left, int right)
@@ -19,27 +31,10 @@ static int	partition(int array[], int left, int right)
 	i = left;
 	j = right + 1;
 	pivot = left;
-
-	i++;
-	while (array[i] < array[pivot])
-		i++;
-	j--;
-	while (array[pivot] < array[j])
-		j--;
-	if (i < j)
-		swap(&array[i], &array[j]);
+	move(array, &i, &j, pivot);
 	while (i < j)
-	{
-		i++;
-		while (array[i] < array[pivot])
-			i++;
-		j--;
-		while (array[pivot] < array[j])
-			j--;
-		if (i < j)
-			swap(&array[i], &array[j]);
-	}
-	swap(&array[pivot], &array[j]);
+		move(array, &i, &j, pivot);
+	int_swap(&array[pivot], &array[j]);
 	return (j);
 }
 

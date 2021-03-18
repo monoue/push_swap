@@ -2,6 +2,7 @@
 # define DEBUG_H
 
 # include <stdio.h>
+# include "defs.h"
 
 # define DEBUGV(v_fmt, v) \
     dprintf(2, #v ": " v_fmt "\t(file \"%s\", line %d, in %s)\n", \
@@ -23,6 +24,6 @@
         __VA_ARGS__, __FILE__, __LINE__, __FUNCTION__);
 
 void	print_list_nums(t_num *num_list);
-void	print_current_status(t_num *list_a, t_num *list_b);
+void	print_current_status(t_num *stack_a, t_num *stack_b);
 
 #endif

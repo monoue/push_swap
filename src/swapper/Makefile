@@ -6,83 +6,84 @@
 #    By: monoue <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/18 06:51:49 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/18 11:23:22 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME2 = checker
+NAME = push_swap
 AR = ar
 ARFLAGS = rcs
 CC = gcc
 CFLAGS = -g -Wall -Wextra -Werror
 
 # PATH
-SRCS_PATH		= src/
-LIBFT_PATH		= libft/
-PUSH_SWAP_PATH	= push_swap/
-CHECKER_PATH	= checker/
-COMMON_PATH	= common/
+LIBFT_PATH		= ../../lib/
+COMMON_PATH	= ../common/
+TEST_PATH	= $(COMMON_PATH)test/
+SRC_PATH	= ./src/
+OPERATION_PATH = $(COMMON_PATH)operation/
 
-INCLUDE	= -I./libft -I./src/includes
+INCLUDE	= -I../../lib -I../includes/ -I./includes
 
 BASE	  = $(COMMON_PATH)args_are_unique.c \
 			$(COMMON_PATH)args_are_valid.c \
-			$(COMMON_PATH)read_and_exec_operations.c \
 			$(COMMON_PATH)basic_list_operations.c \
 			$(COMMON_PATH)get_sorted_array.c \
 			$(COMMON_PATH)get_struct_list.c \
 			$(COMMON_PATH)is_valid_operator.c \
 			$(COMMON_PATH)quick_sort.c \
-			$(COMMON_PATH)put_result.c \
-			$(COMMON_PATH)swap.c \
-			$(COMMON_PATH)rotate.c \
-			$(COMMON_PATH)reverse_rotate.c \
-			$(COMMON_PATH)push.c \
+			$(OPERATION_PATH)swap.c \
+			$(OPERATION_PATH)rotate.c \
+			$(OPERATION_PATH)reverse_rotate.c \
+			$(OPERATION_PATH)push.c \
+			$(SRC_PATH)exec.c \
+			$(SRC_PATH)exec_two.c \
+			$(SRC_PATH)exec_three.c \
+			$(SRC_PATH)exec_and_put_operation.c \
+			$(SRC_PATH)is_sorted.c
 
-SRCS_NAME = $(BASE) $(CHECKER_PATH)main.c
-TEST_NAME = $(BASE) test.c test_functions.c
+TEST_FILES = test_main.c \
+				$(TEST_PATH)test_functions.c
 
-C_SRCS = $(addprefix $(SRCS_PATH), $(SRCS_NAME))
-TEST = $(addprefix $(SRCS_PATH), $(TEST_NAME))
-C_OBJS = $(C_SRCS:%.c=%.o)
-DEPS	= $(C_SRCS:.c=.d)
+
+SRCS = $(BASE) $(SRC_PATH)main.c $(TEST_PATH)test_functions.c
+TEST = $(BASE) $(TEST_FILES)
+
+OBJS = $(SRCS:%.c=%.o)
+DEPS = $(SRCS:.c=.d)
 TOBJS = $(TEST:%.c=%.o)
-LIBFT	= libft/libft.a
+LIBFT	= $(LIBFT_PATH)libft.a
 
 .c.o:
 		$(CC) $(CFLAGS) $(INCLUDE) -c -MMD -MP -MF $(<:.c=.d) $< -o $(<:.c=.o)
 
-$(NAME1): $(OBJS) $(LIBFT)
+$(NAME): $(OBJS) $(LIBFT)
 	@$(CC) -fsanitize=address -o $@ $^
 
 -include $(DEPS)
 
 $(LIBFT):
-	make -C libft
+	make -C $(LIBFT_PATH)
 
-all: $(NAME1)
-
-ps: $(OBJS) $(LIBFT)
-	$(CC) -fsanitize=address -o push_swap $^
-
-checker: $(OBJS) $(LIBFT)
-	$(CC) -fsanitize=address -o checker $^
+all: $(NAME)
 
 test: $(TOBJS) $(LIBFT)
 	@$(CC) -o $@ $^
 
 bonus: $(BOBJS)
 	@$(MAKE) -C $(LIBFT_PATH);
-	@$(CC) $^ -L$(LIBFT_PATH) -lft -o $(NAME1)
+	@$(CC) $^ -L$(LIBFT_PATH) -lft -o $(NAME)
 
 clean:
-	$(MAKE) -C $(LIBFT_PATH) clean
 	$(RM) $(OBJS) $(DEPS)
 
+# $(MAKE) -C $(LIBFT_PATH) clean
+
 fclean: clean
-	$(MAKE) -C $(LIBFT_PATH) fclean
 	$(RM) $(NAME) test
+
+# $(MAKE) -C $(LIBFT_PATH) fclean
 
 re: fclean all
 
-.PHONY: all clean fclean re run
+.PHONY: all clean fclean re run bonus

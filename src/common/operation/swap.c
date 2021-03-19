@@ -1,6 +1,7 @@
 #include <push_swap.h>
 #include <libft.h>
 #include <debug.h>
+#include "swapper.h"
 
 static void	swap(t_num **stack)
 {
@@ -24,16 +25,29 @@ void		swap_a(t_num **stack_a, t_num **stack_b)
 {
 	(void)stack_b;
 	swap(stack_a);
+	ft_putendl("sa");
 }
 
 void		swap_b(t_num **stack_a, t_num **stack_b)
 {
 	(void)stack_a;
 	swap(stack_b);
+	ft_putendl("sb");
 }
 
 void		swap_double(t_num **stack_a, t_num **stack_b)
 {
 	swap(stack_a);
 	swap(stack_b);
+	ft_putendl("ss");
+}
+
+void		swap_designated(t_num **stack_a, t_num **stack_b, int stack_type)
+{
+	if (stack_type == STACK_A)
+		swap_a(stack_a, stack_b);
+	else if (stack_type == STACK_B)
+		swap_b(stack_a, stack_b);
+	else if (stack_type == DOUBLE)
+		swap_double(stack_a, stack_b);
 }

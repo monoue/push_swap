@@ -18,6 +18,7 @@
 # define DX(v) DEBUGV("%x", v);
 # define DL(v) DEBUGV("%ld", v);
 # define DSZ(v) DEBUGV("%zu", v);
+# define DSSZ(v) DEBUGV("%zd", v);
 
 # define DEBUGF(fmt, ...) \
     dprintf(2, fmt "\t(file \"%s\", line %d, in %s)\n", \
@@ -25,5 +26,6 @@
 
 void	print_list_nums(t_num *num_list);
 void	print_current_status(t_num *stack_a, t_num *stack_b);
+void	print_current_status_wrapper(t_num **stack_a, t_num **stack_b);
 
 #endif

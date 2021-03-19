@@ -12,7 +12,8 @@ bool			args_are_unique(size_t argc, char *argv[]);
 t_num			*get_struct_list(size_t args_num, char **num_strs);
 bool			is_valid_operator(char *str);
 
-void		quick_sort(int array[], int left, int right);
+// void		quick_sort(int array[], int left, int right);
+void		quick_sort(int array[], int left, int right, size_t nums_num);
 void		get_sorted_array(int *array, size_t num, char **strs);
 
 t_num	*lstlast(t_num *stack);

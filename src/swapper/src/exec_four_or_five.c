@@ -101,30 +101,6 @@ size_t	get_nth_smallest_num_index(t_num *stack, size_t n)
 // 	}
 // }
 
-void	bring_target_index_to_top(t_num **stack_a, t_num **stack_b, size_t target_index, int stack_type)
-{
-	const size_t	nums_num = lstsize(*stack_a);
-	size_t			index;
-
-	index = 0;
-	if (target_index < nums_num / 2)
-	{
-		while (index < target_index)
-		{
-			exec_and_put_operation(stack_a, stack_b, rotate_designated, stack_type);
-			index++;
-		}
-	}
-	else
-	{
-		while (index + target_index < nums_num)
-		{
-			exec_and_put_operation(stack_a, stack_b, reverse_rotate_designated, stack_type);
-			index++;
-		}
-	}
-}
-
 // 指定された数の範囲内の、最小の値達のうち、一番先頭から近いものの index を返す関数。
 // while を回しながら、一つずつの index をとり、前に獲得した index と比べて、近い方で塗り替えていく。
 // 一番近いものを返す。

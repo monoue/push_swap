@@ -7,6 +7,7 @@ int	main(int argc, char *argv[])
 {
 	t_num	*stack_a;
 	size_t	nums_num;
+	int		sorted_array[argc - 1];
 
 	if (argc < 2)
 		return (EXIT_SUCCESS);
@@ -19,5 +20,6 @@ int	main(int argc, char *argv[])
 	if (nums_num == 1)
 		return (EXIT_SUCCESS);
 	stack_a = get_struct_list(nums_num, &argv[1]);
-	exec(&stack_a, nums_num);
+	get_sorted_array(sorted_array, nums_num, &argv[1]);
+	exec(&stack_a, nums_num, sorted_array);
 }

@@ -6,7 +6,7 @@
 #    By: monoue <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/19 09:41:40 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/19 13:03:14 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,10 +36,12 @@ BASE	  = $(COMMON_PATH)args_are_unique.c \
 			$(OPERATION_PATH)rotate.c \
 			$(OPERATION_PATH)reverse_rotate.c \
 			$(OPERATION_PATH)push.c \
+			$(SRC_PATH)bring_target_index_to_top.c \
 			$(SRC_PATH)exec.c \
 			$(SRC_PATH)exec_two.c \
 			$(SRC_PATH)exec_three.c \
 			$(SRC_PATH)exec_four_or_five.c \
+			$(SRC_PATH)exec_one_hundred_or_less.c \
 			$(SRC_PATH)exec_and_put_operation.c \
 			$(SRC_PATH)is_sorted.c \
 			$(SRC_PATH)get_nearer_index.c

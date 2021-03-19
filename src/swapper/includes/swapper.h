@@ -1,6 +1,8 @@
 #ifndef SWAPPER_H
 # define SWAPPER_H
 
+# define CHUNK_SIZE 20
+
 int	g_count;
 
 typedef struct	s_pattern_set
@@ -30,7 +32,8 @@ typedef enum	e_stacks
 	STACKS_NUM
 }				t_stacks;
 
-void	exec(t_num **stack_a, size_t nums_num);
+void	bring_target_index_to_top(t_num **stack_a, t_num **stack_b, size_t target_index, int stack_type);
+void	exec(t_num **stack_a, size_t nums_num, int sorted_array[]);
 bool	is_sorted(t_num *stack);
 void	exec_two(t_num *stack_a);
 void	exec_three(t_num **stack_a);
@@ -41,5 +44,6 @@ void		push_designated(t_num **stack_a, t_num **stack_b, int stack_type);
 void		swap_designated(t_num **stack_a, t_num **stack_b, int stack_type);
 void		rotate_designated(t_num **stack_a, t_num **stack_b, int stack_type);
 void		reverse_rotate_designated(t_num **stack_a, t_num **stack_b, int stack_type);
+void	exec_one_hundred_or_less(t_num **stack_a, size_t nums_num, int sorted_array[]);
 
 #endif

@@ -5,6 +5,24 @@
 #include "libft.h"
 #include "operation.h"
 
+// 動く
+// void	set_chunk_max_nums(int chunk_max_nums[], size_t chunks_num, int sorted_array[], size_t nums_num)
+// {
+// 	size_t	src_i;
+// 	size_t	dst_i;
+
+// 	src_i = 0;
+// 	dst_i = 0;
+// 	while (dst_i < chunks_num - 1)
+// 	{
+// 		chunk_max_nums[dst_i] = sorted_array[CHUNK_SIZE * (dst_i + 1) - 1];
+// 		dst_i++;
+// 	}
+// 	// この右辺で引っかかる
+// 	chunk_max_nums[dst_i] = sorted_array[nums_num - 1];
+// }
+
+// test
 void	set_chunk_max_nums(int chunk_max_nums[], size_t chunks_num, int sorted_array[], size_t nums_num)
 {
 	size_t	src_i;

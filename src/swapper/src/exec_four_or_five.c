@@ -76,47 +76,42 @@ size_t	get_nth_smallest_num_index(t_num *stack, size_t n)
 	return (get_target_index(stack, nth_smallest_num));
 }
 
-void	bring_target_num_to_top(t_num **stack_a, int target)
-{
-	const size_t	target_index = get_target_index(*stack_a, target);
-	const size_t	nums_num = lstsize(*stack_a);
-	size_t			index;
+// void	bring_target_num_to_top(t_num **stack_a, int target)
+// {
+// 	const size_t	target_index = get_target_index(*stack_a, target);
+// 	const size_t	nums_num = lstsize(*stack_a);
+// 	size_t			index;
 
-	index = 0;
-	if (target_index < nums_num / 2)
-	{
-		while (index < target_index)
-		{
-			exec_and_put_operation(stack_a, NULL, rotate_a);
-			index++;
-		}
-	}
-	else
-	{
-		while (index + target_index < nums_num)
-		{
-			exec_and_put_operation(stack_a, NULL, reverse_rotate_a);
-			index++;
-		}
-	}
-}
+// 	index = 0;
+// 	if (target_index < nums_num / 2)
+// 	{
+// 		while (index < target_index)
+// 		{
+// 			exec_and_put_operation(stack_a, NULL, rotate_designated, rotate_a);
+// 			index++;
+// 		}
+// 	}
+// 	else
+// 	{
+// 		while (index + target_index < nums_num)
+// 		{
+// 			exec_and_put_operation(stack_a, NULL, reverse_rotate_a);
+// 			index++;
+// 		}
+// 	}
+// }
 
 void	bring_target_index_to_top(t_num **stack_a, t_num **stack_b, size_t target_index, int stack_type)
 {
 	const size_t	nums_num = lstsize(*stack_a);
 	size_t			index;
-	size_t			end;
 
-	if (target_index < nums_num / 2)
-		end = target_index;
-	else
-		end = nums_num - target_index;
 	index = 0;
 	if (target_index < nums_num / 2)
 	{
 		while (index < target_index)
 		{
-			exec_and_put_operation(stack_a, stack_b, rotate_a);
+			exec_and_put_operation(stack_a, stack_b, rotate_designated, stack_type);
 			index++;
 		}
 	}
@@ -124,7 +119,7 @@ void	bring_target_index_to_top(t_num **stack_a, t_num **stack_b, size_t target_i
 	{
 		while (index + target_index < nums_num)
 		{
-			exec_and_put_operation(stack_a, stack_b, reverse_rotate_a);
+			exec_and_put_operation(stack_a, stack_b, reverse_rotate_designated, stack_type);
 			index++;
 		}
 	}
@@ -167,7 +162,7 @@ void	push_b_smallest_nums(t_num **stack_a, t_num **stack_b, size_t num)
 	{
 		nearest_index = get_nearest_index_within_nth_smallest_nums(*stack_a, n);
 		bring_target_index_to_top(stack_a, stack_b, nearest_index, STACK_A);
-		exec_and_put_operation(stack_a, stack_b, push_b);
+		exec_and_put_operation(stack_a, stack_b, push_designated, STACK_B);
 		n--;
 	}
 }
@@ -179,7 +174,7 @@ static void	bring_larger_to_top(t_num **stack_a, t_num **stack_b)
 
 	if (first > second)
 		return ;
-	exec_and_put_operation(stack_a, stack_b, swap_b);
+	exec_and_put_operation(stack_a, stack_b, swap_designated, STACK_B);
 }
 
 void	exec_four_or_five(t_num **stack_a)
@@ -197,7 +192,7 @@ void	exec_four_or_five(t_num **stack_a)
 	index = 0;
 	while (index < diff_to_three)
 	{
-		exec_and_put_operation(stack_a, &stack_b, push_a);
+		exec_and_put_operation(stack_a, &stack_b, push_designated, STACK_A);
 		index++;
 	}
 }

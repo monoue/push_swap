@@ -25,6 +25,7 @@ typedef enum	e_stacks
 {
 	STACK_A,
 	STACK_B,
+	DOUBLE,
 
 	STACKS_NUM
 }				t_stacks;
@@ -34,7 +35,11 @@ bool	is_sorted(t_num *stack);
 void	exec_two(t_num *stack_a);
 void	exec_three(t_num **stack_a);
 void	exec_four_or_five(t_num **stack_a);
-void	exec_and_put_operation(t_num **stack_a, t_num **stack_b, void(*func)(t_num **, t_num **));
+void	exec_and_put_operation(t_num **stack_a, t_num **stack_b, void(*func)(t_num **, t_num **, int), int stack_type);
 size_t	get_nearer_index(size_t	i1, size_t i2, size_t nums_num);
+void		push_designated(t_num **stack_a, t_num **stack_b, int stack_type);
+void		swap_designated(t_num **stack_a, t_num **stack_b, int stack_type);
+void		rotate_designated(t_num **stack_a, t_num **stack_b, int stack_type);
+void		reverse_rotate_designated(t_num **stack_a, t_num **stack_b, int stack_type);
 
 #endif

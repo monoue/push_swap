@@ -10,19 +10,19 @@ static void	exec_three_pattern(t_num **stack_a, const int pattern)
 		return;
 	if (pattern == SA_RA)
 	{
-		exec_and_put_operation(stack_a, NULL, swap_a);
-		exec_and_put_operation(stack_a, NULL, rotate_a);
+		exec_and_put_operation(stack_a, NULL, swap_designated, STACK_A);
+		exec_and_put_operation(stack_a, NULL, rotate_designated, STACK_A);
 	}
 	else if (pattern == SA)
-		exec_and_put_operation(stack_a, NULL, swap_a);
+		exec_and_put_operation(stack_a, NULL, swap_designated, STACK_A);
 	else if (pattern == RRA)
-		exec_and_put_operation(stack_a, NULL, reverse_rotate_a);
+		exec_and_put_operation(stack_a, NULL, reverse_rotate_designated, STACK_A);
 	else if (pattern == RA)
-		exec_and_put_operation(stack_a, NULL, rotate_a);
+		exec_and_put_operation(stack_a, NULL, rotate_designated, STACK_A);
 	else if (pattern == SA_RRA)
 	{
-		exec_and_put_operation(stack_a, NULL, swap_a);
-		exec_and_put_operation(stack_a, NULL, reverse_rotate_a);
+		exec_and_put_operation(stack_a, NULL, swap_designated, STACK_A);
+		exec_and_put_operation(stack_a, NULL, reverse_rotate_designated, STACK_A);
 	}
 }
 

@@ -10,5 +10,5 @@ void	exec_two(t_num *stack_a)
 
 	if (first < second)
 		return ;
-	exec_and_put_operation(&stack_a, NULL, swap_a);
+	exec_and_put_operation(&stack_a, NULL, swap_designated, STACK_A);
 }

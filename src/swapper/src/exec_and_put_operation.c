@@ -29,4 +29,6 @@ void	exec_and_put_operation(t_num **stack_a, t_num **stack_b, void(*func)(t_num 
 		index++;
 	}
 	func(stack_a, stack_b);
+	g_count++;
+	print_current_status_wrapper(stack_a, stack_b);
 }

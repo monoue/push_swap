@@ -1,6 +1,7 @@
 #include "libft.h"
 #include "debug.h"
 #include "swapper.h"
+#include "operation.h"
 
 void	exec_two(t_num *stack_a)
 {
@@ -9,5 +10,5 @@ void	exec_two(t_num *stack_a)
 
 	if (first < second)
 		return ;
-	ft_putendl("sa");
+	exec_and_put_operation(&stack_a, NULL, swap_a);
 }

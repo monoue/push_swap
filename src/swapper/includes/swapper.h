@@ -1,7 +1,8 @@
 #ifndef SWAPPER_H
 # define SWAPPER_H
 
-# define MIN(x, y) (x) <= (y) ? (x) : (y)
+int	g_count;
+
 typedef struct	s_pattern_set
 {
 	bool	pattern_bool;
@@ -20,10 +21,20 @@ typedef enum	e_pattern
 	PATTERNS_NUM
 }				t_pattern;
 
+typedef enum	e_stacks
+{
+	STACK_A,
+	STACK_B,
+
+	STACKS_NUM
+}				t_stacks;
+
 void	exec(t_num **stack_a, size_t nums_num);
 bool	is_sorted(t_num *stack);
 void	exec_two(t_num *stack_a);
 void	exec_three(t_num **stack_a);
+void	exec_four_or_five(t_num **stack_a);
 void	exec_and_put_operation(t_num **stack_a, t_num **stack_b, void(*func)(t_num **, t_num **));
+size_t	get_nearer_index(size_t	i1, size_t i2, size_t nums_num);
 
 #endif

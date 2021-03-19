@@ -25,5 +25,7 @@ void	exec(t_num **stack_a, size_t nums_num)
 		exec_three(stack_a);
 	else if (nums_num < 6)
 		exec_four_or_five(stack_a);
+	// else if (nums_num < 101)
+	// 	exec_one_hundred_or_less(stack_a, sorted_array);
 	put_count(g_count);
 }

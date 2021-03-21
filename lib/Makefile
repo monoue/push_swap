@@ -91,6 +91,10 @@ ADDED += ft_substr_free.c
 ADDED += ft_putchar_err.c
 ADDED += ft_atoll.c
 ADDED += ft_atoull.c
+ADDED += ft_min_int.c
+ADDED += ft_min_size_t.c
+ADDED += ft_max_int.c
+ADDED += ft_max_size_t.c
 
 FT_PRINTF += $(FT_PRINTF_PATH)apply_margin.c
 FT_PRINTF += $(FT_PRINTF_PATH)cut_out_format.c

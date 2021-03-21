@@ -88,6 +88,17 @@ size_t	get_target_back_index(t_num *stack_a, int chunk_max_nums[], size_t chunk_
 	return (0);
 }
 
+// 元
+// // 最初と最後から数える。近かった方の index を、あの関数を使って判断し、返す。
+// size_t	get_nearest_target_index(t_num *stack_a, int chunk_max_nums[], size_t chunk_i)
+// {
+// 	const size_t	fore_index = get_target_fore_index(stack_a, chunk_max_nums, chunk_i);
+// 	const size_t	back_index = get_target_back_index(stack_a, chunk_max_nums, chunk_i);
+// 	const size_t	nums_num = lstsize(stack_a);
+
+// 	return (get_nearer_index(fore_index, back_index, nums_num));
+// }
+
 // 最初と最後から数える。近かった方の index を、あの関数を使って判断し、返す。
 size_t	get_nearest_target_index(t_num *stack_a, int chunk_max_nums[], size_t chunk_i)
 {
@@ -205,11 +216,15 @@ void	deal_chunk_range(t_num **stack_a, t_num **stack_b, int chunk_max_nums[], si
 	while (stack_a && lstsize(*stack_a) && (first_try || lstsize(*stack_b) % CHUNK_SIZE))
 	{
 		first_try = false;
+		// 同時に回すには、ここで、target_num も取る必要がある。
+		// 引数が余っているので、参照渡しにできる。
 		target_i = get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i);
-		// 改良の余地としては、ここで同時に回せる。
+
+		// ここから
 		bring_target_index_to_top(stack_a, stack_b, target_i, STACK_A);
 		set_b_for_acception(stack_a, stack_b);
 		exec_and_put_operation(stack_a, stack_b, push_designated, STACK_B);
+		// ここまでを回す
 
 	}
 	bring_largest_num_to_top(stack_a, stack_b, STACK_B);

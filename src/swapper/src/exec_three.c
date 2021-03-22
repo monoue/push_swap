@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   exec_three.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/23 06:51:36 by monoue            #+#    #+#             */
+/*   Updated: 2021/03/23 06:53:11 by monoue           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 #include "libft.h"
 #include "debug.h"
@@ -7,7 +19,7 @@
 static void	exec_three_pattern(t_num **stack_a, const int pattern)
 {
 	if (pattern == SORTED)
-		return;
+		return ;
 	if (pattern == SA_RA)
 	{
 		exec_and_put_operation(stack_a, NULL, swap_designated, STACK_A);
@@ -16,13 +28,15 @@ static void	exec_three_pattern(t_num **stack_a, const int pattern)
 	else if (pattern == SA)
 		exec_and_put_operation(stack_a, NULL, swap_designated, STACK_A);
 	else if (pattern == RRA)
-		exec_and_put_operation(stack_a, NULL, reverse_rotate_designated, STACK_A);
+		exec_and_put_operation(stack_a, NULL, reverse_rotate_designated,
+																	STACK_A);
 	else if (pattern == RA)
 		exec_and_put_operation(stack_a, NULL, rotate_designated, STACK_A);
 	else if (pattern == SA_RRA)
 	{
 		exec_and_put_operation(stack_a, NULL, swap_designated, STACK_A);
-		exec_and_put_operation(stack_a, NULL, reverse_rotate_designated, STACK_A);
+		exec_and_put_operation(stack_a, NULL, reverse_rotate_designated,
+																	STACK_A);
 	}
 }
 
@@ -37,8 +51,8 @@ static int	get_pattern2(const int first, const int second, const int third)
 		{(third < second && second < first), SA_RRA},
 		{false, PATTERNS_NUM}
 	};
-	t_pattern_set	set;
-	int	index;
+	t_pattern_set		set;
+	int					index;
 
 	index = 0;
 	while (index < PATTERNS_NUM)
@@ -60,7 +74,7 @@ static int	get_pattern(t_num *stack_a)
 	return (get_pattern2(first, second, third));
 }
 
-void	exec_three(t_num **stack_a)
+void		exec_three(t_num **stack_a)
 {
 	const int	pattern = get_pattern(*stack_a);
 

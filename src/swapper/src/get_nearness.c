@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_zero_rotation.c                                :+:      :+:    :+:   */
+/*   get_nearness.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/23 06:39:32 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 06:39:49 by monoue           ###   ########.fr       */
+/*   Created: 2021/03/23 06:40:21 by monoue            #+#    #+#             */
+/*   Updated: 2021/03/23 06:47:49 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,12 @@
 #include "libft.h"
 #include "operation.h"
 
-t_rotation_info	*get_zero_rotation(void)
+size_t	get_nearness(size_t index, size_t nums_num)
 {
-	t_rotation_info	*rotation_info;
+	size_t	back_index;
 
-	rotation_info = malloc(sizeof(t_rotation_info));
-	if (!rotation_info)
-		exit(EXIT_FAILURE);
-	rotation_info->rotation_type = NOTHING;
-	rotation_info->num = 0;
-	return (rotation_info);
+	if (index >= nums_num)
+		return (UINT_MAX);
+	back_index = nums_num - index;
+	return (ft_min_size_t(index, back_index));
 }

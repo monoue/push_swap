@@ -6,7 +6,7 @@
 #    By: monoue <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/22 16:33:53 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/23 08:40:11 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,8 @@ INCLUDE	= -I../../lib -I../includes/ -I./includes
 
 BASE	  = $(COMMON_PATH)args_are_integers.c \
 			$(COMMON_PATH)args_are_valid.c \
-			$(COMMON_PATH)basic_list_operations.c \
+			$(COMMON_PATH)basic_list_operations1.c \
+			$(COMMON_PATH)basic_list_operations2.c \
 			$(COMMON_PATH)get_sorted_array.c \
 			$(COMMON_PATH)get_struct_list.c \
 			$(COMMON_PATH)is_valid_operator.c \
@@ -43,11 +44,15 @@ BASE	  = $(COMMON_PATH)args_are_integers.c \
 			$(SRC_PATH)exec_four_or_five.c \
 			$(SRC_PATH)exec_one_hundred_or_less.c \
 			$(SRC_PATH)exec_and_put_operation.c \
+			$(SRC_PATH)get_nearer_distance.c \
 			$(SRC_PATH)get_nearer_index.c \
+			$(SRC_PATH)get_nearness.c \
+			$(SRC_PATH)get_nth_smallest_num_index.c \
 			$(SRC_PATH)get_num_of_target_index.c \
 			$(SRC_PATH)get_rotation_type_and_num.c \
 			$(SRC_PATH)get_zero_rotation.c \
-			$(SRC_PATH)is_sorted.c
+			$(SRC_PATH)is_sorted.c \
+			$(SRC_PATH)rotate_based_on_info.c
 
 TEST_FILES = test_main.c \
 				$(TEST_PATH)test_functions.c

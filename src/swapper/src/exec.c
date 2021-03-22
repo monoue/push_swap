@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   exec.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/23 06:54:01 by monoue            #+#    #+#             */
+/*   Updated: 2021/03/23 06:55:00 by monoue           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 #include "debug.h"
 #include "swapper.h"
@@ -7,14 +19,14 @@
 
 int	g_count = 0;
 
-static void	put_count(int count)
+static void	put_count(void)
 {
 	ft_putstr_err("operation count: ");
-	ft_putnbr_err(count);
-	ft_putendl_err("");
+	ft_putnbr_err(g_count);
+	ft_putchar_err('\n');
 }
 
-void	exec(t_num **stack_a, size_t nums_num, int sorted_array[])
+void		exec(t_num **stack_a, size_t nums_num, int sorted_array[])
 {
 	print_current_status(*stack_a, NULL);
 	if (is_sorted(*stack_a))
@@ -27,5 +39,5 @@ void	exec(t_num **stack_a, size_t nums_num, int sorted_array[])
 		exec_four_or_five(stack_a);
 	else
 		exec_one_hundred_or_less(stack_a, nums_num, sorted_array);
-	put_count(g_count);
+	put_count();
 }

@@ -18,7 +18,7 @@ size_t	get_nearness(size_t index, size_t nums_num)
 // ２つの index のうち、どちらが先頭から近いのかを判断する関数。
 // まず、近さ、つまり何回の rotate で辿り着けるかを数字で獲得。
 // そして、近い方を返す。
-size_t	get_nearer_index(size_t	i1, size_t i2, size_t nums_num)
+size_t	get_nearer_distance(size_t	i1, size_t i2, size_t nums_num)
 {
 	const size_t	nearness1 = get_nearness(i1, nums_num);
 	const size_t	nearness2 = get_nearness(i2, nums_num);

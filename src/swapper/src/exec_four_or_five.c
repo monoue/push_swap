@@ -116,7 +116,7 @@ size_t	get_nearest_index_within_nth_smallest_nums(t_num *stack, size_t nth)
 	while (n > 0)
 	{
 		nth_num_index = get_nth_smallest_num_index(stack, n);
-		nearest_index = get_nearer_index(nth_num_index, nearest_index, nums_num);
+		nearest_index = get_nearer_distance(nth_num_index, nearest_index, nums_num);
 		n--;
 	}
 	return (nearest_index);

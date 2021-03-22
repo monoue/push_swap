@@ -9,9 +9,9 @@ int	g_count = 0;
 
 static void	put_count(int count)
 {
-	ft_putstr("operation count: ");
-	ft_putnbr(count);
-	ft_putendl("");
+	ft_putstr_err("operation count: ");
+	ft_putnbr_err(count);
+	ft_putendl_err("");
 }
 
 void	exec(t_num **stack_a, size_t nums_num, int sorted_array[])

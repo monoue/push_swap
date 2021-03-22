@@ -58,7 +58,7 @@ bool	is_within_range(int num, int chunk_max_nums[], size_t chunk_i)
 	return (num > prev_chunk_max && num <= current_chunk_max);
 }
 
-size_t	get_target_fore_index(t_num *stack_a, int chunk_max_nums[], size_t chunk_i)
+size_t	get_fore_target_index(t_num *stack_a, int chunk_max_nums[], size_t chunk_i)
 {
 	size_t	index;
 	t_num	*tmp;
@@ -67,7 +67,8 @@ size_t	get_target_fore_index(t_num *stack_a, int chunk_max_nums[], size_t chunk_
 	index = 0;
 	while (tmp)
 	{
-		if (is_within_range(stack_a->num, chunk_max_nums, chunk_i))
+		// DI(tmp->num);
+		if (is_within_range(tmp->num, chunk_max_nums, chunk_i))
 			return (index);
 		index++;
 		tmp = tmp->next;
@@ -75,7 +76,7 @@ size_t	get_target_fore_index(t_num *stack_a, int chunk_max_nums[], size_t chunk_
 	return (0);
 }
 
-size_t	get_target_back_index(t_num *stack_a, int chunk_max_nums[], size_t chunk_i)
+size_t	get_back_target_index(t_num *stack_a, int chunk_max_nums[], size_t chunk_i)
 {
 	size_t	index;
 	t_num	*tmp;
@@ -84,7 +85,7 @@ size_t	get_target_back_index(t_num *stack_a, int chunk_max_nums[], size_t chunk_
 	index = 1;
 	while (tmp)
 	{
-		if (is_within_range(stack_a->num, chunk_max_nums, chunk_i))
+		if (is_within_range(tmp->num, chunk_max_nums, chunk_i))
 			return (index);
 		index++;
 		tmp = tmp->prev;
@@ -92,14 +93,35 @@ size_t	get_target_back_index(t_num *stack_a, int chunk_max_nums[], size_t chunk_
 	return (0);
 }
 
+size_t	get_nearer_index(size_t	i1, size_t i2, size_t nums_num)
+{
+	// nearness1 は i1 と同じのような…？
+	const size_t	nearness1 = get_nearness(i1, nums_num);
+	const size_t	nearness2 = get_nearness(i2, nums_num);
+
+	if (nearness1 < nearness2)
+		return (i1);
+	else
+	{
+		DSZ(nums_num);
+		DSZ(i2);
+		DSZ(nums_num - i2);
+		return (nums_num - i2);
+	}
+}
+
 // 元
 // // 最初と最後から数える。近かった方の index を、あの関数を使って判断し、返す。
 size_t	get_nearest_target_index(t_num *stack_a, int chunk_max_nums[], size_t chunk_i)
 {
-	const size_t	fore_index = get_target_fore_index(stack_a, chunk_max_nums, chunk_i);
-	const size_t	back_index = get_target_back_index(stack_a, chunk_max_nums, chunk_i);
+	const size_t	fore_index = get_fore_target_index(stack_a, chunk_max_nums, chunk_i);
+	const size_t	back_index = get_back_target_index(stack_a, chunk_max_nums, chunk_i);
 	const size_t	nums_num = lstsize(stack_a);
 
+	// DSZ(fore_index);
+	// DSZ(back_index);
+	// DSZ(chunk_i);
+	// DI(chunk_max_nums[chunk_i]);
 	return (get_nearer_index(fore_index, back_index, nums_num));
 }
 
@@ -108,8 +130,8 @@ size_t	get_nearest_target_index(t_num *stack_a, int chunk_max_nums[], size_t chu
 // 必要試行回数と、ローテーションの種類（r / rr）を、返り値と引数で返すようにする。
 t_rotation_info *get_rotation_type_and_num_a(t_num *stack_a, int chunk_max_nums[], size_t chunk_i)
 {
-	const size_t	fore_index = get_target_fore_index(stack_a, chunk_max_nums, chunk_i);
-	const size_t	back_index = get_target_back_index(stack_a, chunk_max_nums, chunk_i);
+	const size_t	fore_index = get_fore_target_index(stack_a, chunk_max_nums, chunk_i);
+	const size_t	back_index = get_back_target_index(stack_a, chunk_max_nums, chunk_i);
 	const size_t	nums_num = lstsize(stack_a);
 	const size_t	fore_nearness = get_nearness(fore_index, nums_num);
 	const size_t	back_nearness = get_nearness(back_index, nums_num);
@@ -210,8 +232,13 @@ t_rotation_info *get_rotation_type_and_num_b(t_num *stack_b, int to_be_accepted)
 	if (!stack_b || lstsize(stack_b) < 2)
 		return (get_zero_rotation());
 	target_i = get_index_of_largest_num_under_designattion(stack_b, to_be_accepted);
+	// DI(to_be_accepted);
+	// DSZ(target_i);
 	if (target_i == NOT_FOUND)
+	{
+		DS("NOT_FOUND");
 		target_i = get_index_of_largest_num(stack_b);
+	}
 	return (get_rotation_type_and_num(nums_num, target_i));
 }
 
@@ -334,7 +361,13 @@ void	deal_chunk_range(t_num **stack_a, t_num **stack_b, int chunk_max_nums[], si
 		// 同時に回すには、ここで、target_num も取る必要がある。
 		// 引数が余っているので、参照渡しにできる。
 		a_rotation_info = get_rotation_type_and_num_a(*stack_a, chunk_max_nums, chunk_i);
+		// DSZ(a_rotation_info->num);
+		// DI(a_rotation_info->rotation_type);
+
+		// print_current_status_wrapper(stack_a, stack_b);
+		DSZ(get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i));
 		a_target_num = get_num_of_target_index(*stack_a, get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i));
+		// DI(a_target_num);
 		b_rotation_info = get_rotation_type_and_num_b(*stack_b, a_target_num);
 		rotate_based_on_info(stack_a, stack_b, a_rotation_info, b_rotation_info);
 		exec_and_put_operation(stack_a, stack_b, push_designated, STACK_B);

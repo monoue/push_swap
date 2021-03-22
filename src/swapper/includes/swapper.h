@@ -38,14 +38,6 @@ typedef enum	e_pattern
 	PATTERNS_NUM
 }				t_pattern;
 
-typedef enum	e_stacks
-{
-	STACK_A,
-	STACK_B,
-	DOUBLE,
-
-	STACKS_NUM
-}				t_stacks;
 
 typedef void	(*op_func)(t_num **, t_num **, int);
 
@@ -60,7 +52,7 @@ int		get_num_of_target_index(t_num *stack, size_t target_i);
 t_rotation_info	*get_rotation_type_and_num(size_t nums_num, size_t target_i);
 t_rotation_info *get_rotation_type_and_num_a2(size_t fore_index, size_t back_index);
 t_rotation_info *get_zero_rotation(void);
-size_t	get_nearer_index(size_t	i1, size_t i2, size_t nums_num);
+size_t	get_nearer_distance(size_t	i1, size_t i2, size_t nums_num);
 size_t	get_nearness(size_t index, size_t nums_num);
 void		push_designated(t_num **stack_a, t_num **stack_b, int stack_type);
 void		swap_designated(t_num **stack_a, t_num **stack_b, int stack_type);

@@ -1,3 +1,4 @@
+#include "push_swap.h"
 #include "libft.h"
 #include "debug.h"
 #include "swapper.h"

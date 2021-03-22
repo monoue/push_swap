@@ -33,10 +33,11 @@ int	main(int argc, char *argv[])
 
 	if (argc < 2)
 		return (EXIT_SUCCESS);
+	// 修正の必要あり。args_are_valid が、argc == 2 の時は最初の数字を無視してしまっている。
 	if (argc == 2)
 	{
 		args = ft_split(argv[1], ' ');
-		if (!args_are_valid((size_t)argc, args))
+		if (!args_are_valid(ft_count_strs((const char **)args), args))
 		{
 			ft_putendl_err(ERROR_MESSAGE);
 			return (EXIT_SUCCESS);

@@ -1,0 +1,1838 @@
+       a: 22    b: 0
+
+     204
+      17
+     394
+     118
+     305
+      49
+     484
+     488
+     280
+     182
+      30
+     247
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+     352
+----------------------------------------
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+a_target_num: 204	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+pb
+       a: 21    b: 1
+
+      17     204
+     394
+     118
+     305
+      49
+     484
+     488
+     280
+     182
+      30
+     247
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+     352
+----------------------------------------
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+a_target_num: 17	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+pb
+       a: 20    b: 2
+
+     394      17
+     118     204
+     305
+      49
+     484
+     488
+     280
+     182
+      30
+     247
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+     352
+----------------------------------------
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+a_target_num: 394	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rb
+       a: 20    b: 2
+
+     394     204
+     118      17
+     305
+      49
+     484
+     488
+     280
+     182
+      30
+     247
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+     352
+----------------------------------------
+pb
+       a: 19    b: 3
+
+     118     394
+     305     204
+      49      17
+     484
+     488
+     280
+     182
+      30
+     247
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+     352
+----------------------------------------
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+a_target_num: 118	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rrb
+       a: 19    b: 3
+
+     118      17
+     305     394
+      49     204
+     484
+     488
+     280
+     182
+      30
+     247
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+     352
+----------------------------------------
+pb
+       a: 18    b: 4
+
+     305     118
+      49      17
+     484     394
+     488     204
+     280
+     182
+      30
+     247
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+     352
+----------------------------------------
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+a_target_num: 305	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rrb
+       a: 18    b: 4
+
+     305     204
+      49     118
+     484      17
+     488     394
+     280
+     182
+      30
+     247
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+     352
+----------------------------------------
+pb
+       a: 17    b: 5
+
+      49     305
+     484     204
+     488     118
+     280      17
+     182     394
+      30
+     247
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+     352
+----------------------------------------
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+a_target_num: 49	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rrb
+       a: 17    b: 5
+
+      49     394
+     484     305
+     488     204
+     280     118
+     182      17
+      30
+     247
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+     352
+----------------------------------------
+rrb
+       a: 17    b: 5
+
+      49      17
+     484     394
+     488     305
+     280     204
+     182     118
+      30
+     247
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+     352
+----------------------------------------
+pb
+       a: 16    b: 6
+
+     484      49
+     488      17
+     280     394
+     182     305
+      30     204
+     247     118
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+     352
+----------------------------------------
+nums_num: 16	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 15	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 15	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 16	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 15	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 352	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rrr
+       a: 16    b: 6
+
+     352     118
+     484      49
+     488      17
+     280     394
+     182     305
+      30     204
+     247
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+----------------------------------------
+rb
+       a: 16    b: 6
+
+     352      49
+     484      17
+     488     394
+     280     305
+     182     204
+      30     118
+     247
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+----------------------------------------
+rb
+       a: 16    b: 6
+
+     352      17
+     484     394
+     488     305
+     280     204
+     182     118
+      30      49
+     247
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+----------------------------------------
+pb
+       a: 15    b: 7
+
+     484     352
+     488      17
+     280     394
+     182     305
+      30     204
+     247     118
+     483      49
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+     142
+----------------------------------------
+nums_num: 15	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 14	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 14	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 15	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 14	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 142	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rrr
+       a: 15    b: 7
+
+     142      49
+     484     352
+     488      17
+     280     394
+     182     305
+      30     204
+     247     118
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+----------------------------------------
+rrb
+       a: 15    b: 7
+
+     142     118
+     484      49
+     488     352
+     280      17
+     182     394
+      30     305
+     247     204
+     483
+      36
+     171
+      90
+     354
+     347
+     441
+     170
+----------------------------------------
+pb
+       a: 14    b: 8
+
+     484     142
+     488     118
+     280      49
+     182     352
+      30      17
+     247     394
+     483     305
+      36     204
+     171
+      90
+     354
+     347
+     441
+     170
+----------------------------------------
+nums_num: 14	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 13	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 13	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 14	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 13	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 170	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rra
+       a: 14    b: 8
+
+     170     142
+     484     118
+     488      49
+     280     352
+     182      17
+      30     394
+     247     305
+     483     204
+      36
+     171
+      90
+     354
+     347
+     441
+----------------------------------------
+pb
+       a: 13    b: 9
+
+     484     170
+     488     142
+     280     118
+     182      49
+      30     352
+     247      17
+     483     394
+      36     305
+     171     204
+      90
+     354
+     347
+     441
+----------------------------------------
+nums_num: 13	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 12	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 12	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 13	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 12	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 441	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rrr
+       a: 13    b: 9
+
+     441     204
+     484     170
+     488     142
+     280     118
+     182      49
+      30     352
+     247      17
+     483     394
+      36     305
+     171
+      90
+     354
+     347
+----------------------------------------
+rrb
+       a: 13    b: 9
+
+     441     305
+     484     204
+     488     170
+     280     142
+     182     118
+      30      49
+     247     352
+     483      17
+      36     394
+     171
+      90
+     354
+     347
+----------------------------------------
+rrb
+       a: 13    b: 9
+
+     441     394
+     484     305
+     488     204
+     280     170
+     182     142
+      30     118
+     247      49
+     483     352
+      36      17
+     171
+      90
+     354
+     347
+----------------------------------------
+pb
+       a: 12    b: 10
+
+     484     441
+     488     394
+     280     305
+     182     204
+      30     170
+     247     142
+     483     118
+      36      49
+     171     352
+      90      17
+     354
+     347
+----------------------------------------
+nums_num: 12	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 11	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 11	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 12	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 11	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 347	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rra
+       a: 12    b: 10
+
+     347     441
+     484     394
+     488     305
+     280     204
+     182     170
+      30     142
+     247     118
+     483      49
+      36     352
+     171      17
+      90
+     354
+----------------------------------------
+rb
+       a: 12    b: 10
+
+     347     394
+     484     305
+     488     204
+     280     170
+     182     142
+      30     118
+     247      49
+     483     352
+      36      17
+     171     441
+      90
+     354
+----------------------------------------
+rb
+       a: 12    b: 10
+
+     347     305
+     484     204
+     488     170
+     280     142
+     182     118
+      30      49
+     247     352
+     483      17
+      36     441
+     171     394
+      90
+     354
+----------------------------------------
+pb
+       a: 11    b: 11
+
+     484     347
+     488     305
+     280     204
+     182     170
+      30     142
+     247     118
+     483      49
+      36     352
+     171      17
+      90     441
+     354     394
+----------------------------------------
+nums_num: 11	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 10	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 10	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 11	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 10	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 354	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rrr
+       a: 11    b: 11
+
+     354     394
+     484     347
+     488     305
+     280     204
+     182     170
+      30     142
+     247     118
+     483      49
+      36     352
+     171      17
+      90     441
+----------------------------------------
+rrb
+       a: 11    b: 11
+
+     354     441
+     484     394
+     488     347
+     280     305
+     182     204
+      30     170
+     247     142
+     483     118
+      36      49
+     171     352
+      90      17
+----------------------------------------
+rrb
+       a: 11    b: 11
+
+     354      17
+     484     441
+     488     394
+     280     347
+     182     305
+      30     204
+     247     170
+     483     142
+      36     118
+     171      49
+      90     352
+----------------------------------------
+rrb
+       a: 11    b: 11
+
+     354     352
+     484      17
+     488     441
+     280     394
+     182     347
+      30     305
+     247     204
+     483     170
+      36     142
+     171     118
+      90      49
+----------------------------------------
+pb
+       a: 10    b: 12
+
+     484     354
+     488     352
+     280      17
+     182     441
+      30     394
+     247     347
+     483     305
+      36     204
+     171     170
+      90     142
+             118
+              49
+----------------------------------------
+nums_num: 10	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 9	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 9	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 10	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 9	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 90	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rrr
+       a: 10    b: 12
+
+      90      49
+     484     354
+     488     352
+     280      17
+     182     441
+      30     394
+     247     347
+     483     305
+      36     204
+     171     170
+             142
+             118
+----------------------------------------
+pb
+       a: 9    b: 13
+
+     484      90
+     488      49
+     280     354
+     182     352
+      30      17
+     247     441
+     483     394
+      36     347
+     171     305
+             204
+             170
+             142
+             118
+----------------------------------------
+nums_num: 9	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 8	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 8	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 9	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 8	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 171	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rrr
+       a: 9    b: 13
+
+     171     118
+     484      90
+     488      49
+     280     354
+     182     352
+      30      17
+     247     441
+     483     394
+      36     347
+             305
+             204
+             170
+             142
+----------------------------------------
+rrb
+       a: 9    b: 13
+
+     171     142
+     484     118
+     488      90
+     280      49
+     182     354
+      30     352
+     247      17
+     483     441
+      36     394
+             347
+             305
+             204
+             170
+----------------------------------------
+rrb
+       a: 9    b: 13
+
+     171     170
+     484     142
+     488     118
+     280      90
+     182      49
+      30     354
+     247     352
+     483      17
+      36     441
+             394
+             347
+             305
+             204
+----------------------------------------
+pb
+       a: 8    b: 14
+
+     484     171
+     488     170
+     280     142
+     182     118
+      30      90
+     247      49
+     483     354
+      36     352
+              17
+             441
+             394
+             347
+             305
+             204
+----------------------------------------
+nums_num: 8	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 7	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 7	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 8	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 7	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 36	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rrr
+       a: 8    b: 14
+
+      36     204
+     484     171
+     488     170
+     280     142
+     182     118
+      30      90
+     247      49
+     483     354
+             352
+              17
+             441
+             394
+             347
+             305
+----------------------------------------
+rrb
+       a: 8    b: 14
+
+      36     305
+     484     204
+     488     171
+     280     170
+     182     142
+      30     118
+     247      90
+     483      49
+             354
+             352
+              17
+             441
+             394
+             347
+----------------------------------------
+rrb
+       a: 8    b: 14
+
+      36     347
+     484     305
+     488     204
+     280     171
+     182     170
+      30     142
+     247     118
+     483      90
+              49
+             354
+             352
+              17
+             441
+             394
+----------------------------------------
+rrb
+       a: 8    b: 14
+
+      36     394
+     484     347
+     488     305
+     280     204
+     182     171
+      30     170
+     247     142
+     483     118
+              90
+              49
+             354
+             352
+              17
+             441
+----------------------------------------
+rrb
+       a: 8    b: 14
+
+      36     441
+     484     394
+     488     347
+     280     305
+     182     204
+      30     171
+     247     170
+     483     142
+             118
+              90
+              49
+             354
+             352
+              17
+----------------------------------------
+rrb
+       a: 8    b: 14
+
+      36      17
+     484     441
+     488     394
+     280     347
+     182     305
+      30     204
+     247     171
+     483     170
+             142
+             118
+              90
+              49
+             354
+             352
+----------------------------------------
+pb
+       a: 7    b: 15
+
+     484      36
+     488      17
+     280     441
+     182     394
+      30     347
+     247     305
+     483     204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+----------------------------------------
+nums_num: 7	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 6	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 6	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 7	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 6	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 483	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rra
+       a: 7    b: 15
+
+     483      36
+     484      17
+     488     441
+     280     394
+     182     347
+      30     305
+     247     204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+----------------------------------------
+rb
+       a: 7    b: 15
+
+     483      17
+     484     441
+     488     394
+     280     347
+     182     305
+      30     204
+     247     171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+----------------------------------------
+rb
+       a: 7    b: 15
+
+     483     441
+     484     394
+     488     347
+     280     305
+     182     204
+      30     171
+     247     170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              17
+----------------------------------------
+pb
+       a: 6    b: 16
+
+     484     483
+     488     441
+     280     394
+     182     347
+      30     305
+     247     204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              17
+----------------------------------------
+nums_num: 6	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 5	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 5	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 6	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 5	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 247	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rra
+       a: 6    b: 16
+
+     247     483
+     484     441
+     488     394
+     280     347
+     182     305
+      30     204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              17
+----------------------------------------
+rb
+       a: 6    b: 16
+
+     247     441
+     484     394
+     488     347
+     280     305
+     182     204
+      30     171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              17
+             483
+----------------------------------------
+rb
+       a: 6    b: 16
+
+     247     394
+     484     347
+     488     305
+     280     204
+     182     171
+      30     170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              17
+             483
+             441
+----------------------------------------
+rb
+       a: 6    b: 16
+
+     247     347
+     484     305
+     488     204
+     280     171
+     182     170
+      30     142
+             118
+              90
+              49
+             354
+             352
+              36
+              17
+             483
+             441
+             394
+----------------------------------------
+rb
+       a: 6    b: 16
+
+     247     305
+     484     204
+     488     171
+     280     170
+     182     142
+      30     118
+              90
+              49
+             354
+             352
+              36
+              17
+             483
+             441
+             394
+             347
+----------------------------------------
+rb
+       a: 6    b: 16
+
+     247     204
+     484     171
+     488     170
+     280     142
+     182     118
+      30      90
+              49
+             354
+             352
+              36
+              17
+             483
+             441
+             394
+             347
+             305
+----------------------------------------
+pb
+       a: 5    b: 17
+
+     484     247
+     488     204
+     280     171
+     182     170
+      30     142
+             118
+              90
+              49
+             354
+             352
+              36
+              17
+             483
+             441
+             394
+             347
+             305
+----------------------------------------
+nums_num: 5	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 4	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 4	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 5	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 4	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 30	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rrr
+       a: 5    b: 17
+
+      30     305
+     484     247
+     488     204
+     280     171
+     182     170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              17
+             483
+             441
+             394
+             347
+----------------------------------------
+rrb
+       a: 5    b: 17
+
+      30     347
+     484     305
+     488     247
+     280     204
+     182     171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              17
+             483
+             441
+             394
+----------------------------------------
+rrb
+       a: 5    b: 17
+
+      30     394
+     484     347
+     488     305
+     280     247
+     182     204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              17
+             483
+             441
+----------------------------------------
+rrb
+       a: 5    b: 17
+
+      30     441
+     484     394
+     488     347
+     280     305
+     182     247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              17
+             483
+----------------------------------------
+rrb
+       a: 5    b: 17
+
+      30     483
+     484     441
+     488     394
+     280     347
+     182     305
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              17
+----------------------------------------
+rrb
+       a: 5    b: 17
+
+      30      17
+     484     483
+     488     441
+     280     394
+     182     347
+             305
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+----------------------------------------
+pb
+       a: 4    b: 18
+
+     484      30
+     488      17
+     280     483
+     182     441
+             394
+             347
+             305
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+----------------------------------------
+nums_num: 4	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 3	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 3	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 4	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 3	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 182	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rrr
+       a: 4    b: 18
+
+     182      36
+     484      30
+     488      17
+     280     483
+             441
+             394
+             347
+             305
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+----------------------------------------
+rb
+       a: 4    b: 18
+
+     182      30
+     484      17
+     488     483
+     280     441
+             394
+             347
+             305
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+----------------------------------------
+rb
+       a: 4    b: 18
+
+     182      17
+     484     483
+     488     441
+     280     394
+             347
+             305
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+----------------------------------------
+rb
+       a: 4    b: 18
+
+     182     483
+     484     441
+     488     394
+     280     347
+             305
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+----------------------------------------
+rb
+       a: 4    b: 18
+
+     182     441
+     484     394
+     488     347
+     280     305
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+             483
+----------------------------------------
+rb
+       a: 4    b: 18
+
+     182     394
+     484     347
+     488     305
+     280     247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+             483
+             441
+----------------------------------------
+rb
+       a: 4    b: 18
+
+     182     347
+     484     305
+     488     247
+     280     204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+             483
+             441
+             394
+----------------------------------------
+rb
+       a: 4    b: 18
+
+     182     305
+     484     247
+     488     204
+     280     171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+             483
+             441
+             394
+             347
+----------------------------------------
+rb
+       a: 4    b: 18
+
+     182     247
+     484     204
+     488     171
+     280     170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+             483
+             441
+             394
+             347
+             305
+----------------------------------------
+pb
+       a: 3    b: 19
+
+     484     182
+     488     247
+     280     204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+             483
+             441
+             394
+             347
+             305
+----------------------------------------
+nums_num: 3	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 2	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 2	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 3	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 2	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 280	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rr
+       a: 3    b: 19
+
+     488     247
+     280     204
+     484     171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+             483
+             441
+             394
+             347
+             305
+             182
+----------------------------------------
+pb
+       a: 2    b: 20
+
+     280     488
+     484     247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+             483
+             441
+             394
+             347
+             305
+             182
+----------------------------------------
+nums_num: 2	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 1	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 1	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 2	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 1	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 1	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+a_target_num: 484	(file "src/exec_one_hundred_or_less.c", line 370, in deal_chunk_range)
+rrr
+       a: 2    b: 20
+
+     484     182
+     280     488
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+             483
+             441
+             394
+             347
+             305
+----------------------------------------
+rrb
+       a: 2    b: 20
+
+     484     305
+     280     182
+             488
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+             483
+             441
+             394
+             347
+----------------------------------------
+rrb
+       a: 2    b: 20
+
+     484     347
+     280     305
+             182
+             488
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+             483
+             441
+             394
+----------------------------------------
+rrb
+       a: 2    b: 20
+
+     484     394
+     280     347
+             305
+             182
+             488
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+             483
+             441
+----------------------------------------
+rrb
+       a: 2    b: 20
+
+     484     441
+     280     394
+             347
+             305
+             182
+             488
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+             483
+----------------------------------------
+rrb
+       a: 2    b: 20
+
+     484     483
+     280     441
+             394
+             347
+             305
+             182
+             488
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+----------------------------------------
+pb
+       a: 1    b: 21
+
+     280     484
+             483
+             441
+             394
+             347
+             305
+             182
+             488
+             247
+             204
+             171
+             170
+             142
+             118
+              90
+              49
+             354
+             352
+              36
+              30
+              17
+----------------------------------------
+nums_num: 1	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 0	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 1	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 1	(file "src/exec_one_hundred_or_less.c", line 368, in deal_chunk_range)
+nums_num: 1	(file "src/exec_one_hundred_or_less.c", line 106, in get_nearer_index)
+i2: 0	(file "src/exec_one_hundred_or_less.c", line 107, in get_nearer_index)
+nums_num - i2: 1	(file "src/exec_one_hundred_or_less.c", line 108, in get_nearer_index)
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==58265==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x00010493a7bb bp 0x7ffeeb2c82b0 sp 0x7ffeeb2c82b0 T0)
+==58265==The signal is caused by a READ memory access.
+==58265==Hint: address points to the zero page.
+    #0 0x10493a7ba in get_num_of_target_index get_num_of_target_index.c:20
+    #1 0x10493a3de in deal_chunk_range exec_one_hundred_or_less.c:369
+    #2 0x10493a515 in exec_one_hundred_or_less exec_one_hundred_or_less.c:400
+    #3 0x104938fe0 in exec exec.c:29
+    #4 0x10493ab56 in main main.c:66
+    #5 0x7fff6526b3d4 in start (libdyld.dylib:x86_64+0x163d4)
+
+==58265==Register values:
+rax = 0x0000000000000000  rbx = 0x0000000000000000  rcx = 0x0000000000000001  rdx = 0x0000000000000000  
+rdi = 0x0000603000000490  rsi = 0x0000603000000490  rbp = 0x00007ffeeb2c82b0  rsp = 0x00007ffeeb2c82b0  
+ r8 = 0x00007ffeeb2c7bc8   r9 = 0x0000000000000000  r10 = 0x0000000000000400  r11 = 0x0000000000000246  
+r12 = 0x0000000000000000  r13 = 0x0000000000000000  r14 = 0x0000000000000000  r15 = 0x0000000000000000  
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV get_num_of_target_index.c:20 in get_num_of_target_index
+==58265==ABORTING

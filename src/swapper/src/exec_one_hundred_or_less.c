@@ -217,6 +217,7 @@ void	set_b_for_acception(t_num **stack_a, t_num **stack_b)
 		return ;
 	to_be_accepted = (*stack_a)->num;
 	target_i = get_index_of_largest_num_under_designattion(*stack_b, to_be_accepted);
+	// DSZ(target_i);
 	if (target_i == NOT_FOUND)
 		bring_largest_num_to_top(stack_a, stack_b, STACK_B);
 	else
@@ -234,11 +235,15 @@ t_rotation_info *get_rotation_type_and_num_b(t_num *stack_b, int to_be_accepted)
 	target_i = get_index_of_largest_num_under_designattion(stack_b, to_be_accepted);
 	// DI(to_be_accepted);
 	// DSZ(target_i);
+	// DI(to_be_accepted);
+	// DSZ(target_i);
 	if (target_i == NOT_FOUND)
 	{
 		DS("NOT_FOUND");
 		target_i = get_index_of_largest_num(stack_b);
 	}
+	DSZ(target_i);
+	// DSZ(target_i);
 	return (get_rotation_type_and_num(nums_num, target_i));
 }
 
@@ -299,7 +304,8 @@ static int	get_double_rotation_type(int a_type, int b_type)
 
 static void	rotate_designated_based_on_types(t_num **stack_a, t_num **stack_b, int rotation_type, int stack_type)
 {
-	if (rotation_type == BOTH || rotation_type == NORMAL)
+	// if (rotation_type == BOTH || rotation_type == NORMAL)
+	if (rotation_type == NORMAL)
 		exec_and_put_operation(stack_a, stack_b, rotate_designated, stack_type);
 	else
 		exec_and_put_operation(stack_a, stack_b, reverse_rotate_designated, stack_type);
@@ -367,8 +373,10 @@ void	deal_chunk_range(t_num **stack_a, t_num **stack_b, int chunk_max_nums[], si
 		// print_current_status_wrapper(stack_a, stack_b);
 		DSZ(get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i));
 		a_target_num = get_num_of_target_index(*stack_a, get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i));
-		// DI(a_target_num);
+		DI(a_target_num);
 		b_rotation_info = get_rotation_type_and_num_b(*stack_b, a_target_num);
+		DSZ(b_rotation_info->num);
+		DI(b_rotation_info->rotation_type);
 		rotate_based_on_info(stack_a, stack_b, a_rotation_info, b_rotation_info);
 		exec_and_put_operation(stack_a, stack_b, push_designated, STACK_B);
 

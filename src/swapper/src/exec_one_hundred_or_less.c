@@ -133,9 +133,13 @@ t_rotation_info *get_rotation_type_and_num_a(t_num *stack_a, int chunk_max_nums[
 {
 	const size_t	fore_index = get_fore_target_index(stack_a, chunk_max_nums, chunk_i);
 	const size_t	back_index = get_back_target_index(stack_a, chunk_max_nums, chunk_i);
+	DSZ(fore_index);
+	DSZ(back_index);
 	const size_t	nums_num = lstsize(stack_a);
 	const size_t	fore_nearness = get_nearness(fore_index, nums_num);
 	const size_t	back_nearness = get_nearness(back_index, nums_num);
+	DSZ(fore_nearness);
+	DSZ(back_nearness);
 
 	return (get_rotation_type_and_num_a2(fore_nearness, back_nearness));
 }
@@ -374,7 +378,6 @@ void	deal_chunk_range(t_num **stack_a, t_num **stack_b, int chunk_max_nums[], si
 
 		// print_current_status_wrapper(stack_a, stack_b);
 
-		DI((*stack_a)->num);
 		DSZ(get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i));
 		a_target_num = get_num_of_target_index(*stack_a, get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i));
 		DI(a_target_num);
@@ -383,6 +386,8 @@ void	deal_chunk_range(t_num **stack_a, t_num **stack_b, int chunk_max_nums[], si
 		b_rotation_info = get_rotation_type_and_num_b(*stack_b, a_target_num);
 		// DSZ(b_rotation_info->num);
 		// DI(b_rotation_info->rotation_type);
+		DSZ(a_rotation_info->num);
+		DI(a_rotation_info->rotation_type);
 		rotate_based_on_info(stack_a, stack_b, a_rotation_info, b_rotation_info);
 		exec_and_put_operation(stack_a, stack_b, push_designated, STACK_B);
 

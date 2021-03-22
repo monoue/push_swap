@@ -12,6 +12,8 @@ size_t	get_nearness(size_t index, size_t nums_num)
 	if (index >= nums_num)
 		return (UINT_MAX);
 	back_index = nums_num - index;
+	DSZ(index);
+	DSZ(back_index);
 	return (ft_min_size_t(index, back_index));
 }
 
@@ -30,7 +32,6 @@ size_t	get_nearer_distance(size_t	i1, size_t i2, size_t nums_num)
 		return (i2);
 }
 
-
 t_rotation_info *get_rotation_type_and_num_a2(size_t fore_nearness, size_t back_nearness)
 {
 	t_rotation_info	*rotation_info;
@@ -38,12 +39,17 @@ t_rotation_info *get_rotation_type_and_num_a2(size_t fore_nearness, size_t back_
 	rotation_info = malloc(sizeof(t_rotation_info));
 	if (!rotation_info)
 		exit(EXIT_FAILURE);
-	if (fore_nearness == back_nearness)
-	{
-		rotation_info->rotation_type = BOTH;
-		rotation_info->num = fore_nearness;
-	}
-	else if (fore_nearness < back_nearness)
+	// if (fore_nearness == back_nearness)
+	// {
+	// 	rotation_info->rotation_type = BOTH;
+	// 	rotation_info->num = fore_nearness;
+	// }
+	// else if (fore_nearness < back_nearness)
+	// {
+	// 	rotation_info->rotation_type = NORMAL;
+	// 	rotation_info->num = fore_nearness;
+	// }
+	if (fore_nearness <= back_nearness)
 	{
 		rotation_info->rotation_type = NORMAL;
 		rotation_info->num = fore_nearness;

@@ -1,7 +1,7 @@
 #ifndef SWAPPER_H
 # define SWAPPER_H
 
-# define CHUNK_SIZE 20
+# define CHUNK_SIZE 46
 
 int	g_count;
 

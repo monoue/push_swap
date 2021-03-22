@@ -1,7 +1,6 @@
 #include <push_swap.h>
 #include <libft.h>
 #include <debug.h>
-#include "swapper.h"
 
 static void	reverse_rotate(t_num **num_list)
 {

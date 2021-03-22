@@ -19,6 +19,7 @@
 # define DL(v) DEBUGV("%ld", v);
 # define DSZ(v) DEBUGV("%zu", v);
 # define DSSZ(v) DEBUGV("%zd", v);
+# define DUL(v) DEBUGV("%lu", v);
 
 # define DEBUGF(fmt, ...) \
     dprintf(2, fmt "\t(file \"%s\", line %d, in %s)\n", \

@@ -1,7 +1,6 @@
-#include <push_swap.h>
-#include <libft.h>
-#include <debug.h>
-#include "swapper.h"
+#include "push_swap.h"
+#include "libft.h"
+#include "debug.h"
 
 static void	rotate(t_num **num_list)
 {

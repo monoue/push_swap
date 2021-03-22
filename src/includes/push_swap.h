@@ -7,6 +7,15 @@
 
 # include "defs.h"
 
+typedef enum	e_stacks
+{
+	STACK_A,
+	STACK_B,
+	DOUBLE,
+
+	STACKS_NUM
+}				t_stacks;
+
 bool			args_are_valid(size_t argc, char *argv[]);
 bool			args_are_unique(size_t argc, char *argv[]);
 t_num			*get_struct_list(size_t args_num, char **num_strs);

@@ -95,6 +95,7 @@ ADDED += ft_min_int.c
 ADDED += ft_min_size_t.c
 ADDED += ft_max_int.c
 ADDED += ft_max_size_t.c
+ADDED += ft_putnbr_err.c
 
 FT_PRINTF += $(FT_PRINTF_PATH)apply_margin.c
 FT_PRINTF += $(FT_PRINTF_PATH)cut_out_format.c

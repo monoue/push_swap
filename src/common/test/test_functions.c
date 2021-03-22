@@ -9,16 +9,16 @@ void	print_list_nums(t_num *num_list)
 
 	if (!lstsize(num_list))
 	{
-		ft_putendl("-----");
-		ft_putendl("EMPTY");
-		ft_putendl("-----");
+		ft_putendl_err("-----");
+		ft_putendl_err("EMPTY");
+		ft_putendl_err("-----");
 	}
 	base = num_list;
 	while (base)
 	{
 		next_holder = base->next;
-		ft_putnbr(base->num);
-		ft_putchar('\n');
+		ft_putnbr_err(base->num);
+		ft_putchar_err('\n');
 		base = next_holder;
 	}
 }
@@ -33,37 +33,37 @@ void	put_tab(int n)
 	index = 0;
 	while (index < to_fill_len)
 	{
-		ft_putchar(' ');
+		ft_putchar_err(' ');
 		index++;
 	}
 }
 
 void	print_current_status(t_num *stack_a, t_num *stack_b)
 {
-	ft_putstr("       a: ");
-	ft_putnbr((int)lstsize(stack_a));
-	ft_putstr("    b: ");
-	ft_putnbr((int)lstsize(stack_b));
-	ft_putendl("\n");
+	ft_putstr_err("       a: ");
+	ft_putnbr_err((int)lstsize(stack_a));
+	ft_putstr_err("    b: ");
+	ft_putnbr_err((int)lstsize(stack_b));
+	ft_putendl_err("\n");
 	while (stack_a || stack_b)
 	{
 		if (stack_a)
 		{
 			put_tab(stack_a->num);
-			ft_putnbr(stack_a->num);
+			ft_putnbr_err(stack_a->num);
 			stack_a = stack_a->next;
 		}
 		else
-			ft_putstr("        ");
+			ft_putstr_err("        ");
 		if (stack_b)
 		{
 			put_tab(stack_b->num);
-			ft_putnbr(stack_b->num);
+			ft_putnbr_err(stack_b->num);
 			stack_b = stack_b->next;
 		}
-		ft_putchar('\n');
+		ft_putchar_err('\n');
 	}
-	ft_putendl("----------------------------------------");
+	ft_putendl_err("----------------------------------------");
 }
 
 void	print_current_status_wrapper(t_num **stack_a, t_num **stack_b)

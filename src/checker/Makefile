@@ -6,7 +6,7 @@
 #    By: monoue <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/18 09:48:44 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/22 16:33:39 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRC_PATH	= ./src/
 
 INCLUDE	= -I../../lib -I../includes/ -I./includes/
 
-BASE	  = $(COMMON_PATH)args_are_unique.c \
+BASE	  = $(COMMON_PATH)args_are_integers.c \
 			$(COMMON_PATH)args_are_valid.c \
 			$(COMMON_PATH)basic_list_operations.c \
 			$(COMMON_PATH)get_sorted_array.c \

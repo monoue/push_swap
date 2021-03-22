@@ -1,24 +1,22 @@
-#include <libft.h>
-#include <debug.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   read_and_exec_operations.c                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/22 16:46:45 by monoue            #+#    #+#             */
+/*   Updated: 2021/03/22 16:46:46 by monoue           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+#include "debug.h"
 #include "push_swap.h"
 #include "operation.h"
 
-// t_num	*lst_index(t_num *num_list, size_t index)
-// {
-// 	size_t	i;
-// 	t_num	*tmp;
-
-// 	tmp = num_list;
-// 	i = 0;
-// 	while (i < index)
-// 	{
-// 		tmp = tmp->next;
-// 		i++;
-// 	}
-// 	return (tmp);
-// }
-
-static void	exec_operation(const char *operation, t_num **stack_a, t_num **stack_b)
+static void	exec_operation(const char *operation, t_num **stack_a,
+																t_num **stack_b)
 {
 	const t_op_func_set	sets[] = {
 		{"sa", &swap_a}, {"sb", &swap_b}, {"ss", &swap_double},

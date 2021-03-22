@@ -1,77 +1,34 @@
-#include <push_swap.h>
-#include <libft.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   args_are_valid.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/22 16:20:51 by monoue            #+#    #+#             */
+/*   Updated: 2021/03/22 16:34:16 by monoue           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-static bool	digits_num_is_over_int_max(const char *str)
+#include "push_swap.h"
+#include "libft.h"
+
+static bool	args_are_unique(size_t argc, char **argv)
 {
+	int		array[argc - 1];
 	size_t	index;
+	size_t	num;
 
-	index = 0;
-	if (str[index] == '+' || str[index] == '-')
-		index++;
-	while (str[index] == '0')
-		index++;
-	return (ft_strlen(&str[index]) > INT_MAX_DIGITS);
-}
-
-static bool	str_is_within_int_range(const char *str)
-{
-	bool				sign;
-	unsigned long long	n;
-	size_t				index;
-
-	index = 0;
-	if (digits_num_is_over_int_max(str))
+	if (argc <= 1)
 		return (false);
-	sign = false;
-	if (str[index] == '-' || str[index] == '+')
-	{
-		if (str[index] == '-')
-			sign = true;
-		index++;
-	}
-	n = ft_atoull(&str[index]);
-	if (n == 0)
+	num = argc - 1;
+	if (num == 1)
 		return (true);
-	if (sign)
-		n--;
-	return (n <= INT_MAX);
-}
-
-static bool	str_is_numeric(const char *str)
-{
-	const char	first_c = str[0];
-
-	if (!str || !first_c)
-		return (false);
-	if (first_c == '+' || first_c == '-')
-		return (ft_str_is_numeric(&str[1]));
-	return (ft_str_is_numeric(str));
-}
-
-static bool	args_are_numeric(size_t argc, char *argv[])
-{
-	size_t	index;
-
-	index = 1;
-	while (index < argc)
+	get_sorted_array(array, num, &argv[1]);
+	index = 0;
+	while (index < num - 1)
 	{
-		if (!str_is_numeric(argv[index]))
-			return (false);
-		index++;
-	}
-	return (true);
-}
-
-static bool	args_are_integers(size_t argc, char *argv[])
-{
-	size_t	index;
-
-	if (!args_are_numeric(argc, argv))
-		return (false);
-	index = 1;
-	while (index < argc)
-	{
-		if (!str_is_within_int_range(argv[index]))
+		if (array[index] == array[index + 1])
 			return (false);
 		index++;
 	}

@@ -1,6 +1,18 @@
-#include <push_swap.h>
-#include <libft.h>
-#include <debug.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   reverse_rotate.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/22 16:23:46 by monoue            #+#    #+#             */
+/*   Updated: 2021/03/22 16:40:41 by monoue           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "push_swap.h"
+#include "libft.h"
+#include "debug.h"
 
 static void	reverse_rotate(t_num **num_list)
 {
@@ -34,7 +46,8 @@ void		reverse_rotate_double(t_num **stack_a, t_num **stack_b)
 	ft_putendl("rrr");
 }
 
-void		reverse_rotate_designated(t_num **stack_a, t_num **stack_b, int stack_type)
+void		reverse_rotate_designated(t_num **stack_a, t_num **stack_b,
+																int stack_type)
 {
 	if (stack_type == STACK_A)
 		reverse_rotate_a(stack_a, stack_b);

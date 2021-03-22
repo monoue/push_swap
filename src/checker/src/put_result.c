@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   put_result.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/22 16:45:28 by monoue            #+#    #+#             */
+/*   Updated: 2021/03/22 16:46:03 by monoue           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 #include "libft.h"
 #include "debug.h"
@@ -26,7 +38,8 @@ static bool	is_sorting_success(t_num *stack_a, size_t nums_num, char **num_strs)
 	return (true);
 }
 
-void		put_result(t_num *stack_a, bool stack_b_is_empty, size_t nums_num, char **nums_strs)
+void		put_result(t_num *stack_a, bool stack_b_is_empty, size_t nums_num,
+															char **nums_strs)
 {
 	bool	success;
 
@@ -35,7 +48,6 @@ void		put_result(t_num *stack_a, bool stack_b_is_empty, size_t nums_num, char **
 		ft_putendl_err(ERROR_MESSAGE);
 		return ;
 	}
-
 	success = is_sorting_success(stack_a, nums_num, nums_strs);
 	if (success)
 		ft_putendl(SUCCESS_MESSAGE);

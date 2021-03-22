@@ -1,6 +1,18 @@
-#include <push_swap.h>
-#include <libft.h>
-#include <debug.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_struct_list.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/22 16:41:59 by monoue            #+#    #+#             */
+/*   Updated: 2021/03/22 16:42:00 by monoue           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "push_swap.h"
+#include "libft.h"
+#include "debug.h"
 
 t_num	*get_struct_list(size_t args_num, char **num_strs)
 {

@@ -6,7 +6,7 @@
 #    By: monoue <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/22 09:38:47 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/22 16:33:53 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ OPERATION_PATH = $(COMMON_PATH)operation/
 
 INCLUDE	= -I../../lib -I../includes/ -I./includes
 
-BASE	  = $(COMMON_PATH)args_are_unique.c \
+BASE	  = $(COMMON_PATH)args_are_integers.c \
 			$(COMMON_PATH)args_are_valid.c \
 			$(COMMON_PATH)basic_list_operations.c \
 			$(COMMON_PATH)get_sorted_array.c \

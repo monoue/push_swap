@@ -16,8 +16,8 @@ typedef enum	e_stacks
 	STACKS_NUM
 }				t_stacks;
 
+bool			args_are_integers(size_t argc, char *argv[]);
 bool			args_are_valid(size_t argc, char *argv[]);
-bool			args_are_unique(size_t argc, char *argv[]);
 t_num			*get_struct_list(size_t args_num, char **num_strs);
 bool			is_valid_operator(char *str);
 

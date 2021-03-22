@@ -1,7 +1,8 @@
 #ifndef SWAPPER_H
 # define SWAPPER_H
 
-# define CHUNK_SIZE 46
+# define CHUNK_SIZE 30
+
 
 int	g_count;
 
@@ -41,6 +42,7 @@ typedef enum	e_pattern
 
 typedef void	(*op_func)(t_num **, t_num **, int);
 
+bool	args_are_integers(size_t argc, char *argv[]);
 void	bring_target_index_to_top(t_num **stack_a, t_num **stack_b, size_t target_index, int stack_type);
 void	exec(t_num **stack_a, size_t nums_num, int sorted_array[]);
 bool	is_sorted(t_num *stack);

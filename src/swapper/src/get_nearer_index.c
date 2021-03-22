@@ -15,6 +15,7 @@ size_t	get_nearness(size_t index, size_t nums_num)
 	return (ft_min_size_t(index, back_index));
 }
 
+
 // ２つの index のうち、どちらが先頭から近いのかを判断する関数。
 // まず、近さ、つまり何回の rotate で辿り着けるかを数字で獲得。
 // そして、近い方を返す。

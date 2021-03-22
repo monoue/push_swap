@@ -99,7 +99,7 @@ size_t	get_nearer_index(size_t	i1, size_t i2, size_t nums_num)
 	const size_t	nearness1 = get_nearness(i1, nums_num);
 	const size_t	nearness2 = get_nearness(i2, nums_num);
 
-	if (nearness1 < nearness2)
+	if (nearness1 <= nearness2)
 		return (i1);
 	else
 	{
@@ -122,6 +122,7 @@ size_t	get_nearest_target_index(t_num *stack_a, int chunk_max_nums[], size_t chu
 	// DSZ(back_index);
 	// DSZ(chunk_i);
 	// DI(chunk_max_nums[chunk_i]);
+
 	return (get_nearer_index(fore_index, back_index, nums_num));
 }
 
@@ -324,6 +325,7 @@ void	rotate_based_on_info(t_num **stack_a, t_num **stack_b, t_rotation_info *a_i
 	// DI(double_rotation_type);
 	// DSZ(a_info->num);
 	// DSZ(b_info->num);
+
 		while (a_info->num > 0 && b_info->num > 0)
 		{
 			if (double_rotation_type == NORMAL)
@@ -371,12 +373,16 @@ void	deal_chunk_range(t_num **stack_a, t_num **stack_b, int chunk_max_nums[], si
 		// DI(a_rotation_info->rotation_type);
 
 		// print_current_status_wrapper(stack_a, stack_b);
+
+		DI((*stack_a)->num);
 		DSZ(get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i));
 		a_target_num = get_num_of_target_index(*stack_a, get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i));
 		DI(a_target_num);
+		// ここで、A の type が BOTH の時でも、to_be_accepted は正順で見つかるものを前提に、B の rotation の回数も計算してしまっている。
+		// A が BOTH というのは、つまり、NORMAL ということ。
 		b_rotation_info = get_rotation_type_and_num_b(*stack_b, a_target_num);
-		DSZ(b_rotation_info->num);
-		DI(b_rotation_info->rotation_type);
+		// DSZ(b_rotation_info->num);
+		// DI(b_rotation_info->rotation_type);
 		rotate_based_on_info(stack_a, stack_b, a_rotation_info, b_rotation_info);
 		exec_and_put_operation(stack_a, stack_b, push_designated, STACK_B);
 

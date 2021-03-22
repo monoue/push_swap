@@ -93,19 +93,22 @@ size_t	get_back_target_index(t_num *stack_a, int chunk_max_nums[], size_t chunk_
 	return (0);
 }
 
+// TODO: この関数が、残り１つの時は正しく機能していないよう思える
 size_t	get_nearer_index(size_t	i1, size_t i2, size_t nums_num)
 {
 	// nearness1 は i1 と同じのような…？
 	const size_t	nearness1 = get_nearness(i1, nums_num);
 	const size_t	nearness2 = get_nearness(i2, nums_num);
+	DSZ(nearness1);
+	DSZ(nearness2);
 
 	if (nearness1 <= nearness2)
 		return (i1);
 	else
 	{
-		DSZ(nums_num);
-		DSZ(i2);
-		DSZ(nums_num - i2);
+		// DSZ(nums_num);
+		// DSZ(i2);
+		// DSZ(nums_num - i2);
 		return (nums_num - i2);
 	}
 }
@@ -117,6 +120,8 @@ size_t	get_nearest_target_index(t_num *stack_a, int chunk_max_nums[], size_t chu
 	const size_t	fore_index = get_fore_target_index(stack_a, chunk_max_nums, chunk_i);
 	const size_t	back_index = get_back_target_index(stack_a, chunk_max_nums, chunk_i);
 	const size_t	nums_num = lstsize(stack_a);
+	DSZ(fore_index);
+	DSZ(back_index);
 
 	// DSZ(fore_index);
 	// DSZ(back_index);
@@ -126,8 +131,6 @@ size_t	get_nearest_target_index(t_num *stack_a, int chunk_max_nums[], size_t chu
 	return (get_nearer_index(fore_index, back_index, nums_num));
 }
 
-// is_within_range やる…。
-
 // 必要試行回数と、ローテーションの種類（r / rr）を、返り値と引数で返すようにする。
 t_rotation_info *get_rotation_type_and_num_a(t_num *stack_a, int chunk_max_nums[], size_t chunk_i)
 {
@@ -136,7 +139,9 @@ t_rotation_info *get_rotation_type_and_num_a(t_num *stack_a, int chunk_max_nums[
 	DSZ(fore_index);
 	DSZ(back_index);
 	const size_t	nums_num = lstsize(stack_a);
-	const size_t	fore_nearness = get_nearness(fore_index, nums_num);
+	// 改造中。元の
+	// const size_t	fore_nearness = get_nearness(fore_index, nums_num);
+	const size_t	fore_nearness = fore_index;
 	const size_t	back_nearness = get_nearness(back_index, nums_num);
 	DSZ(fore_nearness);
 	DSZ(back_nearness);
@@ -372,6 +377,9 @@ void	deal_chunk_range(t_num **stack_a, t_num **stack_b, int chunk_max_nums[], si
 		first_try = false;
 		// 同時に回すには、ここで、target_num も取る必要がある。
 		// 引数が余っているので、参照渡しにできる。
+
+
+		// TODO: ここ！！！
 		a_rotation_info = get_rotation_type_and_num_a(*stack_a, chunk_max_nums, chunk_i);
 		// DSZ(a_rotation_info->num);
 		// DI(a_rotation_info->rotation_type);

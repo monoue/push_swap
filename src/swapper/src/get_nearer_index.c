@@ -23,8 +23,12 @@ size_t	get_nearness(size_t index, size_t nums_num)
 // そして、近い方を返す。
 size_t	get_nearer_distance(size_t	i1, size_t i2, size_t nums_num)
 {
+	// DSZ(i1);
+	// DSZ(i2);
 	const size_t	nearness1 = get_nearness(i1, nums_num);
 	const size_t	nearness2 = get_nearness(i2, nums_num);
+	// DSZ(nearness1);
+	// DSZ(nearness2);
 
 	if (nearness1 < nearness2)
 		return (i1);

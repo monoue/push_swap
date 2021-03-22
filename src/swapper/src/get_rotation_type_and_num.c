@@ -15,10 +15,12 @@ t_rotation_info	*get_rotation_type_and_num(size_t nums_num, size_t target_i)
 	rotation_info = malloc(sizeof(t_rotation_info));
 	if (!rotation_info)
 		exit(EXIT_FAILURE);
+	// TODO: 改造中。
 	if (nums_num % 2 == 0 && target_i == middle_i)
 	{
 		// DS("1");
-		rotation_info->rotation_type = BOTH;
+		// rotation_info->rotation_type = BOTH;
+		rotation_info->rotation_type = NORMAL;
 		rotation_info->num = target_i;
 	}
 	else if (target_i <= middle_i)

@@ -1,153 +1,179 @@
        a: 22    b: 0
 
-    3875
-    4087
+    9701
+    3052
+    7159
+     155
+    5175
+    9491
     1415
-    1281
-    7859
-    2949
-    5751
-    1126
-    9842
-    9250
-    1062
-    9120
-    3606
-      38
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
+     420
+     222
+    3051
+    1782
+    3679
+    8986
+    5382
+    2693
+    5362
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
 ----------------------------------------
-fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
+fore_index: 1	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
 back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
 index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 21	(file "src/get_nearer_index.c", line 16, in get_nearness)
-fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
+fore_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
 back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
-fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+fore_index: 1	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
 back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 22	(file "src/get_nearer_index.c", line 16, in get_nearness)
 index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 21	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
-fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 22	(file "src/get_nearer_index.c", line 16, in get_nearness)
 index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 21	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness1: 1	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
 nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 3875	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
-a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 1	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
+fore_index: 1	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 21	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 21	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 1	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 3052	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+a_rotation_info->num: 1	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
 a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
+ra
+       a: 22    b: 0
+
+    3052
+    7159
+     155
+    5175
+    9491
+    1415
+     420
+     222
+    3051
+    1782
+    3679
+    8986
+    5382
+    2693
+    5362
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
+----------------------------------------
 pb
        a: 21    b: 1
 
-    4087    3875
+    7159    3052
+     155
+    5175
+    9491
     1415
-    1281
-    7859
-    2949
-    5751
-    1126
-    9842
-    9250
-    1062
-    9120
-    3606
-      38
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
+     420
+     222
+    3051
+    1782
+    3679
+    8986
+    5382
+    2693
+    5362
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
 ----------------------------------------
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 20	(file "src/get_nearer_index.c", line 16, in get_nearness)
+back_index: 2	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 19	(file "src/get_nearer_index.c", line 16, in get_nearness)
 fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+back_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+back_index: 2	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
 index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 21	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 20	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 19	(file "src/get_nearer_index.c", line 16, in get_nearness)
 nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+nearness2: 2	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
 get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+back_index: 2	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
 index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 21	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 20	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 19	(file "src/get_nearer_index.c", line 16, in get_nearness)
 nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 4087	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+nearness2: 2	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 7159	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
 a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
 a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
 pb
        a: 20    b: 2
 
-    1415    4087
-    1281    3875
-    7859
-    2949
-    5751
-    1126
-    9842
-    9250
-    1062
-    9120
-    3606
-      38
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
+     155    7159
+    5175    3052
+    9491
+    1415
+     420
+     222
+    3051
+    1782
+    3679
+    8986
+    5382
+    2693
+    5362
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
 ----------------------------------------
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 19	(file "src/get_nearer_index.c", line 16, in get_nearness)
+back_index: 2	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 18	(file "src/get_nearer_index.c", line 16, in get_nearness)
 fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+back_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+back_index: 2	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
 index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 20	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 19	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 18	(file "src/get_nearer_index.c", line 16, in get_nearness)
 nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+nearness2: 2	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
 get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+back_index: 2	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
 index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 20	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 19	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 18	(file "src/get_nearer_index.c", line 16, in get_nearness)
 nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 1415	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+nearness2: 2	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 155	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
 "NOT_FOUND": NOT_FOUND	(file "src/exec_one_hundred_or_less.c", line 252, in get_rotation_type_and_num_b)
 target_i: 0	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
 a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
@@ -155,2021 +181,1620 @@ a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 3
 pb
        a: 19    b: 3
 
-    1281    1415
-    7859    4087
-    2949    3875
-    5751
-    1126
-    9842
-    9250
-    1062
-    9120
-    3606
-      38
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
+    5175     155
+    9491    7159
+    1415    3052
+     420
+     222
+    3051
+    1782
+    3679
+    8986
+    5382
+    2693
+    5362
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
 ----------------------------------------
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 18	(file "src/get_nearer_index.c", line 16, in get_nearness)
+back_index: 2	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 17	(file "src/get_nearer_index.c", line 16, in get_nearness)
 fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+back_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+back_index: 2	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
 index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 19	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 18	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 17	(file "src/get_nearer_index.c", line 16, in get_nearness)
 nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+nearness2: 2	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
 get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+back_index: 2	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
 index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 19	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 18	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 17	(file "src/get_nearer_index.c", line 16, in get_nearness)
 nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 1281	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
-"NOT_FOUND": NOT_FOUND	(file "src/exec_one_hundred_or_less.c", line 252, in get_rotation_type_and_num_b)
-target_i: 1	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
+nearness2: 2	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 5175	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+target_i: 2	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
 a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
 a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rb
+rrb
        a: 19    b: 3
 
-    1281    4087
-    7859    3875
-    2949    1415
-    5751
-    1126
-    9842
-    9250
-    1062
-    9120
-    3606
-      38
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
+    5175    3052
+    9491     155
+    1415    7159
+     420
+     222
+    3051
+    1782
+    3679
+    8986
+    5382
+    2693
+    5362
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
 ----------------------------------------
 pb
        a: 18    b: 4
 
-    7859    1281
-    2949    4087
-    5751    3875
-    1126    1415
-    9842
-    9250
-    1062
-    9120
-    3606
-      38
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
+    9491    5175
+    1415    3052
+     420     155
+     222    7159
+    3051
+    1782
+    3679
+    8986
+    5382
+    2693
+    5362
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
+----------------------------------------
+fore_index: 1	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
+back_index: 2	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 16	(file "src/get_nearer_index.c", line 16, in get_nearness)
+fore_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
+back_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+fore_index: 1	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 2	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 17	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 16	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 1	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 2	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 1	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
+fore_index: 1	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 2	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 17	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 16	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 1	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 2	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 1415	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+target_i: 2	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
+a_rotation_info->num: 1	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
+a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
+rr
+       a: 18    b: 4
+
+    1415    3052
+     420     155
+     222    7159
+    3051    5175
+    1782
+    3679
+    8986
+    5382
+    2693
+    5362
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
+    9491
+----------------------------------------
+rb
+       a: 18    b: 4
+
+    1415     155
+     420    7159
+     222    5175
+    3051    3052
+    1782
+    3679
+    8986
+    5382
+    2693
+    5362
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
+    9491
+----------------------------------------
+pb
+       a: 17    b: 5
+
+     420    1415
+     222     155
+    3051    7159
+    1782    5175
+    3679    3052
+    8986
+    5382
+    2693
+    5362
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
+    9491
 ----------------------------------------
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 17	(file "src/get_nearer_index.c", line 16, in get_nearness)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 14	(file "src/get_nearer_index.c", line 16, in get_nearness)
 fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+back_nearness: 3	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
 index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 18	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 17	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 14	(file "src/get_nearer_index.c", line 16, in get_nearness)
 nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
 get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
 index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 18	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 17	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 14	(file "src/get_nearer_index.c", line 16, in get_nearness)
 nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 7859	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 420	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
 target_i: 1	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
 a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
 a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
 rb
-       a: 18    b: 4
-
-    7859    4087
-    2949    3875
-    5751    1415
-    1126    1281
-    9842
-    9250
-    1062
-    9120
-    3606
-      38
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
-----------------------------------------
-pb
        a: 17    b: 5
 
-    2949    7859
-    5751    4087
-    1126    3875
-    9842    1415
-    9250    1281
-    1062
-    9120
-    3606
-      38
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
-----------------------------------------
-fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 16	(file "src/get_nearer_index.c", line 16, in get_nearness)
-fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
-fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 17	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 16	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
-fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 17	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 16	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 2949	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
-target_i: 3	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
-a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
-a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rrb
-       a: 17    b: 5
-
-    2949    1281
-    5751    7859
-    1126    4087
-    9842    3875
-    9250    1415
-    1062
-    9120
-    3606
-      38
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
-----------------------------------------
-rrb
-       a: 17    b: 5
-
-    2949    1415
-    5751    1281
-    1126    7859
-    9842    4087
-    9250    3875
-    1062
-    9120
-    3606
-      38
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
+     420     155
+     222    7159
+    3051    5175
+    1782    3052
+    3679    1415
+    8986
+    5382
+    2693
+    5362
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
+    9491
 ----------------------------------------
 pb
        a: 16    b: 6
 
-    5751    2949
-    1126    1415
-    9842    1281
-    9250    7859
-    1062    4087
-    9120    3875
-    3606
-      38
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
+     222     420
+    3051     155
+    1782    7159
+    3679    5175
+    8986    3052
+    5382    1415
+    2693
+    5362
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
+    9491
 ----------------------------------------
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 15	(file "src/get_nearer_index.c", line 16, in get_nearness)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 13	(file "src/get_nearer_index.c", line 16, in get_nearness)
 fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+back_nearness: 3	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
 index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 16	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 15	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 13	(file "src/get_nearer_index.c", line 16, in get_nearness)
 nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
 get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
 index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 16	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 15	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 13	(file "src/get_nearer_index.c", line 16, in get_nearness)
 nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 5751	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
-target_i: 4	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 222	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+target_i: 1	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
 a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
 a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rrb
+rb
        a: 16    b: 6
 
-    5751    3875
-    1126    2949
-    9842    1415
-    9250    1281
-    1062    7859
-    9120    4087
-    3606
-      38
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
-----------------------------------------
-rrb
-       a: 16    b: 6
-
-    5751    4087
-    1126    3875
-    9842    2949
-    9250    1415
-    1062    1281
-    9120    7859
-    3606
-      38
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
+     222     155
+    3051    7159
+    1782    5175
+    3679    3052
+    8986    1415
+    5382     420
+    2693
+    5362
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
+    9491
 ----------------------------------------
 pb
        a: 15    b: 7
 
-    1126    5751
-    9842    4087
-    9250    3875
-    1062    2949
-    9120    1415
-    3606    1281
-      38    7859
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
+    3051     222
+    1782     155
+    3679    7159
+    8986    5175
+    5382    3052
+    2693    1415
+    5362     420
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
+    9491
 ----------------------------------------
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 14	(file "src/get_nearer_index.c", line 16, in get_nearness)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 12	(file "src/get_nearer_index.c", line 16, in get_nearness)
 fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+back_nearness: 3	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
 index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 15	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 14	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 12	(file "src/get_nearer_index.c", line 16, in get_nearness)
 nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
 get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
 index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 15	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 14	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 12	(file "src/get_nearer_index.c", line 16, in get_nearness)
 nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 1126	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
-"NOT_FOUND": NOT_FOUND	(file "src/exec_one_hundred_or_less.c", line 252, in get_rotation_type_and_num_b)
-target_i: 6	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 3051	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+target_i: 5	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
 a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
 a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
 rrb
        a: 15    b: 7
 
-    1126    7859
-    9842    5751
-    9250    4087
-    1062    3875
-    9120    2949
-    3606    1415
-      38    1281
-    3860
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
+    3051     420
+    1782     222
+    3679     155
+    8986    7159
+    5382    5175
+    2693    3052
+    5362    1415
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
+    9491
+----------------------------------------
+rrb
+       a: 15    b: 7
+
+    3051    1415
+    1782     420
+    3679     222
+    8986     155
+    5382    7159
+    2693    5175
+    5362    3052
+    3508
+    3988
+    1280
+    8634
+    7843
+    9355
+    9701
+    9491
 ----------------------------------------
 pb
        a: 14    b: 8
 
-    9842    1126
-    9250    7859
-    1062    5751
-    9120    4087
-    3606    3875
-      38    2949
-    3860    1415
-    6670    1281
-    8776
-    4214
-    5309
-    7124
-      69
-    7345
+    1782    3051
+    3679    1415
+    8986     420
+    5382     222
+    2693     155
+    5362    7159
+    3508    5175
+    3988    3052
+    1280
+    8634
+    7843
+    9355
+    9701
+    9491
 ----------------------------------------
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 13	(file "src/get_nearer_index.c", line 16, in get_nearness)
-fore_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 12	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 13	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 13	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 12	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 13	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 7345	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
-target_i: 2	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
-a_rotation_info->num: 1	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
-a_rotation_info->rotation_type: 1	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rra
-       a: 14    b: 8
-
-    7345    1126
-    9842    7859
-    9250    5751
-    1062    4087
-    9120    3875
-    3606    2949
-      38    1415
-    3860    1281
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-----------------------------------------
-rb
-       a: 14    b: 8
-
-    7345    7859
-    9842    5751
-    9250    4087
-    1062    3875
-    9120    2949
-    3606    1415
-      38    1281
-    3860    1126
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-----------------------------------------
-rb
-       a: 14    b: 8
-
-    7345    5751
-    9842    4087
-    9250    3875
-    1062    2949
-    9120    1415
-    3606    1281
-      38    1126
-    3860    7859
-    6670
-    8776
-    4214
-    5309
-    7124
-      69
-----------------------------------------
-pb
-       a: 13    b: 9
-
-    9842    7345
-    9250    5751
-    1062    4087
-    9120    3875
-    3606    2949
-      38    1415
-    3860    1281
-    6670    1126
-    8776    7859
-    4214
-    5309
-    7124
-      69
-----------------------------------------
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 12	(file "src/get_nearer_index.c", line 16, in get_nearness)
-fore_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 11	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 12	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 12	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
+fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
+back_nearness: 3	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 14	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 11	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 12	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 69	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
-"NOT_FOUND": NOT_FOUND	(file "src/exec_one_hundred_or_less.c", line 252, in get_rotation_type_and_num_b)
-target_i: 8	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
-a_rotation_info->num: 1	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
-a_rotation_info->rotation_type: 1	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rrr
-       a: 13    b: 9
-
-      69    7859
-    9842    7345
-    9250    5751
-    1062    4087
-    9120    3875
-    3606    2949
-      38    1415
-    3860    1281
-    6670    1126
-    8776
-    4214
-    5309
-    7124
-----------------------------------------
-pb
-       a: 12    b: 10
-
-    9842      69
-    9250    7859
-    1062    7345
-    9120    5751
-    3606    4087
-      38    3875
-    3860    2949
-    6670    1415
-    8776    1281
-    4214    1126
-    5309
-    7124
-----------------------------------------
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 14	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 11	(file "src/get_nearer_index.c", line 16, in get_nearness)
-fore_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 10	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 11	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 11	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 10	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 11	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 7124	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
-target_i: 3	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
-a_rotation_info->num: 1	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
-a_rotation_info->rotation_type: 1	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rra
-       a: 12    b: 10
-
-    7124      69
-    9842    7859
-    9250    7345
-    1062    5751
-    9120    4087
-    3606    3875
-      38    2949
-    3860    1415
-    6670    1281
-    8776    1126
-    4214
-    5309
-----------------------------------------
-rb
-       a: 12    b: 10
-
-    7124    7859
-    9842    7345
-    9250    5751
-    1062    4087
-    9120    3875
-    3606    2949
-      38    1415
-    3860    1281
-    6670    1126
-    8776      69
-    4214
-    5309
-----------------------------------------
-rb
-       a: 12    b: 10
-
-    7124    7345
-    9842    5751
-    9250    4087
-    1062    3875
-    9120    2949
-    3606    1415
-      38    1281
-    3860    1126
-    6670      69
-    8776    7859
-    4214
-    5309
-----------------------------------------
-rb
-       a: 12    b: 10
-
-    7124    5751
-    9842    4087
-    9250    3875
-    1062    2949
-    9120    1415
-    3606    1281
-      38    1126
-    3860      69
-    6670    7859
-    8776    7345
-    4214
-    5309
-----------------------------------------
-pb
-       a: 11    b: 11
-
-    9842    7124
-    9250    5751
-    1062    4087
-    9120    3875
-    3606    2949
-      38    1415
-    3860    1281
-    6670    1126
-    8776      69
-    4214    7859
-    5309    7345
-----------------------------------------
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 10	(file "src/get_nearer_index.c", line 16, in get_nearness)
-fore_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 9	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 10	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 10	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 9	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 10	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 5309	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
-target_i: 2	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
-a_rotation_info->num: 1	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
-a_rotation_info->rotation_type: 1	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rra
-       a: 11    b: 11
-
-    5309    7124
-    9842    5751
-    9250    4087
-    1062    3875
-    9120    2949
-    3606    1415
-      38    1281
-    3860    1126
-    6670      69
-    8776    7859
-    4214    7345
-----------------------------------------
-rb
-       a: 11    b: 11
-
-    5309    5751
-    9842    4087
-    9250    3875
-    1062    2949
-    9120    1415
-    3606    1281
-      38    1126
-    3860      69
-    6670    7859
-    8776    7345
-    4214    7124
-----------------------------------------
-rb
-       a: 11    b: 11
-
-    5309    4087
-    9842    3875
-    9250    2949
-    1062    1415
-    9120    1281
-    3606    1126
-      38      69
-    3860    7859
-    6670    7345
-    8776    7124
-    4214    5751
-----------------------------------------
-pb
-       a: 10    b: 12
-
-    9842    5309
-    9250    4087
-    1062    3875
-    9120    2949
-    3606    1415
-      38    1281
-    3860    1126
-    6670      69
-    8776    7859
-    4214    7345
-            7124
-            5751
-----------------------------------------
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 9	(file "src/get_nearer_index.c", line 16, in get_nearness)
-fore_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 8	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 9	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 9	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 8	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 9	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 4214	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 1782	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
 target_i: 1	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
-a_rotation_info->num: 1	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
-a_rotation_info->rotation_type: 1	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rra
-       a: 10    b: 12
-
-    4214    5309
-    9842    4087
-    9250    3875
-    1062    2949
-    9120    1415
-    3606    1281
-      38    1126
-    3860      69
-    6670    7859
-    8776    7345
-            7124
-            5751
-----------------------------------------
+a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
+a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
 rb
-       a: 10    b: 12
+       a: 14    b: 8
 
-    4214    4087
-    9842    3875
-    9250    2949
-    1062    1415
-    9120    1281
-    3606    1126
-      38      69
-    3860    7859
-    6670    7345
-    8776    7124
-            5751
-            5309
+    1782    1415
+    3679     420
+    8986     222
+    5382     155
+    2693    7159
+    5362    5175
+    3508    3052
+    3988    3051
+    1280
+    8634
+    7843
+    9355
+    9701
+    9491
 ----------------------------------------
 pb
-       a: 9    b: 13
+       a: 13    b: 9
 
-    9842    4214
-    9250    4087
-    1062    3875
-    9120    2949
-    3606    1415
-      38    1281
-    3860    1126
-    6670      69
-    8776    7859
-            7345
-            7124
-            5751
-            5309
+    3679    1782
+    8986    1415
+    5382     420
+    2693     222
+    5362     155
+    3508    7159
+    3988    5175
+    1280    3052
+    8634    3051
+    7843
+    9355
+    9701
+    9491
 ----------------------------------------
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 8	(file "src/get_nearer_index.c", line 16, in get_nearness)
-fore_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 7	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 8	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 8	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 7	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 8	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 8776	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
-target_i: 8	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
-a_rotation_info->num: 1	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
-a_rotation_info->rotation_type: 1	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rrr
-       a: 9    b: 13
-
-    8776    5309
-    9842    4214
-    9250    4087
-    1062    3875
-    9120    2949
-    3606    1415
-      38    1281
-    3860    1126
-    6670      69
-            7859
-            7345
-            7124
-            5751
-----------------------------------------
-rrb
-       a: 9    b: 13
-
-    8776    5751
-    9842    5309
-    9250    4214
-    1062    4087
-    9120    3875
-    3606    2949
-      38    1415
-    3860    1281
-    6670    1126
-              69
-            7859
-            7345
-            7124
-----------------------------------------
-rrb
-       a: 9    b: 13
-
-    8776    7124
-    9842    5751
-    9250    5309
-    1062    4214
-    9120    4087
-    3606    3875
-      38    2949
-    3860    1415
-    6670    1281
-            1126
-              69
-            7859
-            7345
-----------------------------------------
-rrb
-       a: 9    b: 13
-
-    8776    7345
-    9842    7124
-    9250    5751
-    1062    5309
-    9120    4214
-    3606    4087
-      38    3875
-    3860    2949
-    6670    1415
-            1281
-            1126
-              69
-            7859
-----------------------------------------
-rrb
-       a: 9    b: 13
-
-    8776    7859
-    9842    7345
-    9250    7124
-    1062    5751
-    9120    5309
-    3606    4214
-      38    4087
-    3860    3875
-    6670    2949
-            1415
-            1281
-            1126
-              69
-----------------------------------------
-pb
-       a: 8    b: 14
-
-    9842    8776
-    9250    7859
-    1062    7345
-    9120    7124
-    3606    5751
-      38    5309
-    3860    4214
-    6670    4087
-            3875
-            2949
-            1415
-            1281
-            1126
-              69
-----------------------------------------
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 7	(file "src/get_nearer_index.c", line 16, in get_nearness)
-fore_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 6	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 7	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 7	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 6	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 7	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 6670	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
-target_i: 4	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
-a_rotation_info->num: 1	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
-a_rotation_info->rotation_type: 1	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rra
-       a: 8    b: 14
-
-    6670    8776
-    9842    7859
-    9250    7345
-    1062    7124
-    9120    5751
-    3606    5309
-      38    4214
-    3860    4087
-            3875
-            2949
-            1415
-            1281
-            1126
-              69
-----------------------------------------
-rb
-       a: 8    b: 14
-
-    6670    7859
-    9842    7345
-    9250    7124
-    1062    5751
-    9120    5309
-    3606    4214
-      38    4087
-    3860    3875
-            2949
-            1415
-            1281
-            1126
-              69
-            8776
-----------------------------------------
-rb
-       a: 8    b: 14
-
-    6670    7345
-    9842    7124
-    9250    5751
-    1062    5309
-    9120    4214
-    3606    4087
-      38    3875
-    3860    2949
-            1415
-            1281
-            1126
-              69
-            8776
-            7859
-----------------------------------------
-rb
-       a: 8    b: 14
-
-    6670    7124
-    9842    5751
-    9250    5309
-    1062    4214
-    9120    4087
-    3606    3875
-      38    2949
-    3860    1415
-            1281
-            1126
-              69
-            8776
-            7859
-            7345
-----------------------------------------
-rb
-       a: 8    b: 14
-
-    6670    5751
-    9842    5309
-    9250    4214
-    1062    4087
-    9120    3875
-    3606    2949
-      38    1415
-    3860    1281
-            1126
-              69
-            8776
-            7859
-            7345
-            7124
-----------------------------------------
-pb
-       a: 7    b: 15
-
-    9842    6670
-    9250    5751
-    1062    5309
-    9120    4214
-    3606    4087
-      38    3875
-    3860    2949
-            1415
-            1281
-            1126
-              69
-            8776
-            7859
-            7345
-            7124
-----------------------------------------
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 6	(file "src/get_nearer_index.c", line 16, in get_nearness)
-fore_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 5	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 6	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 6	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 5	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 6	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 3860	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
-target_i: 6	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
-a_rotation_info->num: 1	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
-a_rotation_info->rotation_type: 1	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rra
-       a: 7    b: 15
-
-    3860    6670
-    9842    5751
-    9250    5309
-    1062    4214
-    9120    4087
-    3606    3875
-      38    2949
-            1415
-            1281
-            1126
-              69
-            8776
-            7859
-            7345
-            7124
-----------------------------------------
-rb
-       a: 7    b: 15
-
-    3860    5751
-    9842    5309
-    9250    4214
-    1062    4087
-    9120    3875
-    3606    2949
-      38    1415
-            1281
-            1126
-              69
-            8776
-            7859
-            7345
-            7124
-            6670
-----------------------------------------
-rb
-       a: 7    b: 15
-
-    3860    5309
-    9842    4214
-    9250    4087
-    1062    3875
-    9120    2949
-    3606    1415
-      38    1281
-            1126
-              69
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-----------------------------------------
-rb
-       a: 7    b: 15
-
-    3860    4214
-    9842    4087
-    9250    3875
-    1062    2949
-    9120    1415
-    3606    1281
-      38    1126
-              69
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-----------------------------------------
-rb
-       a: 7    b: 15
-
-    3860    4087
-    9842    3875
-    9250    2949
-    1062    1415
-    9120    1281
-    3606    1126
-      38      69
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-----------------------------------------
-rb
-       a: 7    b: 15
-
-    3860    3875
-    9842    2949
-    9250    1415
-    1062    1281
-    9120    1126
-    3606      69
-      38    8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-----------------------------------------
-rb
-       a: 7    b: 15
-
-    3860    2949
-    9842    1415
-    9250    1281
-    1062    1126
-    9120      69
-    3606    8776
-      38    7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-----------------------------------------
-pb
-       a: 6    b: 16
-
-    9842    3860
-    9250    2949
-    1062    1415
-    9120    1281
-    3606    1126
-      38      69
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-----------------------------------------
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 5	(file "src/get_nearer_index.c", line 16, in get_nearness)
-fore_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 4	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 5	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 5	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 4	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 5	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 38	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
-"NOT_FOUND": NOT_FOUND	(file "src/exec_one_hundred_or_less.c", line 252, in get_rotation_type_and_num_b)
-target_i: 6	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
-a_rotation_info->num: 1	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
-a_rotation_info->rotation_type: 1	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rra
-       a: 6    b: 16
-
-      38    3860
-    9842    2949
-    9250    1415
-    1062    1281
-    9120    1126
-    3606      69
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-----------------------------------------
-rb
-       a: 6    b: 16
-
-      38    2949
-    9842    1415
-    9250    1281
-    1062    1126
-    9120      69
-    3606    8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-----------------------------------------
-rb
-       a: 6    b: 16
-
-      38    1415
-    9842    1281
-    9250    1126
-    1062      69
-    9120    8776
-    3606    7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            2949
-----------------------------------------
-rb
-       a: 6    b: 16
-
-      38    1281
-    9842    1126
-    9250      69
-    1062    8776
-    9120    7859
-    3606    7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            2949
-            1415
-----------------------------------------
-rb
-       a: 6    b: 16
-
-      38    1126
-    9842      69
-    9250    8776
-    1062    7859
-    9120    7345
-    3606    7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            2949
-            1415
-            1281
-----------------------------------------
-rb
-       a: 6    b: 16
-
-      38      69
-    9842    8776
-    9250    7859
-    1062    7345
-    9120    7124
-    3606    6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            2949
-            1415
-            1281
-            1126
-----------------------------------------
-rb
-       a: 6    b: 16
-
-      38    8776
-    9842    7859
-    9250    7345
-    1062    7124
-    9120    6670
-    3606    5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            2949
-            1415
-            1281
-            1126
-              69
-----------------------------------------
-pb
-       a: 5    b: 17
-
-    9842      38
-    9250    8776
-    1062    7859
-    9120    7345
-    3606    7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            2949
-            1415
-            1281
-            1126
-              69
-----------------------------------------
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 4	(file "src/get_nearer_index.c", line 16, in get_nearness)
-fore_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 3	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 4	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 4	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 3	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 4	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 3606	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
-target_i: 12	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
-a_rotation_info->num: 1	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
-a_rotation_info->rotation_type: 1	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rrr
-       a: 5    b: 17
-
-    3606      69
-    9842      38
-    9250    8776
-    1062    7859
-    9120    7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            2949
-            1415
-            1281
-            1126
-----------------------------------------
-rrb
-       a: 5    b: 17
-
-    3606    1126
-    9842      69
-    9250      38
-    1062    8776
-    9120    7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            2949
-            1415
-            1281
-----------------------------------------
-rrb
-       a: 5    b: 17
-
-    3606    1281
-    9842    1126
-    9250      69
-    1062      38
-    9120    8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            2949
-            1415
-----------------------------------------
-rrb
-       a: 5    b: 17
-
-    3606    1415
-    9842    1281
-    9250    1126
-    1062      69
-    9120      38
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            2949
-----------------------------------------
-rrb
-       a: 5    b: 17
-
-    3606    2949
-    9842    1415
-    9250    1281
-    1062    1126
-    9120      69
-              38
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-----------------------------------------
-pb
-       a: 4    b: 18
-
-    9842    3606
-    9250    2949
-    1062    1415
-    9120    1281
-            1126
-              69
-              38
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-----------------------------------------
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 3	(file "src/get_nearer_index.c", line 16, in get_nearness)
-fore_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 2	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 3	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 3	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 2	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 3	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 2	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 9120	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 10	(file "src/get_nearer_index.c", line 16, in get_nearness)
+fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
+back_nearness: 3	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 13	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 10	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 13	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 10	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 3679	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
 target_i: 7	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
-a_rotation_info->num: 1	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
-a_rotation_info->rotation_type: 1	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rra
-       a: 4    b: 18
+a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
+a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
+rrb
+       a: 13    b: 9
 
-    9120    3606
-    9842    2949
-    9250    1415
-    1062    1281
-            1126
-              69
-              38
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
+    3679    3051
+    8986    1782
+    5382    1415
+    2693     420
+    5362     222
+    3508     155
+    3988    7159
+    1280    5175
+    8634    3052
+    7843
+    9355
+    9701
+    9491
+----------------------------------------
+rrb
+       a: 13    b: 9
+
+    3679    3052
+    8986    3051
+    5382    1782
+    2693    1415
+    5362     420
+    3508     222
+    3988     155
+    1280    7159
+    8634    5175
+    7843
+    9355
+    9701
+    9491
+----------------------------------------
+pb
+       a: 12    b: 10
+
+    8986    3679
+    5382    3052
+    2693    3051
+    5362    1782
+    3508    1415
+    3988     420
+    1280     222
+    8634     155
+    7843    7159
+    9355    5175
+    9701
+    9491
+----------------------------------------
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 9	(file "src/get_nearer_index.c", line 16, in get_nearness)
+fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
+back_nearness: 3	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 12	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 9	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 12	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 9	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 8986	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+target_i: 8	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
+a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
+a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
+rrb
+       a: 12    b: 10
+
+    8986    5175
+    5382    3679
+    2693    3052
+    5362    3051
+    3508    1782
+    3988    1415
+    1280     420
+    8634     222
+    7843     155
+    9355    7159
+    9701
+    9491
+----------------------------------------
+rrb
+       a: 12    b: 10
+
+    8986    7159
+    5382    5175
+    2693    3679
+    5362    3052
+    3508    3051
+    3988    1782
+    1280    1415
+    8634     420
+    7843     222
+    9355     155
+    9701
+    9491
+----------------------------------------
+pb
+       a: 11    b: 11
+
+    5382    8986
+    2693    7159
+    5362    5175
+    3508    3679
+    3988    3052
+    1280    3051
+    8634    1782
+    7843    1415
+    9355     420
+    9701     222
+    9491     155
+----------------------------------------
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 8	(file "src/get_nearer_index.c", line 16, in get_nearness)
+fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
+back_nearness: 3	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 11	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 8	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 11	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 8	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 5382	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+target_i: 2	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
+a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
+a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
+rb
+       a: 11    b: 11
+
+    5382    7159
+    2693    5175
+    5362    3679
+    3508    3052
+    3988    3051
+    1280    1782
+    8634    1415
+    7843     420
+    9355     222
+    9701     155
+    9491    8986
 ----------------------------------------
 rb
-       a: 4    b: 18
+       a: 11    b: 11
 
-    9120    2949
-    9842    1415
-    9250    1281
-    1062    1126
-              69
-              38
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
+    5382    5175
+    2693    3679
+    5362    3052
+    3508    3051
+    3988    1782
+    1280    1415
+    8634     420
+    7843     222
+    9355     155
+    9701    8986
+    9491    7159
+----------------------------------------
+pb
+       a: 10    b: 12
+
+    2693    5382
+    5362    5175
+    3508    3679
+    3988    3052
+    1280    3051
+    8634    1782
+    7843    1415
+    9355     420
+    9701     222
+    9491     155
+            8986
+            7159
+----------------------------------------
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 7	(file "src/get_nearer_index.c", line 16, in get_nearness)
+fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
+back_nearness: 3	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 10	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 7	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 10	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 7	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 2693	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+target_i: 5	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
+a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
+a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
+rb
+       a: 10    b: 12
+
+    2693    5175
+    5362    3679
+    3508    3052
+    3988    3051
+    1280    1782
+    8634    1415
+    7843     420
+    9355     222
+    9701     155
+    9491    8986
+            7159
+            5382
 ----------------------------------------
 rb
-       a: 4    b: 18
+       a: 10    b: 12
 
-    9120    1415
-    9842    1281
-    9250    1126
-    1062      69
-              38
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    2693    3679
+    5362    3052
+    3508    3051
+    3988    1782
+    1280    1415
+    8634     420
+    7843     222
+    9355     155
+    9701    8986
+    9491    7159
+            5382
+            5175
 ----------------------------------------
 rb
-       a: 4    b: 18
+       a: 10    b: 12
 
-    9120    1281
-    9842    1126
-    9250      69
-    1062      38
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    2693    3052
+    5362    3051
+    3508    1782
+    3988    1415
+    1280     420
+    8634     222
+    7843     155
+    9355    8986
+    9701    7159
+    9491    5382
+            5175
+            3679
+----------------------------------------
+rb
+       a: 10    b: 12
+
+    2693    3051
+    5362    1782
+    3508    1415
+    3988     420
+    1280     222
+    8634     155
+    7843    8986
+    9355    7159
+    9701    5382
+    9491    5175
+            3679
+            3052
+----------------------------------------
+rb
+       a: 10    b: 12
+
+    2693    1782
+    5362    1415
+    3508     420
+    3988     222
+    1280     155
+    8634    8986
+    7843    7159
+    9355    5382
+    9701    5175
+    9491    3679
+            3052
+            3051
+----------------------------------------
+pb
+       a: 9    b: 13
+
+    5362    2693
+    3508    1782
+    3988    1415
+    1280     420
+    8634     222
+    7843     155
+    9355    8986
+    9701    7159
+    9491    5382
+            5175
+            3679
+            3052
+            3051
+----------------------------------------
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 6	(file "src/get_nearer_index.c", line 16, in get_nearness)
+fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
+back_nearness: 3	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 9	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 6	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 9	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 6	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 5362	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+target_i: 9	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
+a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
+a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
+rrb
+       a: 9    b: 13
+
+    5362    3051
+    3508    2693
+    3988    1782
+    1280    1415
+    8634     420
+    7843     222
+    9355     155
+    9701    8986
+    9491    7159
+            5382
+            5175
+            3679
+            3052
+----------------------------------------
+rrb
+       a: 9    b: 13
+
+    5362    3052
+    3508    3051
+    3988    2693
+    1280    1782
+    8634    1415
+    7843     420
+    9355     222
+    9701     155
+    9491    8986
+            7159
+            5382
+            5175
+            3679
+----------------------------------------
+rrb
+       a: 9    b: 13
+
+    5362    3679
+    3508    3052
+    3988    3051
+    1280    2693
+    8634    1782
+    7843    1415
+    9355     420
+    9701     222
+    9491     155
+            8986
+            7159
+            5382
+            5175
+----------------------------------------
+rrb
+       a: 9    b: 13
+
+    5362    5175
+    3508    3679
+    3988    3052
+    1280    3051
+    8634    2693
+    7843    1782
+    9355    1415
+    9701     420
+    9491     222
+             155
+            8986
+            7159
+            5382
+----------------------------------------
+pb
+       a: 8    b: 14
+
+    3508    5362
+    3988    5175
+    1280    3679
+    8634    3052
+    7843    3051
+    9355    2693
+    9701    1782
+    9491    1415
+             420
+             222
+             155
+            8986
+            7159
+            5382
+----------------------------------------
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 5	(file "src/get_nearer_index.c", line 16, in get_nearness)
+fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
+back_nearness: 3	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 8	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 5	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 8	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 5	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 3508	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+target_i: 3	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
+a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
+a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
+rb
+       a: 8    b: 14
+
+    3508    5175
+    3988    3679
+    1280    3052
+    8634    3051
+    7843    2693
+    9355    1782
+    9701    1415
+    9491     420
+             222
+             155
+            8986
+            7159
+            5382
+            5362
+----------------------------------------
+rb
+       a: 8    b: 14
+
+    3508    3679
+    3988    3052
+    1280    3051
+    8634    2693
+    7843    1782
+    9355    1415
+    9701     420
+    9491     222
+             155
+            8986
+            7159
+            5382
+            5362
+            5175
+----------------------------------------
+rb
+       a: 8    b: 14
+
+    3508    3052
+    3988    3051
+    1280    2693
+    8634    1782
+    7843    1415
+    9355     420
+    9701     222
+    9491     155
+            8986
+            7159
+            5382
+            5362
+            5175
+            3679
+----------------------------------------
+pb
+       a: 7    b: 15
+
+    3988    3508
+    1280    3052
+    8634    3051
+    7843    2693
+    9355    1782
+    9701    1415
+    9491     420
+             222
+             155
+            8986
+            7159
+            5382
+            5362
+            5175
+            3679
+----------------------------------------
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 4	(file "src/get_nearer_index.c", line 16, in get_nearness)
+fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
+back_nearness: 3	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 7	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 4	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 7	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 4	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 3988	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+target_i: 14	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
+a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
+a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
+rrb
+       a: 7    b: 15
+
+    3988    3679
+    1280    3508
+    8634    3052
+    7843    3051
+    9355    2693
+    9701    1782
+    9491    1415
+             420
+             222
+             155
+            8986
+            7159
+            5382
+            5362
+            5175
+----------------------------------------
+pb
+       a: 6    b: 16
+
+    1280    3988
+    8634    3679
+    7843    3508
+    9355    3052
+    9701    3051
+    9491    2693
+            1782
+            1415
+             420
+             222
+             155
+            8986
+            7159
+            5382
+            5362
+            5175
+----------------------------------------
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 3	(file "src/get_nearer_index.c", line 16, in get_nearness)
+fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
+back_nearness: 3	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 6	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 3	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 6	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 3	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 3	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 1280	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+target_i: 8	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
+a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
+a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
+rb
+       a: 6    b: 16
+
+    1280    3679
+    8634    3508
+    7843    3052
+    9355    3051
+    9701    2693
+    9491    1782
+            1415
+             420
+             222
+             155
+            8986
+            7159
+            5382
+            5362
+            5175
+            3988
+----------------------------------------
+rb
+       a: 6    b: 16
+
+    1280    3508
+    8634    3052
+    7843    3051
+    9355    2693
+    9701    1782
+    9491    1415
+             420
+             222
+             155
+            8986
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+----------------------------------------
+rb
+       a: 6    b: 16
+
+    1280    3052
+    8634    3051
+    7843    2693
+    9355    1782
+    9701    1415
+    9491     420
+             222
+             155
+            8986
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+----------------------------------------
+rb
+       a: 6    b: 16
+
+    1280    3051
+    8634    2693
+    7843    1782
+    9355    1415
+    9701     420
+    9491     222
+             155
+            8986
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+----------------------------------------
+rb
+       a: 6    b: 16
+
+    1280    2693
+    8634    1782
+    7843    1415
+    9355     420
+    9701     222
+    9491     155
+            8986
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+----------------------------------------
+rb
+       a: 6    b: 16
+
+    1280    1782
+    8634    1415
+    7843     420
+    9355     222
+    9701     155
+    9491    8986
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+----------------------------------------
+rb
+       a: 6    b: 16
+
+    1280    1415
+    8634     420
+    7843     222
+    9355     155
+    9701    8986
+    9491    7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
+----------------------------------------
+rb
+       a: 6    b: 16
+
+    1280     420
+    8634     222
+    7843     155
+    9355    8986
+    9701    7159
+    9491    5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
 ----------------------------------------
-rb
-       a: 4    b: 18
+pb
+       a: 5    b: 17
 
-    9120    1126
-    9842      69
-    9250      38
-    1062    8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    8634    1280
+    7843     420
+    9355     222
+    9701     155
+    9491    8986
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
+----------------------------------------
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 2	(file "src/get_nearer_index.c", line 16, in get_nearness)
+fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
+back_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 5	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 2	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 2	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 5	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 2	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 2	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 8634	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+target_i: 5	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
+a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
+a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
+rb
+       a: 5    b: 17
+
+    8634     420
+    7843     222
+    9355     155
+    9701    8986
+    9491    7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
+            1415
+            1280
 ----------------------------------------
 rb
+       a: 5    b: 17
+
+    8634     222
+    7843     155
+    9355    8986
+    9701    7159
+    9491    5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
+            1415
+            1280
+             420
+----------------------------------------
+rb
+       a: 5    b: 17
+
+    8634     155
+    7843    8986
+    9355    7159
+    9701    5382
+    9491    5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
+            1415
+            1280
+             420
+             222
+----------------------------------------
+rb
+       a: 5    b: 17
+
+    8634    8986
+    7843    7159
+    9355    5382
+    9701    5362
+    9491    5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
+            1415
+            1280
+             420
+             222
+             155
+----------------------------------------
+rb
+       a: 5    b: 17
+
+    8634    7159
+    7843    5382
+    9355    5362
+    9701    5175
+    9491    3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
+            1415
+            1280
+             420
+             222
+             155
+            8986
+----------------------------------------
+pb
        a: 4    b: 18
 
-    9120      69
-    9842      38
-    9250    8776
-    1062    7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    7843    8634
+    9355    7159
+    9701    5382
+    9491    5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
+            1280
+             420
+             222
+             155
+            8986
 ----------------------------------------
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 1	(file "src/get_nearer_index.c", line 16, in get_nearness)
+fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
+back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 4	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 1	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 4	(file "src/get_nearer_index.c", line 16, in get_nearness)
+index: 3	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 1	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 7843	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+target_i: 1	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
+a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
+a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
 rb
        a: 4    b: 18
 
-    9120      38
-    9842    8776
-    9250    7859
-    1062    7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    7843    7159
+    9355    5382
+    9701    5362
+    9491    5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-              69
-----------------------------------------
-rb
-       a: 4    b: 18
-
-    9120    8776
-    9842    7859
-    9250    7345
-    1062    7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
-            1415
-            1281
-            1126
-              69
-              38
+            1280
+             420
+             222
+             155
+            8986
+            8634
 ----------------------------------------
 pb
        a: 3    b: 19
 
-    9842    9120
-    9250    8776
-    1062    7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    9355    7843
+    9701    7159
+    9491    5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-              69
-              38
+            1280
+             420
+             222
+             155
+            8986
+            8634
 ----------------------------------------
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 2	(file "src/get_nearer_index.c", line 16, in get_nearness)
-fore_nearness: 2	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
-back_nearness: 1	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 1	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 2	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 1	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 2	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
-fore_index: 2	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
-back_index: 1	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
-index: 2	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 1	(file "src/get_nearer_index.c", line 16, in get_nearness)
-index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
-back_index: 2	(file "src/get_nearer_index.c", line 16, in get_nearness)
-nearness1: 1	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
-nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 1062	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
+fore_nearness: 0	(file "src/exec_one_hundred_or_less.c", line 146, in get_rotation_type_and_num_a)
+back_nearness: 4294967295	(file "src/exec_one_hundred_or_less.c", line 147, in get_rotation_type_and_num_a)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 3	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 4294967295	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i): 0	(file "src/exec_one_hundred_or_less.c", line 389, in deal_chunk_range)
+fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 123, in get_nearest_target_index)
+back_index: 3	(file "src/exec_one_hundred_or_less.c", line 124, in get_nearest_target_index)
+index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
+back_index: 3	(file "src/get_nearer_index.c", line 16, in get_nearness)
+nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
+nearness2: 4294967295	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
+a_target_num: 9355	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
 target_i: 17	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
-a_rotation_info->num: 1	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
-a_rotation_info->rotation_type: 1	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
-rrr
+a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
+a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
+rrb
        a: 3    b: 19
 
-    1062      38
-    9842    9120
-    9250    8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    9355    8634
+    9701    7843
+    9491    7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-              69
+            1280
+             420
+             222
+             155
+            8986
 ----------------------------------------
 rrb
        a: 3    b: 19
 
-    1062      69
-    9842      38
-    9250    9120
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    9355    8986
+    9701    8634
+    9491    7843
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
+            1280
+             420
+             222
+             155
 ----------------------------------------
 pb
        a: 2    b: 20
 
-    9842    1062
-    9250      69
-              38
-            9120
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    9701    9355
+    9491    8986
+            8634
+            7843
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-----------------------------------------
-rb
-       a: 2    b: 20
-
-    9842      69
-    9250      38
-            9120
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
-            1415
-            1281
-            1126
-            1062
-----------------------------------------
-rb
-       a: 2    b: 20
-
-    9842      38
-    9250    9120
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
-            1415
-            1281
-            1126
-            1062
-              69
-----------------------------------------
-rb
-       a: 2    b: 20
-
-    9842    9120
-    9250    8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
-            1415
-            1281
-            1126
-            1062
-              69
-              38
+            1280
+             420
+             222
+             155
 ----------------------------------------
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
 back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
@@ -2194,34 +1819,34 @@ index: 1	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 1	(file "src/get_nearer_index.c", line 16, in get_nearness)
 nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
 nearness2: 1	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 9842	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+a_target_num: 9701	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
 target_i: 0	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
 a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
 a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
 pb
        a: 1    b: 21
 
-    9250    9842
-            9120
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    9491    9701
+            9355
+            8986
+            8634
+            7843
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-            1062
-              69
-              38
+            1280
+             420
+             222
+             155
 ----------------------------------------
 fore_index: 0	(file "src/exec_one_hundred_or_less.c", line 139, in get_rotation_type_and_num_a)
 back_index: 1	(file "src/exec_one_hundred_or_less.c", line 140, in get_rotation_type_and_num_a)
@@ -2240,536 +1865,536 @@ index: 0	(file "src/get_nearer_index.c", line 15, in get_nearness)
 back_index: 1	(file "src/get_nearer_index.c", line 16, in get_nearness)
 nearness1: 0	(file "src/exec_one_hundred_or_less.c", line 102, in get_nearer_index)
 nearness2: 4294967295	(file "src/exec_one_hundred_or_less.c", line 103, in get_nearer_index)
-a_target_num: 9250	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
+a_target_num: 9491	(file "src/exec_one_hundred_or_less.c", line 391, in deal_chunk_range)
 target_i: 1	(file "src/exec_one_hundred_or_less.c", line 255, in get_rotation_type_and_num_b)
 a_rotation_info->num: 0	(file "src/exec_one_hundred_or_less.c", line 397, in deal_chunk_range)
 a_rotation_info->rotation_type: 0	(file "src/exec_one_hundred_or_less.c", line 398, in deal_chunk_range)
 rb
        a: 1    b: 21
 
-    9250    9120
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    9491    9355
+            8986
+            8634
+            7843
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-            1062
-              69
-              38
-            9842
+            1280
+             420
+             222
+             155
+            9701
 ----------------------------------------
 pb
        a: 0    b: 22
 
-            9250
-            9120
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+            9491
+            9355
+            8986
+            8634
+            7843
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-            1062
-              69
-              38
-            9842
+            1280
+             420
+             222
+             155
+            9701
 ----------------------------------------
 rrb
        a: 0    b: 22
 
-            9842
-            9250
-            9120
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+            9701
+            9491
+            9355
+            8986
+            8634
+            7843
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-            1062
-              69
-              38
+            1280
+             420
+             222
+             155
 ----------------------------------------
 pa
        a: 1    b: 21
 
-    9842    9250
-            9120
-            8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    9701    9491
+            9355
+            8986
+            8634
+            7843
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-            1062
-              69
-              38
+            1280
+             420
+             222
+             155
 ----------------------------------------
 pa
        a: 2    b: 20
 
-    9250    9120
-    9842    8776
-            7859
-            7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    9491    9355
+    9701    8986
+            8634
+            7843
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-            1062
-              69
-              38
+            1280
+             420
+             222
+             155
 ----------------------------------------
 pa
        a: 3    b: 19
 
-    9120    8776
-    9250    7859
-    9842    7345
-            7124
-            6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    9355    8986
+    9491    8634
+    9701    7843
+            7159
+            5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-            1062
-              69
-              38
+            1280
+             420
+             222
+             155
 ----------------------------------------
 pa
        a: 4    b: 18
 
-    8776    7859
-    9120    7345
-    9250    7124
-    9842    6670
-            5751
-            5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    8986    8634
+    9355    7843
+    9491    7159
+    9701    5382
+            5362
+            5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-            1062
-              69
-              38
+            1280
+             420
+             222
+             155
 ----------------------------------------
 pa
        a: 5    b: 17
 
-    7859    7345
-    8776    7124
-    9120    6670
-    9250    5751
-    9842    5309
-            4214
-            4087
-            3875
-            3860
-            3606
-            2949
+    8634    7843
+    8986    7159
+    9355    5382
+    9491    5362
+    9701    5175
+            3988
+            3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-            1062
-              69
-              38
+            1280
+             420
+             222
+             155
 ----------------------------------------
 pa
        a: 6    b: 16
 
-    7345    7124
-    7859    6670
-    8776    5751
-    9120    5309
-    9250    4214
-    9842    4087
-            3875
-            3860
-            3606
-            2949
+    7843    7159
+    8634    5382
+    8986    5362
+    9355    5175
+    9491    3988
+    9701    3679
+            3508
+            3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-            1062
-              69
-              38
+            1280
+             420
+             222
+             155
 ----------------------------------------
 pa
        a: 7    b: 15
 
-    7124    6670
-    7345    5751
-    7859    5309
-    8776    4214
-    9120    4087
-    9250    3875
-    9842    3860
-            3606
-            2949
+    7159    5382
+    7843    5362
+    8634    5175
+    8986    3988
+    9355    3679
+    9491    3508
+    9701    3052
+            3051
+            2693
+            1782
             1415
-            1281
-            1126
-            1062
-              69
-              38
+            1280
+             420
+             222
+             155
 ----------------------------------------
 pa
        a: 8    b: 14
 
-    6670    5751
-    7124    5309
-    7345    4214
-    7859    4087
-    8776    3875
-    9120    3860
-    9250    3606
-    9842    2949
+    5382    5362
+    7159    5175
+    7843    3988
+    8634    3679
+    8986    3508
+    9355    3052
+    9491    3051
+    9701    2693
+            1782
             1415
-            1281
-            1126
-            1062
-              69
-              38
+            1280
+             420
+             222
+             155
 ----------------------------------------
 pa
        a: 9    b: 13
 
-    5751    5309
-    6670    4214
-    7124    4087
-    7345    3875
-    7859    3860
-    8776    3606
-    9120    2949
-    9250    1415
-    9842    1281
-            1126
-            1062
-              69
-              38
+    5362    5175
+    5382    3988
+    7159    3679
+    7843    3508
+    8634    3052
+    8986    3051
+    9355    2693
+    9491    1782
+    9701    1415
+            1280
+             420
+             222
+             155
 ----------------------------------------
 pa
        a: 10    b: 12
 
-    5309    4214
-    5751    4087
-    6670    3875
-    7124    3860
-    7345    3606
-    7859    2949
-    8776    1415
-    9120    1281
-    9250    1126
-    9842    1062
-              69
-              38
+    5175    3988
+    5362    3679
+    5382    3508
+    7159    3052
+    7843    3051
+    8634    2693
+    8986    1782
+    9355    1415
+    9491    1280
+    9701     420
+             222
+             155
 ----------------------------------------
 pa
        a: 11    b: 11
 
-    4214    4087
-    5309    3875
-    5751    3860
-    6670    3606
-    7124    2949
-    7345    1415
-    7859    1281
-    8776    1126
-    9120    1062
-    9250      69
-    9842      38
+    3988    3679
+    5175    3508
+    5362    3052
+    5382    3051
+    7159    2693
+    7843    1782
+    8634    1415
+    8986    1280
+    9355     420
+    9491     222
+    9701     155
 ----------------------------------------
 pa
        a: 12    b: 10
 
-    4087    3875
-    4214    3860
-    5309    3606
-    5751    2949
-    6670    1415
-    7124    1281
-    7345    1126
-    7859    1062
-    8776      69
-    9120      38
-    9250
-    9842
+    3679    3508
+    3988    3052
+    5175    3051
+    5362    2693
+    5382    1782
+    7159    1415
+    7843    1280
+    8634     420
+    8986     222
+    9355     155
+    9491
+    9701
 ----------------------------------------
 pa
        a: 13    b: 9
 
-    3875    3860
-    4087    3606
-    4214    2949
-    5309    1415
-    5751    1281
-    6670    1126
-    7124    1062
-    7345      69
-    7859      38
-    8776
-    9120
-    9250
-    9842
+    3508    3052
+    3679    3051
+    3988    2693
+    5175    1782
+    5362    1415
+    5382    1280
+    7159     420
+    7843     222
+    8634     155
+    8986
+    9355
+    9491
+    9701
 ----------------------------------------
 pa
        a: 14    b: 8
 
-    3860    3606
-    3875    2949
-    4087    1415
-    4214    1281
-    5309    1126
-    5751    1062
-    6670      69
-    7124      38
-    7345
-    7859
-    8776
-    9120
-    9250
-    9842
+    3052    3051
+    3508    2693
+    3679    1782
+    3988    1415
+    5175    1280
+    5362     420
+    5382     222
+    7159     155
+    7843
+    8634
+    8986
+    9355
+    9491
+    9701
 ----------------------------------------
 pa
        a: 15    b: 7
 
-    3606    2949
-    3860    1415
-    3875    1281
-    4087    1126
-    4214    1062
-    5309      69
-    5751      38
-    6670
-    7124
-    7345
-    7859
-    8776
-    9120
-    9250
-    9842
+    3051    2693
+    3052    1782
+    3508    1415
+    3679    1280
+    3988     420
+    5175     222
+    5362     155
+    5382
+    7159
+    7843
+    8634
+    8986
+    9355
+    9491
+    9701
 ----------------------------------------
 pa
        a: 16    b: 6
 
-    2949    1415
-    3606    1281
-    3860    1126
-    3875    1062
-    4087      69
-    4214      38
-    5309
-    5751
-    6670
-    7124
-    7345
-    7859
-    8776
-    9120
-    9250
-    9842
+    2693    1782
+    3051    1415
+    3052    1280
+    3508     420
+    3679     222
+    3988     155
+    5175
+    5362
+    5382
+    7159
+    7843
+    8634
+    8986
+    9355
+    9491
+    9701
 ----------------------------------------
 pa
        a: 17    b: 5
 
-    1415    1281
-    2949    1126
-    3606    1062
-    3860      69
-    3875      38
-    4087
-    4214
-    5309
-    5751
-    6670
-    7124
-    7345
-    7859
-    8776
-    9120
-    9250
-    9842
+    1782    1415
+    2693    1280
+    3051     420
+    3052     222
+    3508     155
+    3679
+    3988
+    5175
+    5362
+    5382
+    7159
+    7843
+    8634
+    8986
+    9355
+    9491
+    9701
 ----------------------------------------
 pa
        a: 18    b: 4
 
-    1281    1126
-    1415    1062
-    2949      69
-    3606      38
-    3860
-    3875
-    4087
-    4214
-    5309
-    5751
-    6670
-    7124
-    7345
-    7859
-    8776
-    9120
-    9250
-    9842
+    1415    1280
+    1782     420
+    2693     222
+    3051     155
+    3052
+    3508
+    3679
+    3988
+    5175
+    5362
+    5382
+    7159
+    7843
+    8634
+    8986
+    9355
+    9491
+    9701
 ----------------------------------------
 pa
        a: 19    b: 3
 
-    1126    1062
-    1281      69
-    1415      38
-    2949
-    3606
-    3860
-    3875
-    4087
-    4214
-    5309
-    5751
-    6670
-    7124
-    7345
-    7859
-    8776
-    9120
-    9250
-    9842
+    1280     420
+    1415     222
+    1782     155
+    2693
+    3051
+    3052
+    3508
+    3679
+    3988
+    5175
+    5362
+    5382
+    7159
+    7843
+    8634
+    8986
+    9355
+    9491
+    9701
 ----------------------------------------
 pa
        a: 20    b: 2
 
-    1062      69
-    1126      38
-    1281
+     420     222
+    1280     155
     1415
-    2949
-    3606
-    3860
-    3875
-    4087
-    4214
-    5309
-    5751
-    6670
-    7124
-    7345
-    7859
-    8776
-    9120
-    9250
-    9842
+    1782
+    2693
+    3051
+    3052
+    3508
+    3679
+    3988
+    5175
+    5362
+    5382
+    7159
+    7843
+    8634
+    8986
+    9355
+    9491
+    9701
 ----------------------------------------
 pa
        a: 21    b: 1
 
-      69      38
-    1062
-    1126
-    1281
+     222     155
+     420
+    1280
     1415
-    2949
-    3606
-    3860
-    3875
-    4087
-    4214
-    5309
-    5751
-    6670
-    7124
-    7345
-    7859
-    8776
-    9120
-    9250
-    9842
+    1782
+    2693
+    3051
+    3052
+    3508
+    3679
+    3988
+    5175
+    5362
+    5382
+    7159
+    7843
+    8634
+    8986
+    9355
+    9491
+    9701
 ----------------------------------------
 pa
        a: 22    b: 0
 
-      38
-      69
-    1062
-    1126
-    1281
+     155
+     222
+     420
+    1280
     1415
-    2949
-    3606
-    3860
-    3875
-    4087
-    4214
-    5309
-    5751
-    6670
-    7124
-    7345
-    7859
-    8776
-    9120
-    9250
-    9842
+    1782
+    2693
+    3051
+    3052
+    3508
+    3679
+    3988
+    5175
+    5362
+    5382
+    7159
+    7843
+    8634
+    8986
+    9355
+    9491
+    9701
 ----------------------------------------
-operation count: 108
+operation count: 90

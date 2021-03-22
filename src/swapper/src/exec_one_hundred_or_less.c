@@ -139,7 +139,7 @@ t_rotation_info *get_rotation_type_and_num_a(t_num *stack_a, int chunk_max_nums[
 	DSZ(fore_index);
 	DSZ(back_index);
 	const size_t	nums_num = lstsize(stack_a);
-	// 改造中。元の
+	// 改造中。元の。こっちが正しいのかもしれない。
 	// const size_t	fore_nearness = get_nearness(fore_index, nums_num);
 	const size_t	fore_nearness = fore_index;
 	const size_t	back_nearness = get_nearness(back_index, nums_num);

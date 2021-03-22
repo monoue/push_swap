@@ -43,7 +43,7 @@ void	bring_target_index_to_top(t_num **stack_a, t_num **stack_b, size_t target_i
 	if (target_index == 0)
 		return ;
 	index = 0;
-	if (target_index < nums_num / 2)
+	if (target_index <= nums_num / 2)
 	{
 		while (index < target_index)
 		{

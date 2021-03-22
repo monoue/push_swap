@@ -5,7 +5,7 @@
 #include "libft.h"
 #include "operation.h"
 
-static size_t	get_nearness(size_t index, size_t nums_num)
+size_t	get_nearness(size_t index, size_t nums_num)
 {
 	size_t	back_index;
 
@@ -30,12 +30,13 @@ size_t	get_nearer_index(size_t	i1, size_t i2, size_t nums_num)
 }
 
 
-t_rotation_info *get_rotation_type_and_num_a2(size_t fore_nearness, size_t back_nearness, size_t nums_num)
+t_rotation_info *get_rotation_type_and_num_a2(size_t fore_nearness, size_t back_nearness)
 {
 	t_rotation_info	*rotation_info;
 
 	rotation_info = malloc(sizeof(t_rotation_info));
-
+	if (!rotation_info)
+		exit(EXIT_FAILURE);
 	if (fore_nearness == back_nearness)
 	{
 		rotation_info->rotation_type = BOTH;

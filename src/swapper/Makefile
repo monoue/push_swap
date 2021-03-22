@@ -6,7 +6,7 @@
 #    By: monoue <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/19 13:03:14 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/22 09:38:47 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,8 +43,11 @@ BASE	  = $(COMMON_PATH)args_are_unique.c \
 			$(SRC_PATH)exec_four_or_five.c \
 			$(SRC_PATH)exec_one_hundred_or_less.c \
 			$(SRC_PATH)exec_and_put_operation.c \
-			$(SRC_PATH)is_sorted.c \
-			$(SRC_PATH)get_nearer_index.c
+			$(SRC_PATH)get_nearer_index.c \
+			$(SRC_PATH)get_num_of_target_index.c \
+			$(SRC_PATH)get_rotation_type_and_num.c \
+			$(SRC_PATH)get_zero_rotation.c \
+			$(SRC_PATH)is_sorted.c
 
 TEST_FILES = test_main.c \
 				$(TEST_PATH)test_functions.c

@@ -5,6 +5,25 @@
 #include "libft.h"
 #include "operation.h"
 
+// void	set_chunk_max_nums(int chunk_max_nums[], size_t chunks_num, int sorted_array[], size_t nums_num)
+// {
+// 	size_t	src_i;
+// 	size_t	dst_i;
+
+// 	src_i = 0;
+// 	dst_i = 0;
+
+
+// 	while (dst_i < chunks_num - 1)
+// 	{
+// 		chunk_max_nums[dst_i] = sorted_array[CHUNK_SIZE * (dst_i + 1) - 1];
+// 		dst_i++;
+// 	}
+// 	DI(chunk_max_nums[0]);
+// 	DI(chunk_max_nums[1]);
+// 	chunk_max_nums[dst_i] = sorted_array[nums_num - 1];
+// }
+
 void	set_chunk_max_nums(int chunk_max_nums[], size_t chunks_num, int sorted_array[], size_t nums_num)
 {
 	size_t	src_i;
@@ -12,6 +31,9 @@ void	set_chunk_max_nums(int chunk_max_nums[], size_t chunks_num, int sorted_arra
 
 	src_i = 0;
 	dst_i = 0;
+	size_t	index;
+
+	index = 0;
 	while (dst_i < chunks_num - 1)
 	{
 		chunk_max_nums[dst_i] = sorted_array[CHUNK_SIZE * (dst_i + 1) - 1];
@@ -81,7 +103,7 @@ size_t	get_nearest_target_index(t_num *stack_a, int chunk_max_nums[], size_t chu
 	return (get_nearer_index(fore_index, back_index, nums_num));
 }
 
-
+// is_within_range やる…。
 
 // 必要試行回数と、ローテーションの種類（r / rr）を、返り値と引数で返すようにする。
 t_rotation_info *get_rotation_type_and_num_a(t_num *stack_a, int chunk_max_nums[], size_t chunk_i)
@@ -92,7 +114,7 @@ t_rotation_info *get_rotation_type_and_num_a(t_num *stack_a, int chunk_max_nums[
 	const size_t	fore_nearness = get_nearness(fore_index, nums_num);
 	const size_t	back_nearness = get_nearness(back_index, nums_num);
 
-	return (get_rotation_type_and_num_a2(fore_nearness, back_nearness, nums_num));
+	return (get_rotation_type_and_num_a2(fore_nearness, back_nearness));
 }
 
 ssize_t	get_index_of_largest_num_under_designattion(t_num *stack, int designated_num)
@@ -179,19 +201,6 @@ void	set_b_for_acception(t_num **stack_a, t_num **stack_b)
 		bring_target_index_to_top(stack_a, stack_b, target_i, STACK_B);
 }
 
-
-t_rotation_info *get_zero_rotation(void)
-{
-	t_rotation_info	*rotation_info;
-
-	rotation_info = malloc(sizeof(t_rotation_info));
-	if (!rotation_info)
-		exit(EXIT_FAILURE);
-	rotation_info->rotation_type = NOTHING;
-	rotation_info->num = 0;
-	return (rotation_info);
-}
-
 // この関数も、必要試行回数と種類 (r / rr) を返すようにする。
 t_rotation_info *get_rotation_type_and_num_b(t_num *stack_b, int to_be_accepted)
 {
@@ -203,7 +212,7 @@ t_rotation_info *get_rotation_type_and_num_b(t_num *stack_b, int to_be_accepted)
 	target_i = get_index_of_largest_num_under_designattion(stack_b, to_be_accepted);
 	if (target_i == NOT_FOUND)
 		target_i = get_index_of_largest_num(stack_b);
-	return (get_rotation_type_and_num(stack_b, nums_num, target_i));
+	return (get_rotation_type_and_num(nums_num, target_i));
 }
 
 // 元
@@ -237,6 +246,73 @@ t_rotation_info *get_rotation_type_and_num_b(t_num *stack_b, int to_be_accepted)
 // 	bring_largest_num_to_top(stack_a, stack_b, STACK_B);
 // }
 
+// void	rotate_both_common_times(t_num **stack_a, t_num **stack_b, const int double_rotation_type)
+// {
+// 	while (a_info->num > 0 && b_info->num > 0)
+// 	{
+// 		if (double_rotation_type == NORMAL)
+// 			rotate_double(stack_a, stack_b);
+// 		else
+// 			reverse_rotate_double(stack_a, stack_b);
+// 		a_info->num--;
+// 		b_info->num--;
+// 	}
+// }
+
+static int	get_double_rotation_type(int a_type, int b_type)
+{
+	if (a_type == NOTHING || b_type == NOTHING)
+		return (NOTHING);
+	if ((a_type == BOTH && b_type == BOTH) || (a_type == NORMAL && b_type == NORMAL) || (a_type == NORMAL && b_type == BOTH) || (a_type == BOTH && b_type == NORMAL))
+		return (NORMAL);
+	if ((a_type == REVERSE && b_type == REVERSE) || (a_type == REVERSE && b_type == BOTH) || (a_type == BOTH && b_type == REVERSE))
+		return (REVERSE);
+	return (NOTHING);
+}
+
+static void	rotate_designated_based_on_types(t_num **stack_a, t_num **stack_b, int rotation_type, int stack_type)
+{
+	if (rotation_type == BOTH || rotation_type == NORMAL)
+		exec_and_put_operation(stack_a, stack_b, rotate_designated, stack_type);
+	else
+		exec_and_put_operation(stack_a, stack_b, reverse_rotate_designated, stack_type);
+}
+
+void	rotate_based_on_info(t_num **stack_a, t_num **stack_b, t_rotation_info *a_info, t_rotation_info *b_info)
+{
+	const int	double_rotation_type = get_double_rotation_type(a_info->rotation_type, b_info->rotation_type);
+
+	if (double_rotation_type == NORMAL || double_rotation_type == REVERSE)
+	{
+	// DI(NORMAL);
+	// DI(REVERSE);
+	// DI(BOTH);
+	// DI(NOTHING);
+	// DI(double_rotation_type);
+	// DSZ(a_info->num);
+	// DSZ(b_info->num);
+		while (a_info->num > 0 && b_info->num > 0)
+		{
+			if (double_rotation_type == NORMAL)
+				exec_and_put_operation(stack_a, stack_b, rotate_designated, DOUBLE);
+			else
+				exec_and_put_operation(stack_a, stack_b, reverse_rotate_designated, DOUBLE);
+			a_info->num--;
+			b_info->num--;
+		}
+	}
+	while (a_info->num > 0)
+	{
+		rotate_designated_based_on_types(stack_a, stack_b, a_info->rotation_type, STACK_A);
+		a_info->num--;
+	}
+	while (b_info->num > 0)
+	{
+		rotate_designated_based_on_types(stack_a, stack_b, b_info->rotation_type, STACK_B);
+		b_info->num--;
+	}
+}
+
 // 20 個までを全部扱う。
 // まず、範囲内で、先頭から一番近いものの index を検索。
 // 次に、その index に応じて、A を rotate し、target を top に持ってくる。
@@ -260,6 +336,8 @@ void	deal_chunk_range(t_num **stack_a, t_num **stack_b, int chunk_max_nums[], si
 		a_rotation_info = get_rotation_type_and_num_a(*stack_a, chunk_max_nums, chunk_i);
 		a_target_num = get_num_of_target_index(*stack_a, get_nearest_target_index(*stack_a, chunk_max_nums, chunk_i));
 		b_rotation_info = get_rotation_type_and_num_b(*stack_b, a_target_num);
+		rotate_based_on_info(stack_a, stack_b, a_rotation_info, b_rotation_info);
+		exec_and_put_operation(stack_a, stack_b, push_designated, STACK_B);
 
 		// ここから
 		// bring_target_index_to_top(stack_a, stack_b, target_i, STACK_A);

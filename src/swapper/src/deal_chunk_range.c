@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:51:22 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 13:11:31 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 13:56:36 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ void			deal_chunk_range(t_num **stack_a, t_num **stack_b,
 	int				a_target_num;
 	size_t			chunk_size;
 
-	chunk_size = (lstsize(*stack_a) + lstsize(*stack_b));
+	chunk_size = get_chunk_size(lstsize(*stack_a) + lstsize(*stack_b));
 	first_try = true;
 	while (stack_a && lstsize(*stack_a)
 							&& (first_try || lstsize(*stack_b) % chunk_size))

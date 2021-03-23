@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:55:13 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 13:38:49 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 13:47:35 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ void	exec_and_put_operation(t_num **stack_a, t_num **stack_b, t_op_func func,
 		{"rrb", &reverse_rotate_designated, STACK_B},
 		{"rrr", &reverse_rotate_designated, DOUBLE}, {NULL, NULL, STACKS_NUM}
 	};
-	t_op_func_set2		set;
-	size_t				index;
+	t_op_func_set2			set;
+	size_t					index;
 
 	index = 0;
 	while (sets[index].str)

@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/02 11:56:31 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/22 11:01:24 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 16:58:11 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,5 +143,6 @@ int					ft_min_int(int a, int b);
 size_t				ft_max_size_t(size_t a, size_t b);
 int					ft_max_int(int a, int b);
 void				ft_putnbr_err(int n);
+bool				str_is_of_tabs_or_spaces(char *str);
 
 #endif

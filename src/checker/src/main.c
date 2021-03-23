@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:45:01 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 13:23:16 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 16:55:35 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int			main(int argc, char *argv[])
 	size_t	args_num;
 	char	**args;
 
-	if (argc < 2)
+	if (argc < 2 || str_is_of_tabs_or_spaces(argv[1]))
 		return (EXIT_SUCCESS);
 	if (argc == 2)
 	{

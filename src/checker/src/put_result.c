@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:45:28 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 13:10:21 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 16:46:27 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void		put_result(t_num *stack_a, bool stack_b_is_empty, size_t nums_num,
 
 	if (!stack_b_is_empty)
 	{
-		ft_putendl_err(ERROR_MESSAGE);
+		ft_putendl_err(FAILURE_MESSAGE);
 		return ;
 	}
 	success = is_sorting_success(stack_a, nums_num, nums_strs);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   defs.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:33:26 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 13:33:35 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/24 01:51:21 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # define ERROR_MESSAGE "Error"
 # define SUCCESS_MESSAGE "OK"
 # define FAILURE_MESSAGE "KO"
+# define ARG_NUM_ERROR_MESSAGE "Arg list too long"
 
 typedef struct	s_num
 {

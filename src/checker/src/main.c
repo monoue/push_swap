@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:45:01 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 16:55:35 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/24 01:49:51 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,11 @@ static int	exec(size_t args_num, char *args[])
 	t_num	*stack_a;
 	t_num	*stack_b;
 
+	if (args_num > 500)
+	{
+		ft_putendl_err(ARG_NUM_ERROR_MESSAGE);
+		return (EXIT_FAILURE);
+	}
 	if (!args_are_valid(args_num, args))
 	{
 		ft_putendl_err(ERROR_MESSAGE);

@@ -6,7 +6,7 @@
 #    By: monoue <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/23 13:21:50 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/23 14:13:55 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,10 +39,10 @@ BASE	  = $(COMMON_PATH)args_are_integers.c \
 			$(SRC_PATH)bring_target_index_to_top.c \
 			$(SRC_PATH)deal_chunk_range.c \
 			$(SRC_PATH)exec.c \
+			$(SRC_PATH)exec2.c \
 			$(SRC_PATH)exec_two.c \
 			$(SRC_PATH)exec_three.c \
 			$(SRC_PATH)exec_four_or_five.c \
-			$(SRC_PATH)exec_one_hundred_or_less.c \
 			$(SRC_PATH)exec_and_put_operation.c \
 			$(SRC_PATH)get_chunk_size.c \
 			$(SRC_PATH)get_fore_or_back_target_index.c \

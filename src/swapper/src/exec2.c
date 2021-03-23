@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:51:22 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 13:11:43 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 14:13:01 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static size_t	get_chunks_num(size_t nums_num)
 	return (nums_num / chunk_size + (nums_num % chunk_size > 0));
 }
 
-void			exec_one_hundred_or_less(t_num **stack_a, size_t nums_num,
+void			exec2(t_num **stack_a, size_t nums_num,
 															int sorted_array[])
 {
 	const size_t	chunks_num = get_chunks_num(nums_num);

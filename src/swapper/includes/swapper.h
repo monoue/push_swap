@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:56:23 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 13:32:51 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 14:13:01 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void			exec_three(t_num **stack_a);
 void			exec_four_or_five(t_num **stack_a);
 void			exec_and_put_operation(t_num **stack_a, t_num **stack_b,
 												t_op_func func, int stack_type);
-void			exec_one_hundred_or_less(t_num **stack_a, size_t nums_num,
+void			exec2(t_num **stack_a, size_t nums_num,
 															int sorted_array[]);
 size_t			get_back_target_index(t_num *stack_a, int chunk_max_nums[],
 																size_t chunk_i);

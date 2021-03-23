@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:54:01 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 13:11:51 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 14:13:01 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ void		exec(t_num **stack_a, size_t nums_num, int sorted_array[])
 	else if (nums_num < 6)
 		exec_four_or_five(stack_a);
 	else
-		exec_one_hundred_or_less(stack_a, nums_num, sorted_array);
+		exec2(stack_a, nums_num, sorted_array);
 }

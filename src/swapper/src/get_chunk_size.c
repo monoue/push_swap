@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   exec.c                                             :+:      :+:    :+:   */
+/*   get_chunk_size.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/23 06:54:01 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 13:11:51 by monoue           ###   ########.fr       */
+/*   Created: 2021/03/23 06:51:22 by monoue            #+#    #+#             */
+/*   Updated: 2021/03/23 13:11:54 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "swapper.h"
-#include "libft.h"
 #include "defs.h"
+#include "libft.h"
 #include "operation.h"
 
-void		exec(t_num **stack_a, size_t nums_num, int sorted_array[])
+size_t	get_chunk_size(size_t nums_num)
 {
-	if (is_sorted(*stack_a))
-		;
-	else if (nums_num == 2)
-		exec_two(*stack_a);
-	else if (nums_num == 3)
-		exec_three(stack_a);
-	else if (nums_num < 6)
-		exec_four_or_five(stack_a);
-	else
-		exec_one_hundred_or_less(stack_a, nums_num, sorted_array);
+	if (nums_num < 101)
+		return (20);
+	if (nums_num < 201)
+		return (30);
+	if (nums_num < 301)
+		return (35);
+	if (nums_num < 401)
+		return (40);
+	if (nums_num < 501)
+		return (46);
+	return (50);
 }

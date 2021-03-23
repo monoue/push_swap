@@ -6,12 +6,11 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:40:03 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 06:40:04 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 13:12:09 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include "debug.h"
 #include "swapper.h"
 #include "defs.h"
 #include "libft.h"

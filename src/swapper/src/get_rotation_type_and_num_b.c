@@ -6,18 +6,18 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:49:30 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 09:22:41 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 13:12:13 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include "debug.h"
 #include "swapper.h"
 #include "defs.h"
 #include "libft.h"
 #include "operation.h"
 
-static t_rotation_info	*get_rotation_type_and_num_b2(size_t nums_num, size_t target_i)
+static t_rotation_info	*get_rotation_type_and_num_b2(size_t nums_num,
+																size_t target_i)
 {
 	t_rotation_info	*rotation_info;
 	const size_t	middle_i = nums_num / 2;
@@ -40,7 +40,8 @@ static t_rotation_info	*get_rotation_type_and_num_b2(size_t nums_num, size_t tar
 	return (rotation_info);
 }
 
-static ssize_t			get_index_of_largest_num_under_designattion(t_num *stack, int designated_num)
+static ssize_t			get_index_of_largest_num_under_designation(t_num *stack,
+															int designated_num)
 {
 	int		largest_under_designation;
 	int		current_num;
@@ -67,14 +68,15 @@ static ssize_t			get_index_of_largest_num_under_designattion(t_num *stack, int d
 	return (ret_i);
 }
 
-t_rotation_info			*get_rotation_type_and_num_b(t_num *stack_b, int to_be_accepted)
+t_rotation_info			*get_rotation_type_and_num_b(t_num *stack_b,
+															int to_be_accepted)
 {
 	const size_t	nums_num = lstsize(stack_b);
 	ssize_t			target_i;
 
 	if (!stack_b || lstsize(stack_b) < 2)
 		return (get_zero_rotation());
-	target_i = get_index_of_largest_num_under_designattion(stack_b,
+	target_i = get_index_of_largest_num_under_designation(stack_b,
 																to_be_accepted);
 	if (target_i == NOT_FOUND)
 		target_i = get_index_of_largest_num(stack_b);

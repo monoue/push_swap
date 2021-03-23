@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include "debug.h"
 #include "swapper.h"
 
 bool	is_sorted(t_num *stack)

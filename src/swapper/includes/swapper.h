@@ -6,16 +6,12 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:56:23 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 09:20:36 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 13:32:51 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SWAPPER_H
 # define SWAPPER_H
-
-# define CHUNK_SIZE 30
-
-int	g_count;
 
 typedef struct	s_pattern_set
 {
@@ -50,8 +46,6 @@ typedef enum	e_pattern
 	PATTERNS_NUM
 }				t_pattern;
 
-typedef void	(*t_op_func)(t_num **, t_num **, int);
-
 bool			args_are_integers(size_t argc, char *argv[]);
 void			bring_target_index_to_top(t_num **stack_a, t_num **stack_b,
 										size_t target_index, int stack_type);
@@ -62,13 +56,13 @@ bool			is_sorted(t_num *stack);
 void			exec_two(t_num *stack_a);
 void			exec_three(t_num **stack_a);
 void			exec_four_or_five(t_num **stack_a);
-// void			exec_and_put_operation(t_num **stack_a, t_num **stack_b, void(*func)(t_num **, t_num **, int), int stack_type);
 void			exec_and_put_operation(t_num **stack_a, t_num **stack_b,
 												t_op_func func, int stack_type);
 void			exec_one_hundred_or_less(t_num **stack_a, size_t nums_num,
 															int sorted_array[]);
 size_t			get_back_target_index(t_num *stack_a, int chunk_max_nums[],
 																size_t chunk_i);
+size_t			get_chunk_size(size_t nums_num);
 size_t			get_fore_target_index(t_num *stack_a, int chunk_max_nums[],
 																size_t chunk_i);
 size_t			get_index_of_largest_num(t_num *stack);

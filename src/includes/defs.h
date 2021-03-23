@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   defs.h                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/23 06:33:26 by monoue            #+#    #+#             */
+/*   Updated: 2021/03/23 13:33:35 by monoue           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef DEFS_H
 # define DEFS_H
 
@@ -20,5 +32,14 @@ typedef struct	s_op_func_set
 	char	*str;
 	void	(*func)(t_num **, t_num **);
 }				t_op_func_set;
+
+typedef void	(*t_op_func)(t_num **, t_num **, int);
+
+typedef struct	s_op_func_set2
+{
+	char		*str;
+	t_op_func	func;
+	int			stack_type;
+}				t_op_func_set2;
 
 #endif

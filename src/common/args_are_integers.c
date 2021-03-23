@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   args_are_valid.c                                   :+:      :+:    :+:   */
+/*   args_are_integers.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:27:54 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/22 16:29:41 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 10:53:59 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,30 +60,30 @@ static bool	str_is_numeric(const char *str)
 	return (ft_str_is_numeric(str));
 }
 
-static bool	args_are_numeric(size_t argc, char *argv[])
+static bool	args_are_numeric(size_t args_num, char *args[])
 {
 	size_t	index;
 
-	index = 1;
-	while (index < argc)
+	index = 0;
+	while (index < args_num)
 	{
-		if (!str_is_numeric(argv[index]))
+		if (!str_is_numeric(args[index]))
 			return (false);
 		index++;
 	}
 	return (true);
 }
 
-bool		args_are_integers(size_t argc, char *argv[])
+bool		args_are_integers(size_t args_num, char *args[])
 {
 	size_t	index;
 
-	if (!args_are_numeric(argc, argv))
+	if (!args_are_numeric(args_num, args))
 		return (false);
-	index = 1;
-	while (index < argc)
+	index = 0;
+	while (index < args_num)
 	{
-		if (!str_is_within_int_range(argv[index]))
+		if (!str_is_within_int_range(args[index]))
 			return (false);
 		index++;
 	}

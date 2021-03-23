@@ -6,13 +6,12 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:45:28 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/22 16:46:03 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 13:10:21 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "libft.h"
-#include "debug.h"
 
 static bool	is_sorting_success(t_num *stack_a, size_t nums_num, char **num_strs)
 {

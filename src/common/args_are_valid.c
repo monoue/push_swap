@@ -6,27 +6,23 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:20:51 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/22 16:34:16 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 12:11:09 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "libft.h"
 
-static bool	args_are_unique(size_t argc, char **argv)
+static bool	args_are_unique(size_t args_num, char **args)
 {
-	int		array[argc - 1];
+	int		array[args_num];
 	size_t	index;
-	size_t	num;
 
-	if (argc <= 1)
-		return (false);
-	num = argc - 1;
-	if (num == 1)
+	if (args_num < 2)
 		return (true);
-	get_sorted_array(array, num, &argv[1]);
+	get_sorted_array(array, args_num, args);
 	index = 0;
-	while (index < num - 1)
+	while (index < args_num - 1)
 	{
 		if (array[index] == array[index + 1])
 			return (false);
@@ -35,7 +31,8 @@ static bool	args_are_unique(size_t argc, char **argv)
 	return (true);
 }
 
-bool		args_are_valid(size_t argc, char *argv[])
+bool		args_are_valid(size_t args_num, char *args[])
 {
-	return (args_are_integers(argc, argv) && args_are_unique(argc, argv));
+	return (args_are_integers(args_num, args)
+			&& args_are_unique(args_num, args));
 }

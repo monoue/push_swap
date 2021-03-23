@@ -6,13 +6,12 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:21:59 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/22 16:22:00 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 13:11:17 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "libft.h"
-#include "debug.h"
 
 static void	rotate(t_num **num_list)
 {
@@ -29,21 +28,18 @@ void		rotate_a(t_num **stack_a, t_num **stack_b)
 {
 	(void)stack_b;
 	rotate(stack_a);
-	ft_putendl("ra");
 }
 
 void		rotate_b(t_num **stack_a, t_num **stack_b)
 {
 	(void)stack_a;
 	rotate(stack_b);
-	ft_putendl("rb");
 }
 
 void		rotate_double(t_num **stack_a, t_num **stack_b)
 {
 	rotate(stack_a);
 	rotate(stack_b);
-	ft_putendl("rr");
 }
 
 void		rotate_designated(t_num **stack_a, t_num **stack_b, int stack_type)

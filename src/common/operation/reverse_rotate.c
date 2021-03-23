@@ -6,13 +6,12 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:23:46 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/22 16:40:41 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 13:11:15 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "libft.h"
-#include "debug.h"
 
 static void	reverse_rotate(t_num **num_list)
 {
@@ -29,21 +28,18 @@ void		reverse_rotate_a(t_num **stack_a, t_num **stack_b)
 {
 	(void)stack_b;
 	reverse_rotate(stack_a);
-	ft_putendl("rra");
 }
 
 void		reverse_rotate_b(t_num **stack_a, t_num **stack_b)
 {
 	(void)stack_a;
 	reverse_rotate(stack_b);
-	ft_putendl("rrb");
 }
 
 void		reverse_rotate_double(t_num **stack_a, t_num **stack_b)
 {
 	reverse_rotate(stack_a);
 	reverse_rotate(stack_b);
-	ft_putendl("rrr");
 }
 
 void		reverse_rotate_designated(t_num **stack_a, t_num **stack_b,

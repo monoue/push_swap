@@ -6,12 +6,11 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:46:45 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 12:51:02 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 13:09:54 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "debug.h"
 #include "push_swap.h"
 #include "operation.h"
 
@@ -35,9 +34,7 @@ static void	exec_operation(const char *operation, t_num **stack_a,
 		set = sets[index];
 		if (ft_strequal(set.str, operation))
 		{
-			ft_putchar('\n');
 			set.func(stack_a, stack_b);
-			print_current_status(*stack_a, *stack_b);
 			return ;
 		}
 		index++;
@@ -49,7 +46,6 @@ void		read_and_exec_operations(t_num **stack_a, t_num **stack_b)
 	char	*line;
 	int		ret;
 
-	print_current_status(*stack_a, *stack_b);
 	while ((ret = get_next_line(STDIN_FILENO, &line)) >= 0)
 	{
 		if (ret == 0)

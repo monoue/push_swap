@@ -6,13 +6,12 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:26:56 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/22 16:40:41 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 13:10:43 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "libft.h"
-#include "debug.h"
 
 size_t	lstsize(t_num *stack)
 {

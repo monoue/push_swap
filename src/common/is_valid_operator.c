@@ -6,13 +6,12 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:41:08 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/22 16:42:52 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 13:11:07 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "libft.h"
-#include "debug.h"
 
 bool	is_valid_operator(char *str)
 {

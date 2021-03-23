@@ -6,13 +6,12 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:23:54 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/22 16:23:55 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 13:11:20 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "libft.h"
-#include "debug.h"
 
 static void	swap(t_num **stack)
 {
@@ -36,21 +35,18 @@ void		swap_a(t_num **stack_a, t_num **stack_b)
 {
 	(void)stack_b;
 	swap(stack_a);
-	ft_putendl("sa");
 }
 
 void		swap_b(t_num **stack_a, t_num **stack_b)
 {
 	(void)stack_a;
 	swap(stack_b);
-	ft_putendl("sb");
 }
 
 void		swap_double(t_num **stack_a, t_num **stack_b)
 {
 	swap(stack_a);
 	swap(stack_b);
-	ft_putendl("ss");
 }
 
 void		swap_designated(t_num **stack_a, t_num **stack_b, int stack_type)

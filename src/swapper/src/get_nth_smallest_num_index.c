@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 07:02:45 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 07:16:04 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 08:43:20 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ static int		get_smallest_num(t_num *stack)
 	return (smallest_num);
 }
 
-static int		get_smallest_num_over_designation(t_num *stack, int designated_num)
+static int		get_smallest_num_over_designation(t_num *stack,
+															int designated_num)
 {
 	int		designated_smallest;
 	t_num	*tmp;

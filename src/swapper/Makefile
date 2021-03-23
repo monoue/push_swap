@@ -6,7 +6,7 @@
 #    By: monoue <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/23 08:40:11 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/23 09:37:32 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,18 +38,21 @@ BASE	  = $(COMMON_PATH)args_are_integers.c \
 			$(OPERATION_PATH)reverse_rotate.c \
 			$(OPERATION_PATH)push.c \
 			$(SRC_PATH)bring_target_index_to_top.c \
+			$(SRC_PATH)deal_chunk_range.c \
 			$(SRC_PATH)exec.c \
 			$(SRC_PATH)exec_two.c \
 			$(SRC_PATH)exec_three.c \
 			$(SRC_PATH)exec_four_or_five.c \
 			$(SRC_PATH)exec_one_hundred_or_less.c \
 			$(SRC_PATH)exec_and_put_operation.c \
+			$(SRC_PATH)get_fore_or_back_target_index.c \
+			$(SRC_PATH)get_index_of_largest_num.c \
 			$(SRC_PATH)get_nearer_distance.c \
-			$(SRC_PATH)get_nearer_index.c \
 			$(SRC_PATH)get_nearness.c \
 			$(SRC_PATH)get_nth_smallest_num_index.c \
 			$(SRC_PATH)get_num_of_target_index.c \
-			$(SRC_PATH)get_rotation_type_and_num.c \
+			$(SRC_PATH)get_rotation_type_and_num_a.c \
+			$(SRC_PATH)get_rotation_type_and_num_b.c \
 			$(SRC_PATH)get_zero_rotation.c \
 			$(SRC_PATH)is_sorted.c \
 			$(SRC_PATH)rotate_based_on_info.c
@@ -70,7 +73,8 @@ LIBFT	= $(LIBFT_PATH)libft.a
 		$(CC) $(CFLAGS) $(INCLUDE) -c -MMD -MP -MF $(<:.c=.d) $< -o $(<:.c=.o)
 
 $(NAME): $(OBJS) $(LIBFT)
-	@$(CC) -fsanitize=address -o $@ $^
+	@$(CC) -o $@ $^
+# -fsanitize=address
 
 -include $(DEPS)
 

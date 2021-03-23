@@ -1925,3 +1925,47 @@ pa
     9701
 ----------------------------------------
 operation count: 93
+Process:         push_swap [97651]
+Path:            /Volumes/VOLUME/*/push_swap
+Load Address:    0x101896000
+Identifier:      push_swap
+Version:         ???
+Code Type:       X86-64
+Parent Process:  sh [97403]
+
+Date/Time:       2021-03-23 09:37:55.049 +0900
+Launch Time:     2021-03-23 09:37:54.751 +0900
+OS Version:      Mac OS X 10.14.6 (18G8022)
+Report Version:  7
+Analysis Tool:   /Applications/Xcode.app/Contents/Developer/usr/bin/leaks
+Analysis Tool Version:  Xcode 11.3.1 (11C505)
+----
+
+leaks Report Version: 4.0
+Process 97651: 185 nodes malloced for 14 KB
+Process 97651: 22 leaks for 704 total leaked bytes.
+
+    22 (704 bytes) ROOT CYCLE: 0x7fe3e4400640 [32]
+       21 (672 bytes) ROOT CYCLE: 0x7fe3e4402b90 [32]
+          CYCLE BACK TO 0x7fe3e4400640 [32]
+          20 (640 bytes) ROOT CYCLE: 0x7fe3e4402d90 [32]
+             19 (608 bytes) ROOT CYCLE: 0x7fe3e4402c70 [32]
+                18 (576 bytes) ROOT CYCLE: 0x7fe3e4402d50 [32]
+                   17 (544 bytes) ROOT CYCLE: 0x7fe3e4402d70 [32]
+                      16 (512 bytes) ROOT CYCLE: 0x7fe3e4402b30 [32]
+                         15 (480 bytes) ROOT CYCLE: 0x7fe3e4402c90 [32]
+                            14 (448 bytes) ROOT CYCLE: 0x7fe3e4402cd0 [32]
+                               13 (416 bytes) ROOT CYCLE: 0x7fe3e4402b70 [32]
+                                  12 (384 bytes) ROOT CYCLE: 0x7fe3e4402d10 [32]
+                                     11 (352 bytes) ROOT CYCLE: 0x7fe3e4402c50 [32]
+                                        10 (320 bytes) ROOT CYCLE: 0x7fe3e4402cf0 [32]
+                                           9 (288 bytes) ROOT CYCLE: 0x7fe3e4402b10 [32]
+                                              8 (256 bytes) ROOT CYCLE: 0x7fe3e4402c10 [32]
+                                                 7 (224 bytes) ROOT CYCLE: 0x7fe3e4402cb0 [32]
+                                                    6 (192 bytes) ROOT CYCLE: 0x7fe3e4402c30 [32]
+                                                       5 (160 bytes) ROOT CYCLE: 0x7fe3e4402bb0 [32]
+                                                          4 (128 bytes) ROOT CYCLE: 0x7fe3e4402d30 [32]
+                                                             3 (96 bytes) ROOT CYCLE: 0x7fe3e4402bd0 [32]
+                                                                2 (64 bytes) ROOT CYCLE: 0x7fe3e4402bf0 [32]
+                                                                   1 (32 bytes) ROOT CYCLE: 0x7fe3e4402b50 [32]
+

@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:54:01 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 06:55:00 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 09:52:27 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,8 @@ void		exec(t_num **stack_a, size_t nums_num, int sorted_array[])
 		exec_three(stack_a);
 	else if (nums_num < 6)
 		exec_four_or_five(stack_a);
-	else
-		exec_one_hundred_or_less(stack_a, nums_num, sorted_array);
+	(void)sorted_array;
+	// else
+	// 	exec_one_hundred_or_less(stack_a, nums_num, sorted_array);
 	put_count();
 }

@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:48:57 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 06:48:58 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 09:59:56 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,14 @@
 #include "libft.h"
 #include "debug.h"
 #include "swapper.h"
+
+__attribute__((destructor))
+void end()
+{
+	// system("leaks push_swap");
+	while (1)
+		;
+}
 
 // 動く
 // int	main(int argc, char *argv[])
@@ -61,6 +69,7 @@ int	main(int argc, char *argv[])
 		int		sorted_array[nums_num];
 		get_sorted_array(sorted_array, nums_num, args);
 		exec(&stack_a, nums_num, sorted_array);
+		ft_free_split(args);
 	}
 	else
 	{
@@ -77,4 +86,5 @@ int	main(int argc, char *argv[])
 		get_sorted_array(sorted_array, nums_num, &argv[1]);
 		exec(&stack_a, nums_num, sorted_array);
 	}
+	lstdel(stack_a);
 }

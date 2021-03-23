@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:45:01 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/22 16:45:17 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 12:04:47 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,27 @@
 #include "libft.h"
 #include "debug.h"
 
-int	main(int argc, char *argv[])
+static int	exec(size_t args_num, char *args[])
 {
 	t_num	*stack_a;
 	t_num	*stack_b;
+
+	if (!args_are_valid(args_num, args))
+	{
+		ft_putendl_err(ERROR_MESSAGE);
+		return (EXIT_FAILURE);
+	}
+	stack_a = get_struct_list(args_num, args);
+	stack_b = NULL;
+	read_and_exec_operations(&stack_a, &stack_b);
+	put_result(stack_a, (lstsize(stack_b) == 0), args_num, args);
+	return (EXIT_SUCCESS);
+}
+
+int			main(int argc, char *argv[])
+{
+	int		ret;
+	size_t	args_num;
 	char	**args;
 
 	if (argc < 2)
@@ -26,21 +43,15 @@ int	main(int argc, char *argv[])
 	if (argc == 2)
 	{
 		args = ft_split(argv[1], ' ');
-		stack_a = get_struct_list(ft_count_strs((const char **)args), args);
-		stack_b = NULL;
-		read_and_exec_operations(&stack_a, &stack_b);
-		put_result(stack_a, (lstsize(stack_b) == 0), ft_count_strs((const char **)args), args);
+		args_num = ft_count_strs((const char **)args);
 	}
 	else
 	{
-		if (!args_are_valid((size_t)argc, argv))
-		{
-			ft_putendl_err(ERROR_MESSAGE);
-			return (EXIT_SUCCESS);
-		}
-		stack_a = get_struct_list((size_t)argc - 1, &argv[1]);
-		stack_b = NULL;
-		read_and_exec_operations(&stack_a, &stack_b);
-		put_result(stack_a, (lstsize(stack_b) == 0), argc - 1, &argv[1]);
+		args = &argv[1];
+		args_num = argc - 1;
 	}
+	ret = exec(args_num, args);
+	if (argc == 2)
+		ft_free_split(args);
+	return (ret);
 }

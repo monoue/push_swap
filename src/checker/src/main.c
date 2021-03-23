@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:45:01 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 12:04:47 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 12:49:16 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ static int	exec(size_t args_num, char *args[])
 	stack_b = NULL;
 	read_and_exec_operations(&stack_a, &stack_b);
 	put_result(stack_a, (lstsize(stack_b) == 0), args_num, args);
+	lstdel(stack_a);
+	lstdel(stack_b);
 	return (EXIT_SUCCESS);
 }
 

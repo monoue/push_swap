@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:46:45 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/22 16:46:46 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/23 12:51:02 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,9 @@ void		read_and_exec_operations(t_num **stack_a, t_num **stack_b)
 		{
 			SAFE_FREE(line);
 			ft_putendl_err("Error");
-			exit(EXIT_SUCCESS);
+			lstdel(*stack_a);
+			lstdel(*stack_b);
+			exit(EXIT_FAILURE);
 		}
 		exec_operation(line, stack_a, stack_b);
 		SAFE_FREE(line);

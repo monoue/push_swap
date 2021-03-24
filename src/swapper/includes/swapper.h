@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:56:23 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 14:13:01 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/24 09:10:18 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ typedef enum	e_rotation_type
 {
 	NORMAL,
 	REVERSE,
-	BOTH,
 	NOTHING,
 
 	ROTATION_TYPE_NUM

@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:51:22 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 13:12:24 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/24 09:11:19 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,19 +20,10 @@ static int	get_double_rotation_type(int a_type, int b_type)
 {
 	if (a_type == NOTHING || b_type == NOTHING)
 		return (NOTHING);
-	if ((a_type == BOTH && b_type == BOTH)
-		|| (a_type == NORMAL && b_type == NORMAL)
-		|| (a_type == NORMAL && b_type == BOTH)
-		|| (a_type == BOTH && b_type == NORMAL))
-	{
+	if (a_type == NORMAL && b_type == NORMAL)
 		return (NORMAL);
-	}
-	if ((a_type == REVERSE && b_type == REVERSE)
-		|| (a_type == REVERSE && b_type == BOTH)
-		|| (a_type == BOTH && b_type == REVERSE))
-	{
+	if (a_type == REVERSE && b_type == REVERSE)
 		return (REVERSE);
-	}
 	return (NOTHING);
 }
 

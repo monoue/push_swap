@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:27:54 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/24 09:16:09 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/24 09:20:08 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,10 +70,7 @@ static bool	args_are_numeric(size_t args_num, char *args[])
 	while (index < args_num)
 	{
 		if (!str_is_numeric(args[index]))
-		{
-			DS(args[index]);
 			return (false);
-		}
 		index++;
 	}
 	return (true);
@@ -89,10 +86,7 @@ bool		args_are_integers(size_t args_num, char *args[])
 	while (index < args_num)
 	{
 		if (!str_is_within_int_range(args[index]))
-		{
-			DS(args[index]);
 			return (false);
-		}
 		index++;
 	}
 	return (true);

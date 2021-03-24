@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:20:51 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/24 09:15:18 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/24 09:19:38 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,7 @@ static bool	args_are_unique(size_t args_num, char **args)
 	while (index < args_num - 1)
 	{
 		if (array[index] == array[index + 1])
-		{
-			DI(array[index]);
 			return (false);
-		}
 		index++;
 	}
 	return (true);

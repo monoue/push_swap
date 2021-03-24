@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   args_are_valid.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
+/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:20:51 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/24 01:46:05 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/24 09:15:18 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "libft.h"
+
+#include "debug.h"
 
 static bool	args_are_unique(size_t args_num, char **args)
 {
@@ -25,7 +27,10 @@ static bool	args_are_unique(size_t args_num, char **args)
 	while (index < args_num - 1)
 	{
 		if (array[index] == array[index + 1])
+		{
+			DI(array[index]);
 			return (false);
+		}
 		index++;
 	}
 	return (true);

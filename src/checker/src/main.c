@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:45:01 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/24 10:10:36 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/24 10:19:36 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static int	exec(size_t args_num, char *args[])
 	t_stacks	*stacks;
 
 	stacks = malloc(sizeof(t_stacks));
-	if (!stacks || !stacks->stack_a || !stacks->stack_b)
+	if (!stacks)
 		exit(EXIT_FAILURE);
 	if (args_num > 500)
 	{
@@ -39,12 +39,9 @@ static int	exec(size_t args_num, char *args[])
 	}
 	stacks->stack_a = get_struct_list(args_num, args);
 	stacks->stack_b = NULL;
-	// read_and_exec_operations(&stack_a, &stack_b);
 	read_and_exec_operations(stacks);
 	put_result(stacks->stack_a, (lstsize(stacks->stack_b) == 0), args_num, args);
-	lstdel(stacks->stack_a);
-	lstdel(stacks->stack_b);
-	// SAFE_FREE(stacks);
+	stacks_del(stacks);
 	return (EXIT_SUCCESS);
 }
 

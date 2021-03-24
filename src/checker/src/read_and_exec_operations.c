@@ -6,7 +6,7 @@
 /*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:46:45 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/24 10:11:46 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/24 10:19:03 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 #include "push_swap.h"
 #include "operation.h"
 
-static void	exec_operation(const char *operation, t_num **stack_a,
-																t_num **stack_b)
+static void	exec_operation(const char *operation, t_stacks *stacks)
 {
 	const t_op_func_set	sets[] = {
 		{"sa", &swap_a}, {"sb", &swap_b}, {"ss", &swap_double},
@@ -34,7 +33,7 @@ static void	exec_operation(const char *operation, t_num **stack_a,
 		set = sets[index];
 		if (ft_strequal(set.str, operation))
 		{
-			set.func(stack_a, stack_b);
+			set.func(&stacks->stack_a, &stacks->stack_b);
 			return ;
 		}
 		index++;
@@ -57,11 +56,10 @@ void		read_and_exec_operations(t_stacks *stacks)
 		{
 			SAFE_FREE(line);
 			ft_putendl_err("Error");
-			lstdel(stacks->stack_a);
-			lstdel(stacks->stack_b);
+			stacks_del(stacks);
 			exit(EXIT_FAILURE);
 		}
-		exec_operation(line, &stacks->stack_a, &stacks->stack_b);
+		exec_operation(line, stacks);
 		SAFE_FREE(line);
 	}
 }

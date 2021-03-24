@@ -6,7 +6,7 @@
 #    By: monoue <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/23 13:21:54 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/24 09:42:04 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,6 +54,9 @@ LIBFT	= $(LIBFT_PATH)libft.a
 $(NAME): $(OBJS) $(LIBFT)
 	@$(CC) -o $@ $^
 
+debug: $(OBJS) $(LIBFT)
+	@$(CC) -fsanitize=address -o $(NAME) $^
+
 -include $(DEPS)
 
 $(LIBFT):
@@ -63,11 +66,13 @@ all: $(NAME)
 
 clean:
 	$(RM) $(OBJS) $(DEPS)
-	$(MAKE) -C $(LIBFT_PATH) clean
+
+	# $(MAKE) -C $(LIBFT_PATH) clean
 
 fclean: clean
-	$(RM) $(NAME)
-	$(MAKE) -C $(LIBFT_PATH) fclean
+	$(RM) $(NAME) debug
+
+	# $(MAKE) -C $(LIBFT_PATH) fclean
 
 re: fclean all
 

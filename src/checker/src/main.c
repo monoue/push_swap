@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
+/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:45:01 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/24 01:49:51 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/24 10:10:36 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,19 @@
 #include "checker.h"
 #include "libft.h"
 
+__attribute__((destructor))
+void end()
+{
+	system("leaks checker");
+}
+
 static int	exec(size_t args_num, char *args[])
 {
-	t_num	*stack_a;
-	t_num	*stack_b;
+	t_stacks	*stacks;
 
+	stacks = malloc(sizeof(t_stacks));
+	if (!stacks || !stacks->stack_a || !stacks->stack_b)
+		exit(EXIT_FAILURE);
 	if (args_num > 500)
 	{
 		ft_putendl_err(ARG_NUM_ERROR_MESSAGE);
@@ -29,12 +37,14 @@ static int	exec(size_t args_num, char *args[])
 		ft_putendl_err(ERROR_MESSAGE);
 		return (EXIT_FAILURE);
 	}
-	stack_a = get_struct_list(args_num, args);
-	stack_b = NULL;
-	read_and_exec_operations(&stack_a, &stack_b);
-	put_result(stack_a, (lstsize(stack_b) == 0), args_num, args);
-	lstdel(stack_a);
-	lstdel(stack_b);
+	stacks->stack_a = get_struct_list(args_num, args);
+	stacks->stack_b = NULL;
+	// read_and_exec_operations(&stack_a, &stack_b);
+	read_and_exec_operations(stacks);
+	put_result(stacks->stack_a, (lstsize(stacks->stack_b) == 0), args_num, args);
+	lstdel(stacks->stack_a);
+	lstdel(stacks->stack_b);
+	// SAFE_FREE(stacks);
 	return (EXIT_SUCCESS);
 }
 

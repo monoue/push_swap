@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:34:07 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 12:49:51 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/25 09:20:22 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,6 @@
 # include <limits.h>
 
 # include "defs.h"
-
-typedef enum	e_stacks
-{
-	STACK_A,
-	STACK_B,
-	DOUBLE,
-
-	STACKS_NUM
-}				t_stacks;
 
 bool			args_are_integers(size_t argc, char *argv[]);
 bool			args_are_valid(size_t argc, char *argv[]);
@@ -50,5 +41,6 @@ void			lstdel(t_num *stack);
 void			lstdel_front(t_num **stack);
 void			lstdel_back(t_num **stack);
 void			lstadd_front(t_num **stack, t_num *new);
+void			stacks_del(t_stacks *stacks);
 
 #endif

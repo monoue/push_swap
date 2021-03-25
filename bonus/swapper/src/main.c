@@ -6,13 +6,13 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:48:57 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 14:37:44 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/25 15:19:23 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "push_swap_bonus.h"
 #include "libft.h"
-#include "swapper.h"
+#include "swapper_bonus.h"
 
 static int	main2(size_t args_num, char *args[])
 {
@@ -60,4 +60,12 @@ int			main(int argc, char *argv[])
 	if (argc == 2)
 		ft_free_split(args);
 	return (ret);
+	size_t	index;
+
+	index = 0;
+	while ([index])
+	{
+
+		index++;
+	}
 }

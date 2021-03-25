@@ -3,31 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:45:01 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/24 10:19:36 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/25 14:37:56 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "checker.h"
 #include "libft.h"
+#include "debug.h"
 
 __attribute__((destructor))
-void end()
+void	end()
 {
 	system("leaks checker");
 }
+
 
 static int	exec(size_t args_num, char *args[])
 {
 	t_stacks	*stacks;
 
-	stacks = malloc(sizeof(t_stacks));
-	if (!stacks)
-		exit(EXIT_FAILURE);
-	if (args_num > 500)
+	if (args_num > ARGS_LIMIT)
 	{
 		ft_putendl_err(ARG_NUM_ERROR_MESSAGE);
 		return (EXIT_FAILURE);
@@ -37,6 +36,7 @@ static int	exec(size_t args_num, char *args[])
 		ft_putendl_err(ERROR_MESSAGE);
 		return (EXIT_FAILURE);
 	}
+	stacks = init_stacks();
 	stacks->stack_a = get_struct_list(args_num, args);
 	stacks->stack_b = NULL;
 	read_and_exec_operations(stacks);

@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   main_bonus.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:48:57 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 14:37:44 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/25 15:41:40 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "push_swap_bonus.h"
 #include "libft.h"
-#include "swapper.h"
+#include "swapper_bonus.h"
 
 static int	main2(size_t args_num, char *args[])
 {
-	t_num	*stack_a;
-	int		sorted_array[args_num];
+	t_stacks	*stacks;
+	int			sorted_array[args_num];
 
 	if (args_num > ARGS_LIMIT)
 	{
@@ -31,10 +31,12 @@ static int	main2(size_t args_num, char *args[])
 	}
 	if (args_num < 2)
 		return (EXIT_SUCCESS);
-	stack_a = get_struct_list(args_num, args);
+	stacks = init_stacks();
+	stacks->stack_a = get_struct_list(args_num, args);
 	get_sorted_array(sorted_array, args_num, args);
-	exec(&stack_a, args_num, sorted_array);
-	lstdel(stack_a);
+	// exec(&stacks->stack_a, args_num, sorted_array);
+	exec(stacks, args_num, sorted_array);
+	stacks_del(stacks);
 	return (EXIT_SUCCESS);
 }
 

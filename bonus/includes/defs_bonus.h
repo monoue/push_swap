@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:33:26 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 16:27:46 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/25 16:46:10 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,8 @@ typedef struct	s_stacks
 	t_num	*stack_b;
 	bool	total_count_flag;
 	bool	frame_flag;
-	bool	num_in_stack_flag;
+	bool	nums_in_stacks_flag;
+	bool	num_of_operations_flag;
 	size_t	sa_count;
 	size_t	sb_count;
 	size_t	ss_count;

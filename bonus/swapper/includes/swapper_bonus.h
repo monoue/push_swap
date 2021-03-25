@@ -50,14 +50,11 @@ void			bring_target_index_to_top(t_stacks *stacks,
 										size_t target_index, int stack_type);
 void			deal_chunk_range(t_stacks *stacks,
 										int chunk_max_nums[], size_t chunk_i);
-// void			exec(t_num **stack_a, size_t nums_num, int sorted_array[]);
 void			exec(t_stacks *stacks, size_t nums_num, int sorted_array[]);
 bool			is_sorted(t_num *stack);
-// void			exec_two(t_num *stack_a);
 void			exec_two(t_stacks *stacks);
 void			exec_three(t_stacks *stacks);
 void			exec_four_or_five(t_stacks *stacks);
-// void			exec_and_put_operation(t_num **stack_a, t_num **stack_b,
 void			exec_and_put_operation(t_stacks *stacks,
 												t_op_func func, int stack_type);
 void			exec2(t_stacks *stacks, size_t nums_num,

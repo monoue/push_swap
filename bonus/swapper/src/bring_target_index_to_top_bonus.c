@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 07:18:56 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 16:09:10 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/25 16:38:04 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ static void	set_end_and_func(size_t nums_num, size_t target_index, size_t *end,
 	}
 }
 
-// void		bring_target_index_to_top(t_num **stack_a, t_num **stack_b,
 void		bring_target_index_to_top(t_stacks *stacks,
 											size_t target_index, int stack_type)
 {

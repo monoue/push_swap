@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 07:02:45 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 16:29:16 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/26 17:55:49 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include "libft.h"
 #include "operation_bonus.h"
 
-static size_t	get_nearest_index_within_nth_smallest_nums(t_num *stack,
+static size_t	get_nearest_i_range_n_smallest_nums(t_num *stack,
 																	size_t nth)
 {
 	const size_t	nums_num = lstsize(stack);
@@ -52,7 +52,7 @@ static void		push_b_smallest_nums(t_stacks *stacks,
 	n = num;
 	while (n > 0)
 	{
-		nearest_index = get_nearest_index_within_nth_smallest_nums(stacks->stack_a, n);
+		nearest_index = get_nearest_i_range_n_smallest_nums(stacks->stack_a, n);
 		bring_target_index_to_top(stacks, nearest_index, STACK_A);
 		exec_and_put_operation(stacks, push_designated, STACK_B);
 		n--;

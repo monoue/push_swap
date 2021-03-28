@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: monoue <marvin@student.42.fr>              +#+  +:+       +#+         #
+#    By: monoue <monoue@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/24 09:42:04 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/29 07:51:11 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,7 @@ BASE	  = $(COMMON_PATH)args_are_integers.c \
 			$(COMMON_PATH)basic_list_operations2.c \
 			$(COMMON_PATH)get_sorted_array.c \
 			$(COMMON_PATH)get_struct_list.c \
+			$(COMMON_PATH)init_stacks.c \
 			$(COMMON_PATH)is_valid_operator.c \
 			$(COMMON_PATH)quick_sort.c \
 			$(OPERATION_PATH)push.c \

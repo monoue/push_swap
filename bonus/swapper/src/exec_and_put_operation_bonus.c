@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:55:13 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 15:45:17 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/26 10:58:17 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,20 @@
 #include "swapper_bonus.h"
 #include "libft.h"
 #include "operation_bonus.h"
+#include "debug_bonus.h"
 
-void	exec_and_put_operation(t_stacks *stacks, t_op_func func,
+static void	deal_debug_info(t_stacks *stacks)
+{
+	t_flags	*flags;
+
+	flags = stacks->flags;
+	if (flags->total_count_flag)
+		stacks->counts->total_count++;
+	if (flags->frame_flag || flags->nums_in_stacks_flag)
+		put_status(stacks);
+}
+
+void		exec_and_put_operation(t_stacks *stacks, t_op_func func,
 																int stack_type)
 {
 	const t_op_func_set2	sets[] = {
@@ -42,4 +54,5 @@ void	exec_and_put_operation(t_stacks *stacks, t_op_func func,
 		index++;
 	}
 	func(stacks, stack_type);
+	deal_debug_info(stacks);
 }

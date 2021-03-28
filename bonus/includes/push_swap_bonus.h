@@ -6,14 +6,12 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:34:07 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 15:33:46 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/26 16:27:50 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#ifndef PUSH_SWAP_BONUS_H
+# define PUSH_SWAP_BONUS_H
 
 # include <stdbool.h>
 # include <unistd.h>

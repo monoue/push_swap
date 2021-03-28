@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:26:56 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 15:23:38 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/26 10:32:09 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,7 @@ void	stacks_del(t_stacks *stacks)
 {
 	lstdel(stacks->stack_a);
 	lstdel(stacks->stack_b);
+	SAFE_FREE(stacks->counts);
+	SAFE_FREE(stacks->flags);
 	SAFE_FREE(stacks);
 }

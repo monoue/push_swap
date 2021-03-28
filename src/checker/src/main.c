@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:45:01 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 14:37:56 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 07:44:41 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,6 @@
 #include "checker.h"
 #include "libft.h"
 #include "debug.h"
-
-__attribute__((destructor))
-void	end()
-{
-	system("leaks checker");
-}
-
 
 static int	exec(size_t args_num, char *args[])
 {
@@ -40,7 +33,8 @@ static int	exec(size_t args_num, char *args[])
 	stacks->stack_a = get_struct_list(args_num, args);
 	stacks->stack_b = NULL;
 	read_and_exec_operations(stacks);
-	put_result(stacks->stack_a, (lstsize(stacks->stack_b) == 0), args_num, args);
+	put_result(stacks->stack_a, (lstsize(stacks->stack_b) == 0), args_num,
+																		args);
 	stacks_del(stacks);
 	return (EXIT_SUCCESS);
 }

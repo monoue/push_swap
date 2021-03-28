@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:51:22 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 16:28:21 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/26 17:56:39 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,6 @@ static size_t	get_chunks_num(size_t nums_num)
 	return (nums_num / chunk_size + (nums_num % chunk_size > 0));
 }
 
-// void			exec2(t_num **stack_a, size_t nums_num,
-// 															int sorted_array[])
 void			exec2(t_stacks *stacks, size_t nums_num,
 															int sorted_array[])
 {
@@ -55,7 +53,6 @@ void			exec2(t_stacks *stacks, size_t nums_num,
 	index = 0;
 	while (index < chunks_num)
 	{
-		// deal_chunk_range(stack_a, &stack_b, chunk_max_nums, index);
 		deal_chunk_range(stacks, chunk_max_nums, index);
 		index++;
 	}

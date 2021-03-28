@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:21:30 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 15:54:09 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/26 15:12:51 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,19 @@ static void	push(t_num **src, t_num **dst)
 void		push_a(t_stacks *stacks)
 {
 	push(&stacks->stack_b, &stacks->stack_a);
+	if (stacks->flags->num_of_operations_flag)
+		stacks->counts->pa_count++;
+	if (stacks->flags->color_flag)
+		stacks->last_op = OP_PA;
 }
 
 void		push_b(t_stacks *stacks)
 {
 	push(&stacks->stack_a, &stacks->stack_b);
+	if (stacks->flags->num_of_operations_flag)
+		stacks->counts->pb_count++;
+	if (stacks->flags->color_flag)
+		stacks->last_op = OP_PB;
 }
 
 void		push_designated(t_stacks *stacks, int stack_type)

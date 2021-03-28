@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/02 11:56:31 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/23 16:58:11 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/26 15:18:46 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@
 # define BLUE_S		ESC"[34:1m"
 # define PURPLE_S	ESC"[35:1m"
 # define CYAN_S		ESC"[36:1m"
-# define RESET		ESC"[m"
+# define RESET		ESC"[0m"
 
 typedef enum	e_colors{
 	RED_N,

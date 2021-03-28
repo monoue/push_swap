@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:51:36 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 16:03:56 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/26 17:51:33 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 #include "swapper_bonus.h"
 #include "operation_bonus.h"
 
-// static void	exec_three_pattern(t_num **stack_a, const int pattern)
 static void	exec_three_pattern(t_stacks *stacks, const int pattern)
 {
 	if (pattern == SORTED)
@@ -74,7 +73,6 @@ static int	get_pattern(t_num *stack_a)
 	return (get_pattern2(first, second, third));
 }
 
-// void		exec_three(t_num **stack_a)
 void		exec_three(t_stacks *stacks)
 {
 	const int	pattern = get_pattern(stacks->stack_a);

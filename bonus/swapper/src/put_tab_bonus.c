@@ -1,23 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   checker.h                                          :+:      :+:    :+:   */
+/*   put_tab_bonus.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/22 16:44:08 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/29 07:44:18 by monoue           ###   ########.fr       */
+/*   Created: 2021/03/26 10:05:52 by monoue            #+#    #+#             */
+/*   Updated: 2021/03/26 16:48:54 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CHECKER_H
-# define CHECKER_H
+#include "push_swap_bonus.h"
+#include "libft.h"
+#include "debug_bonus.h"
+#include "swapper_bonus.h"
 
-# include <unistd.h>
-# include "defs.h"
+void	put_tab(int n)
+{
+	const int	intlen = ft_intlen(n);
+	const int	tabsize = 8;
+	const int	to_fill_len = tabsize - intlen;
+	int			index;
 
-void	put_result(t_num *stack_a, bool stack_b_is_empty, size_t nums_num,
-															char **nums_strs);
-void	read_and_exec_operations(t_stacks *stacks);
-
-#endif
+	index = 0;
+	while (index < to_fill_len)
+	{
+		ft_putchar_err(' ');
+		index++;
+	}
+}

@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:26:56 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 15:34:48 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/26 10:22:36 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,16 @@
 t_stacks	*init_stacks(void)
 {
 	t_stacks	*stacks;
+	t_counts	*counts;
 
 	stacks = malloc(sizeof(t_stacks));
 	if (!stacks)
 		exit(EXIT_FAILURE);
 	*stacks = (t_stacks){0};
+	counts = malloc(sizeof(t_counts));
+	if (!counts)
+		exit(EXIT_FAILURE);
+	*counts = (t_counts){0};
+	stacks->counts = counts;
 	return (stacks);
 }

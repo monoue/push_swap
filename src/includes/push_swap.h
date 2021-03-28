@@ -6,11 +6,9 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:34:07 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 09:43:50 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 07:51:59 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
@@ -35,6 +33,7 @@ void			get_sorted_array(int *array, size_t num, char **strs);
 /*
 ** list operation
 */
+t_stacks		*init_stacks(void);
 t_num			*lstlast(t_num *stack);
 void			lstadd_back(t_num **stack, t_num *new);
 t_num			*lstnew(int num);
@@ -44,5 +43,7 @@ void			lstdel_front(t_num **stack);
 void			lstdel_back(t_num **stack);
 void			lstadd_front(t_num **stack, t_num *new);
 void			stacks_del(t_stacks *stacks);
+void			put_stack_num(t_num *stack, t_stacks *stacks,
+										t_stack_type stack_type, size_t index);
 
 #endif

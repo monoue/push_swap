@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:21:59 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 15:50:04 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/26 15:13:54 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,29 @@ static void	rotate(t_num **num_list)
 void		rotate_a(t_stacks *stacks)
 {
 	rotate(&stacks->stack_a);
+	if (stacks->flags->num_of_operations_flag)
+		stacks->counts->ra_count++;
+	if (stacks->flags->color_flag)
+		stacks->last_op = OP_RA;
 }
 
 void		rotate_b(t_stacks *stacks)
 {
 	rotate(&stacks->stack_b);
+	if (stacks->flags->num_of_operations_flag)
+		stacks->counts->rb_count++;
+	if (stacks->flags->color_flag)
+		stacks->last_op = OP_RB;
 }
 
 void		rotate_double(t_stacks *stacks)
 {
 	rotate(&stacks->stack_a);
 	rotate(&stacks->stack_b);
+	if (stacks->flags->num_of_operations_flag)
+		stacks->counts->rr_count++;
+	if (stacks->flags->color_flag)
+		stacks->last_op = OP_RR;
 }
 
 void		rotate_designated(t_stacks *stacks, int stack_type)

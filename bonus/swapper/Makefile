@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: monoue <marvin@student.42.fr>              +#+  +:+       +#+         #
+#    By: monoue <monoue@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/25 16:26:38 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/26 17:44:57 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,10 +52,15 @@ BASE	  = $(COMMON_PATH)args_are_integers_bonus.c \
 			$(SRC_PATH)get_nearness_bonus.c \
 			$(SRC_PATH)get_nth_smallest_num_index_bonus.c \
 			$(SRC_PATH)get_num_of_target_index_bonus.c \
+			$(SRC_PATH)get_option_strs_num_bonus.c \
 			$(SRC_PATH)get_rotation_type_and_num_a_bonus.c \
 			$(SRC_PATH)get_rotation_type_and_num_b_bonus.c \
 			$(SRC_PATH)get_zero_rotation_bonus.c \
 			$(SRC_PATH)is_sorted_bonus.c \
+			$(SRC_PATH)put_result_bonus.c \
+			$(SRC_PATH)put_status_bonus.c \
+			$(SRC_PATH)put_stack_num_bonus.c \
+			$(SRC_PATH)put_tab_bonus.c \
 			$(SRC_PATH)rotate_based_on_info_bonus.c
 
 

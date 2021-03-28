@@ -6,12 +6,12 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:33:45 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 15:55:27 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 07:39:09 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef OPERATION_H
-# define OPERATION_H
+#ifndef OPERATION_BONUS_H
+# define OPERATION_BONUS_H
 
 # include <stdbool.h>
 # include <unistd.h>

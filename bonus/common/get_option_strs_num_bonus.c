@@ -1,18 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_option_strs_num.c                              :+:      :+:    :+:   */
+/*   get_option_strs_num_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:48:57 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/26 17:44:05 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 09:27:01 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap_bonus.h"
 #include "libft.h"
-#include "swapper_bonus.h"
 
 static bool	is_option_char(char c)
 {

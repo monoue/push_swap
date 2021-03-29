@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:33:26 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/29 07:38:31 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 08:55:15 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ typedef struct	s_stacks
 typedef struct	s_op_func_set
 {
 	char	*str;
-	void	(*func)(t_num **, t_num **);
+	void	(*func)(t_stacks *);
 }				t_op_func_set;
 
 typedef void	(*t_op_func)(t_stacks*, int);

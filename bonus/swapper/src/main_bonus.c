@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:48:57 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/26 17:48:26 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 09:35:34 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ static void	parse_and_exec(size_t args_num, char *args[], t_flags *flags)
 	stacks = init_stacks();
 	stacks->flags = flags;
 	stacks->stack_a = get_struct_list(args_num, args);
+	stacks->stack_b = NULL;
 	get_sorted_array(sorted_array, args_num, args);
 	exec(stacks, args_num, sorted_array);
 	put_result(stacks);

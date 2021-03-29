@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/26 16:31:04 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/26 17:44:22 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 09:25:41 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,6 @@ t_rotation_info *get_rotation_type_and_num_b(t_num *stack_b,
 t_rotation_info *get_zero_rotation(void);
 size_t			get_nearer_distance(size_t	i1, size_t i2, size_t nums_num);
 size_t			get_nearness(size_t index, size_t nums_num);
-size_t			get_option_strs_num(size_t args_num, char *args[]);
 void			push_designated(t_stacks *stacks,
 																int stack_type);
 void			rotate_based_on_info(t_stacks *stacks,

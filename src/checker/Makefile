@@ -6,7 +6,7 @@
 #    By: monoue <monoue@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/29 07:51:11 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/29 09:36:51 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,13 +67,11 @@ all: $(NAME)
 
 clean:
 	$(RM) $(OBJS) $(DEPS)
-
-	# $(MAKE) -C $(LIBFT_PATH) clean
+	$(MAKE) -C $(LIBFT_PATH) clean
 
 fclean: clean
 	$(RM) $(NAME) debug
-
-	# $(MAKE) -C $(LIBFT_PATH) fclean
+	$(MAKE) -C $(LIBFT_PATH) fclean
 
 re: fclean all
 

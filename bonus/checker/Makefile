@@ -6,7 +6,7 @@
 #    By: monoue <monoue@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/25 15:34:23 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/29 09:37:17 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ BASE	  = $(COMMON_PATH)args_are_integers_bonus.c \
 			$(COMMON_PATH)args_are_valid_bonus.c \
 			$(COMMON_PATH)basic_list_operations1_bonus.c \
 			$(COMMON_PATH)basic_list_operations2_bonus.c \
+			$(COMMON_PATH)get_option_strs_num_bonus.c \
 			$(COMMON_PATH)get_sorted_array_bonus.c \
 			$(COMMON_PATH)get_struct_list_bonus.c \
 			$(COMMON_PATH)init_stacks_bonus.c \
@@ -67,13 +68,11 @@ all: $(NAME)
 
 clean:
 	$(RM) $(OBJS) $(DEPS)
-
-	# $(MAKE) -C $(LIBFT_PATH) clean
+	$(MAKE) -C $(LIBFT_PATH) clean
 
 fclean: clean
 	$(RM) $(NAME) debug
-
-	# $(MAKE) -C $(LIBFT_PATH) fclean
+	$(MAKE) -C $(LIBFT_PATH) fclean
 
 re: fclean all
 

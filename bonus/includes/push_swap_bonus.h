@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:34:07 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/26 16:27:50 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 09:26:03 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 
 bool			args_are_integers(size_t argc, char *argv[]);
 bool			args_are_valid(size_t argc, char *argv[]);
+size_t			get_option_strs_num(size_t args_num, char *args[]);
 t_num			*get_struct_list(size_t args_num, char **num_strs);
 bool			is_valid_operator(char *str);
 
@@ -43,4 +44,5 @@ void			lstdel_back(t_num **stack);
 void			lstadd_front(t_num **stack, t_num *new);
 void			stacks_del(t_stacks *stacks);
 t_stacks		*init_stacks(void);
+
 #endif

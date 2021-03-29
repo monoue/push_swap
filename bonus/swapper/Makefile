@@ -6,7 +6,7 @@
 #    By: monoue <monoue@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/26 17:44:57 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/29 09:24:55 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ BASE	  = $(COMMON_PATH)args_are_integers_bonus.c \
 			$(COMMON_PATH)args_are_valid_bonus.c \
 			$(COMMON_PATH)basic_list_operations1_bonus.c \
 			$(COMMON_PATH)basic_list_operations2_bonus.c \
+			$(COMMON_PATH)get_option_strs_num_bonus.c \
 			$(COMMON_PATH)get_sorted_array_bonus.c \
 			$(COMMON_PATH)get_struct_list_bonus.c \
 			$(COMMON_PATH)init_stacks_bonus.c \
@@ -52,7 +53,6 @@ BASE	  = $(COMMON_PATH)args_are_integers_bonus.c \
 			$(SRC_PATH)get_nearness_bonus.c \
 			$(SRC_PATH)get_nth_smallest_num_index_bonus.c \
 			$(SRC_PATH)get_num_of_target_index_bonus.c \
-			$(SRC_PATH)get_option_strs_num_bonus.c \
 			$(SRC_PATH)get_rotation_type_and_num_a_bonus.c \
 			$(SRC_PATH)get_rotation_type_and_num_b_bonus.c \
 			$(SRC_PATH)get_zero_rotation_bonus.c \

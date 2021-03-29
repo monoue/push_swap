@@ -6,14 +6,13 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:45:01 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/29 09:36:21 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 09:41:00 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap_bonus.h"
 #include "checker_bonus.h"
 #include "libft.h"
-#include "debug_bonus.h"
 
 static int	exec(size_t args_num, char *args[], t_flags *flags)
 {

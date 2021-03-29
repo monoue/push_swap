@@ -3,17 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   args_are_integers.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: monoue <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:27:54 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/24 09:20:08 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 09:39:45 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "libft.h"
-
-#include "debug.h"
 
 static bool	digits_num_is_over_int_max(const char *str)
 {

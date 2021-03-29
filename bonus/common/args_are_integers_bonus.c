@@ -6,14 +6,12 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:27:54 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/25 15:18:35 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 09:40:46 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap_bonus.h"
 #include "libft.h"
-
-#include "debug_bonus.h"
 
 static bool	digits_num_is_over_int_max(const char *str)
 {

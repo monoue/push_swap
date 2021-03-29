@@ -6,14 +6,13 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:46:45 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/29 09:35:18 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 09:42:29 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "push_swap_bonus.h"
 #include "operation_bonus.h"
-#include "debug_bonus.h"
 
 static void	exec_operation(const char *operation, t_stacks *stacks)
 {

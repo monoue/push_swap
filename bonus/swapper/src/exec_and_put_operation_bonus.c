@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:55:13 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/26 10:58:17 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 09:41:51 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #include "swapper_bonus.h"
 #include "libft.h"
 #include "operation_bonus.h"
-#include "debug_bonus.h"
 
 static void	deal_debug_info(t_stacks *stacks)
 {

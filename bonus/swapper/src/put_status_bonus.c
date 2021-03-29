@@ -6,13 +6,12 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/26 10:05:52 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/26 17:49:11 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 09:42:00 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap_bonus.h"
 #include "libft.h"
-#include "debug_bonus.h"
 #include "swapper_bonus.h"
 
 static void		put_num_counts_of_stacks(t_stacks *stacks)

@@ -6,14 +6,13 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:45:01 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/29 07:57:42 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 09:49:05 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "checker.h"
 #include "libft.h"
-#include "debug.h"
 
 static int	exec(size_t args_num, char *args[])
 {

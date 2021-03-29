@@ -6,13 +6,12 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/26 10:05:52 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/26 16:48:54 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 09:42:14 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap_bonus.h"
 #include "libft.h"
-#include "debug_bonus.h"
 #include "swapper_bonus.h"
 
 void	put_tab(int n)

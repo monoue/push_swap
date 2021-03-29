@@ -6,13 +6,12 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:21:30 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/29 09:12:27 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 09:41:15 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap_bonus.h"
 #include "libft.h"
-#include "debug_bonus.h"
 
 static void	push(t_num **src, t_num **dst)
 {

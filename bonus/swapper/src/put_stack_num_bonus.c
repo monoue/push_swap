@@ -6,14 +6,13 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/26 10:05:52 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/26 17:50:32 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 09:42:08 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap_bonus.h"
 #include "swapper_bonus.h"
 #include "libft.h"
-#include "debug_bonus.h"
 
 static bool	is_type_b(int op_type)
 {

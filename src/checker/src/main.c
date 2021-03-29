@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 16:45:01 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/29 09:49:05 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 10:37:19 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,13 @@ int			main(int argc, char *argv[])
 	size_t	args_num;
 	char	**args;
 
-	if (argc < 2 || str_is_of_tabs_or_spaces(argv[1]))
+	if (argc < 2)
 		return (EXIT_SUCCESS);
+	if (args_has_empty((size_t)argc - 1, &argv[1]))
+	{
+		ft_putendl_err(ERROR_MESSAGE);
+		return (EXIT_FAILURE);
+	}
 	if (argc == 2)
 	{
 		args = ft_split(argv[1], ' ');

@@ -6,7 +6,7 @@
 #    By: monoue <monoue@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/30 15:33:41 by monoue            #+#    #+#              #
-#    Updated: 2021/03/29 09:44:26 by monoue           ###   ########.fr        #
+#    Updated: 2021/03/29 10:44:43 by monoue           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,8 @@ SRC_PATH	= ./src/
 
 INCLUDE	= -I../../lib -I../includes/ -I./includes/
 
-BASE	  = $(COMMON_PATH)args_are_integers_bonus.c \
+BASE	  = $(COMMON_PATH)args_has_empty_bonus.c \
+			$(COMMON_PATH)args_are_integers_bonus.c \
 			$(COMMON_PATH)args_are_valid_bonus.c \
 			$(COMMON_PATH)basic_list_operations1_bonus.c \
 			$(COMMON_PATH)basic_list_operations2_bonus.c \

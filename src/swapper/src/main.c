@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:48:57 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/29 07:59:21 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 10:41:33 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,11 @@ int			main(int argc, char *argv[])
 
 	if (argc < 2)
 		return (EXIT_SUCCESS);
+	if (args_has_empty((size_t)argc - 1, &argv[1]))
+	{
+		ft_putendl_err(ERROR_MESSAGE);
+		return (EXIT_FAILURE);
+	}
 	if (argc == 2)
 	{
 		args = ft_split(argv[1], ' ');

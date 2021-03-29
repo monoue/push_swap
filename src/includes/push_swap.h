@@ -6,7 +6,7 @@
 /*   By: monoue <monoue@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 06:34:07 by monoue            #+#    #+#             */
-/*   Updated: 2021/03/29 07:51:59 by monoue           ###   ########.fr       */
+/*   Updated: 2021/03/29 10:31:46 by monoue           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 
 # include "defs.h"
 
+bool			args_has_empty(size_t args_num, char **args);
 bool			args_are_integers(size_t argc, char *argv[]);
 bool			args_are_valid(size_t argc, char *argv[]);
 t_num			*get_struct_list(size_t args_num, char **num_strs);

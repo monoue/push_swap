@@ -51,8 +51,6 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-*hoge*
-*fuga*
-
 /push_swap
 /checker
+.idea
